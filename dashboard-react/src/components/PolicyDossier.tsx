@@ -1,0 +1,249 @@
+import React from 'react';
+import { 
+  FileText, 
+  Scissors, 
+  Wind, 
+  GitMerge, 
+  Clock, 
+  ArrowRight,
+  TrendingDown,
+  AlertTriangle,
+  Lightbulb
+} from 'lucide-react';
+import { NETWORK_STATS } from '../data/railwayData';
+
+interface PolicyDossierProps {
+  onApplyPreset: (type: 'slow_zones' | 'ac_gap' | 'peak_hours') => void;
+}
+
+export const PolicyDossier: React.FC<PolicyDossierProps> = ({ onApplyPreset }) => {
+  return (
+    <section className="mt-8 rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 p-6 shadow-xs text-slate-800 dark:text-slate-100">
+      
+      {/* Dossier Header */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-slate-200 dark:border-slate-800">
+        <div>
+          <div className="flex items-center gap-2">
+            <FileText className="w-5 h-5 text-amber-600 dark:text-amber-500" />
+            <h3 className="font-heading font-bold text-2xl tracking-wide uppercase text-slate-900 dark:text-white">
+              Policy Dossier: Strategic Insights & Network Interventions
+            </h3>
+          </div>
+          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-3xl leading-relaxed font-sans">
+            Empirical findings derived from timetable parsing of 5,164 train services and 8,497 stations. Stoppage overhead and load skew require targeted structural remedies.
+          </p>
+        </div>
+
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-xs font-mono text-slate-600 dark:text-slate-400">
+          <span>Pearson Correlation (Halts vs Speed):</span>
+          <strong className="text-amber-700 dark:text-amber-400 font-bold">{NETWORK_STATS.haltSpeedCorrelation}</strong>
+        </div>
+      </div>
+
+      {/* 4 Strategic Pillars Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        
+        {/* Case 1: Slow Passenger Services & Stop Rationalization */}
+        <div className="p-5 rounded-xl bg-slate-50/70 dark:bg-slate-950/80 border border-slate-200/90 dark:border-slate-800 flex flex-col justify-between hover:border-slate-300 dark:hover:border-slate-700 transition">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-amber-50 text-amber-800 border border-amber-300 dark:bg-amber-500/10 dark:text-amber-400 dark:border-amber-500/20 text-xs font-mono font-medium">
+                <Scissors className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" /> Pillar 01 // Speed Recovery
+              </span>
+              <span className="text-[11px] font-mono text-red-700 dark:text-red-400 flex items-center gap-1 font-semibold">
+                <TrendingDown className="w-3.5 h-3.5" /> -16.9 km/h speed deficit
+              </span>
+            </div>
+
+            <h4 className="text-base font-bold font-heading uppercase text-slate-900 dark:text-white mb-2">
+              Rationalize Stoppages on Passenger & Suburban Lines
+            </h4>
+
+            {/* Finding */}
+            <div className="mb-3 text-xs text-slate-700 dark:text-slate-300 leading-relaxed space-y-1.5">
+              <div className="flex items-center gap-1 text-[11px] font-mono font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
+                <AlertTriangle className="w-3 h-3 text-amber-600 dark:text-amber-500" /> Empirical Finding:
+              </div>
+              <p>
+                Passenger & suburban services comprise <strong>52.9%</strong> of the network but average only <strong>33.5 km/h</strong> (vs 50.4 km/h for express). They stop dramatically more often per 100 km.
+              </p>
+              <p className="text-slate-500 dark:text-slate-400">
+                Standing dwell time accounts for ~8% of journey time mechanically. Running speed drops steadily as halts per 100km rise (r = -0.37 controlled, -0.51 raw). <strong>SECR, ECR, and NER</strong> are slowest at 33.2, 33.7, and 36.0 km/h with 67% to 74% passenger fleet share.
+              </p>
+            </div>
+
+            {/* Action */}
+            <div className="pt-3 border-t border-slate-200 dark:border-slate-800/80 text-xs leading-relaxed text-slate-800 dark:text-slate-200">
+              <div className="flex items-center gap-1 text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">
+                <Lightbulb className="w-3 h-3 text-emerald-600 dark:text-emerald-400" /> Strategic Action:
+              </div>
+              <p>
+                Audit and prune low-patronage flag halts on SECR, ECR, and NER. Transition multi-stop long runs into high-acceleration MEMU or skip-stop fast-passenger operational patterns.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-800/80 flex items-center justify-between">
+            <span className="text-[11px] font-mono text-slate-500">Target Zones: SECR, ECR, NER</span>
+            <button
+              onClick={() => onApplyPreset('slow_zones')}
+              className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-amber-700 hover:text-amber-800 dark:text-amber-400 dark:hover:text-amber-300 cursor-pointer"
+            >
+              Filter Slow Zones <ArrowRight className="w-3 h-3" />
+            </button>
+          </div>
+        </div>
+
+        {/* Case 2: AC Supply Gap on 300 to 700 km */}
+        <div className="p-5 rounded-xl bg-slate-50/70 dark:bg-slate-950/80 border border-slate-200/90 dark:border-slate-800 flex flex-col justify-between hover:border-slate-300 dark:hover:border-slate-700 transition">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-blue-50 text-blue-800 border border-blue-200 dark:bg-blue-500/10 dark:text-blue-400 dark:border-blue-500/20 text-xs font-mono font-medium">
+                <Wind className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" /> Pillar 02 // Rolling Stock
+              </span>
+              <span className="text-[11px] font-mono text-blue-700 dark:text-blue-300 font-semibold">
+                375 services without AC
+              </span>
+            </div>
+
+            <h4 className="text-base font-bold font-heading uppercase text-slate-900 dark:text-white mb-2">
+              Augment AC Capacity on 300 to 700 km Corridors
+            </h4>
+
+            {/* Finding */}
+            <div className="mb-3 text-xs text-slate-700 dark:text-slate-300 leading-relaxed space-y-1.5">
+              <div className="flex items-center gap-1 text-[11px] font-mono font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
+                <AlertTriangle className="w-3 h-3 text-amber-600 dark:text-amber-500" /> Empirical Finding:
+              </div>
+              <p>
+                While 95% to 96% of services exceeding 700 km have AC classes, <strong>375 of 997 services (37.6%)</strong> in the 300–700 km intercity band operate with zero AC coaches (including AC Chair Car).
+              </p>
+              <p className="text-slate-500 dark:text-slate-400">
+                Within this distance band, <strong>NER (31% AC), NWR (39% AC), and WCR (41% AC)</strong> hold the lowest provision rates among major regional zones despite heavy inter-city commuter demand.
+              </p>
+            </div>
+
+            {/* Action */}
+            <div className="pt-3 border-t border-slate-200 dark:border-slate-800/80 text-xs leading-relaxed text-slate-800 dark:text-slate-200">
+              <div className="flex items-center gap-1 text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">
+                <Lightbulb className="w-3 h-3 text-emerald-600 dark:text-emerald-400" /> Strategic Action:
+              </div>
+              <p>
+                Prioritize deployment of 3AC Economy coaches and AC Chair Cars onto non-AC daytime 300–700 km intercity services in NER, NWR, and WCR before adding long-haul AC capacity.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-800/80 flex items-center justify-between">
+            <span className="text-[11px] font-mono text-slate-500">Deficit: 375 intercity trains</span>
+            <button
+              onClick={() => onApplyPreset('ac_gap')}
+              className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-blue-700 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 cursor-pointer"
+            >
+              Filter 300-700km Non-AC <ArrowRight className="w-3 h-3" />
+            </button>
+          </div>
+        </div>
+
+        {/* Case 3: Station Hub Bottlenecks */}
+        <div className="p-5 rounded-xl bg-slate-50/70 dark:bg-slate-950/80 border border-slate-200/90 dark:border-slate-800 flex flex-col justify-between hover:border-slate-300 dark:hover:border-slate-700 transition">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-purple-50 text-purple-800 border border-purple-200 dark:bg-purple-500/10 dark:text-purple-400 dark:border-purple-500/20 text-xs font-mono font-medium">
+                <GitMerge className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" /> Pillar 03 // Infrastructure
+              </span>
+              <span className="text-[11px] font-mono text-purple-700 dark:text-purple-300 font-semibold">
+                Top 10% = 51.5% Halts
+              </span>
+            </div>
+
+            <h4 className="text-base font-bold font-heading uppercase text-slate-900 dark:text-white mb-2">
+              Decouple Terminal Load from Primary Junction Hubs
+            </h4>
+
+            {/* Finding */}
+            <div className="mb-3 text-xs text-slate-700 dark:text-slate-300 leading-relaxed space-y-1.5">
+              <div className="flex items-center gap-1 text-[11px] font-mono font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
+                <AlertTriangle className="w-3 h-3 text-amber-600 dark:text-amber-500" /> Empirical Finding:
+              </div>
+              <p>
+                The national station network exhibits extreme Pareto concentration: the top 10% busiest stations handle <strong>51.5%</strong> of all train halting events.
+              </p>
+              <p className="text-slate-500 dark:text-slate-400">
+                <strong>Kanpur Central (286 halts)</strong> and <strong>Howrah Jn (283 halts)</strong> bear immense platform turn-around strain. In contrast, <strong>{NETWORK_STATS.lowTrafficStationPercent}% of stations</strong> nationwide handle 3 or fewer train services in the entire timetable.
+              </p>
+            </div>
+
+            {/* Action */}
+            <div className="pt-3 border-t border-slate-200 dark:border-slate-800/80 text-xs leading-relaxed text-slate-800 dark:text-slate-200">
+              <div className="flex items-center gap-1 text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">
+                <Lightbulb className="w-3 h-3 text-emerald-600 dark:text-emerald-400" /> Strategic Action:
+              </div>
+              <p>
+                Expand satellite bypass terminals (e.g., Santragachi/Shalimar for Howrah; Panki/Govindpuri for Kanpur) to decongest central throat tracks and unlock express throughput.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-800/80 flex items-center justify-between">
+            <span className="text-[11px] font-mono text-slate-500">Busiest: Kanpur, Howrah, Vijayawada</span>
+            <span className="text-[11px] font-mono text-purple-700 dark:text-purple-400 font-semibold">Infrastructure Focus</span>
+          </div>
+        </div>
+
+        {/* Case 4: Diurnal Smoothing */}
+        <div className="p-5 rounded-xl bg-slate-50/70 dark:bg-slate-950/80 border border-slate-200/90 dark:border-slate-800 flex flex-col justify-between hover:border-slate-300 dark:hover:border-slate-700 transition">
+          <div>
+            <div className="flex items-center justify-between mb-3">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-800 border border-emerald-200 dark:bg-emerald-500/10 dark:text-emerald-400 dark:border-emerald-500/20 text-xs font-mono font-medium">
+                <Clock className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" /> Pillar 04 // Timetable Scheduling
+              </span>
+              <span className="text-[11px] font-mono text-emerald-700 dark:text-emerald-300 font-semibold">
+                05:00-08:59 = 25.6% rush
+              </span>
+            </div>
+
+            <h4 className="text-base font-bold font-heading uppercase text-slate-900 dark:text-white mb-2">
+              Utilize Midday Capacity Window (10:00 to 12:59)
+            </h4>
+
+            {/* Finding */}
+            <div className="mb-3 text-xs text-slate-700 dark:text-slate-300 leading-relaxed space-y-1.5">
+              <div className="flex items-center gap-1 text-[11px] font-mono font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400">
+                <AlertTriangle className="w-3 h-3 text-amber-600 dark:text-amber-500" /> Empirical Finding:
+              </div>
+              <p>
+                Timetable scheduling shows steep diurnal peak concentration: <strong>25.6% of all departures</strong> occur in the 4-hour morning window (05:00 to 08:59), while late night (00:00 to 03:59) accounts for only 2.5%.
+              </p>
+              <p className="text-slate-500 dark:text-slate-400">
+                The midday slot (10:00 to 12:59) experiences a noticeable dip in scheduled departures while terminal tracks remain fully staffed and powered.
+              </p>
+            </div>
+
+            {/* Action */}
+            <div className="pt-3 border-t border-slate-200 dark:border-slate-800/80 text-xs leading-relaxed text-slate-800 dark:text-slate-200">
+              <div className="flex items-center gap-1 text-[11px] font-mono font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-1">
+                <Lightbulb className="w-3 h-3 text-emerald-600 dark:text-emerald-400" /> Strategic Action:
+              </div>
+              <p>
+                Slot newly planned intercity Vande Bharat and Jan Shatabdi turns into the 10:30–12:30 departure window to avoid peak morning throat lockouts and balance platform occupancy.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-800/80 flex items-center justify-between">
+            <span className="text-[11px] font-mono text-slate-500">Slot Smoothing Strategy</span>
+            <button
+              onClick={() => onApplyPreset('peak_hours')}
+              className="inline-flex items-center gap-1 text-xs font-mono font-semibold text-emerald-700 hover:text-emerald-800 dark:text-emerald-400 dark:hover:text-emerald-300 cursor-pointer"
+            >
+              Filter Morning Rush Trains <ArrowRight className="w-3 h-3" />
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  );
+};

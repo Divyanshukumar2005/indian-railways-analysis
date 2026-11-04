@@ -1,0 +1,7 @@
+raw: trains=5208, stations=8990, schedule stops=417080
+stations with state+zone+coords: 4171 (dropped 4819 placeholder/incomplete)
+trains with valid distance & duration: 5166 (dropped 42)
+zone imputed from origin station for 94 trains; 177 remain Unknown
+removed 2 trains with impossible speed (>140 km/h)
+schedule stops after dedupe & joining valid trains: 414518 (from 417080)
+stations in timetable: 8497; geo-tagged match: 4125; halting events: 103554, pass-through events: 310964

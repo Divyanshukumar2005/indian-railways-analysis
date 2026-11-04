@@ -1,0 +1,11 @@
+number,name,from_station_name,to_station_name,distance,avg_speed_kmph,halts
+52328,Saharsa-Forbesganj Passenger,SAHARSA JN,FORBESGANJ,112.0,14.6,10
+52322,Saharsa-Forbesganj Passenger,SAHARSA JN,FORBESGANJ,112.0,15.6,10
+52324,Saharsa-forbesganj Passenger,SAHARSA JN,FORBESGANJ,112.0,16.0,10
+52325,Forbesganj-Saharsa Passenger,FORBESGANJ,SAHARSA JN,112.0,16.0,10
+52326,Saharsa-Forbesganj Passenger,SAHARSA JN,FORBESGANJ,112.0,16.2,10
+52330,Saharsa-Forbesganj Passenger,SAHARSA JN,FORBESGANJ,112.0,16.2,10
+53232,Rajgir Danapur Passenger,Rajgir,DANAPUR,108.0,18.0,16
+55506,Runnisaidpur-Samastipur Passenger,Runnisaidpur,SAMASTIPUR JN,120.0,18.7,17
+53207,Islampur Buxar Passenger,Islampur,BUXAR,181.0,19.7,36
+53341,Dhanbad-Muri Passenger,DHANBAD JN,MURI,101.0,19.9,17

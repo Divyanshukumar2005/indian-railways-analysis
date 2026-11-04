@@ -1,0 +1,13 @@
+# raw downloads (re-create with scripts/download_data.py)
+raw/
+# 17 MB, re-created by scripts/clean.py
+data/schedules_clean.csv
+# local sqlite db, re-created by sql/load.py
+data/railways.db
+__pycache__/
+*.pyc
+venv/
+.venv/
+.DS_Store
+node_modules/
+dist/

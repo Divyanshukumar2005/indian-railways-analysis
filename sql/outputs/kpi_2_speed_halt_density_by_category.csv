@@ -1,0 +1,5 @@
+category,services,pct_of_services,avg_speed_kmph,halts_per_100km
+Passenger & Suburban,2732,52.9,33.5,17.4
+Express & Superfast,2026,39.2,50.4,3.1
+Premium / Fast-track,261,5.1,65.4,1.2
+Other / Local,145,2.8,31.9,53.6
