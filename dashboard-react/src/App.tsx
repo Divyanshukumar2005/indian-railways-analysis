@@ -165,7 +165,7 @@ export default function App() {
               RailGati // National Railway Network Intelligence
             </h1>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-3xl mt-1.5 leading-relaxed font-sans">
-              An empirical operational analysis of <strong>5,164 timetable train services</strong> and <strong>8,497 stations</strong>. Identifies corridor speed bottlenecks, stoppage overhead penalties, AC class deficits, and junction terminal load concentration.
+              An empirical operational analysis of <strong>{TRAINS_DATA.length.toLocaleString()} timetable train services</strong> and <strong>8,497 stations</strong>. Identifies corridor speed bottlenecks, stoppage overhead penalties, AC class deficits, and junction terminal load concentration.
             </p>
           </div>
 

@@ -17,26 +17,27 @@ interface SimulatorModalProps {
 export const SimulatorModal: React.FC<SimulatorModalProps> = ({ isOpen, onClose }) => {
   const [reductionPercent, setReductionPercent] = useState<number>(20);
   const [acAugmentPercent, setAcAugmentPercent] = useState<number>(40);
-  const [selectedFocusZone, setSelectedFocusZone] = useState<string>('slow_three'); // 'all' | 'slow_three'
 
   if (!isOpen) return null;
 
-  // Mathematical models:
-  const baselineSpeed = 33.5;
-  const speedGain = (reductionPercent / 100) * 8.4;
+  // All constants come from the data (see scripts/build_dashboard.py), none are typed in by hand.
+  // Model: speed change = regression slope x change in halts per 100 km, fitted on passenger &
+  // suburban services of 100 km or more. This is an association across trains, not a measured
+  // effect of removing stops on any one train.
+  const sim = NETWORK_STATS.sim;
+  const baselineSpeed = sim.base_speed;
+  const currentAvgHaltsPer100km = sim.base_h100;
+  const simulatedHaltsPer100km = currentAvgHaltsPer100km * (1 - reductionPercent / 100);
+  const speedGain = -sim.slope * (currentAvgHaltsPer100km - simulatedHaltsPer100km);
   const projectedSpeed = baselineSpeed + speedGain;
 
-  // Stoppage overhead reduction
-  const currentAvgHaltsPer100km = 11.9;
-  const simulatedHaltsPer100km = currentAvgHaltsPer100km * (1 - reductionPercent / 100);
-
-  // Travel time savings for average 200km passenger journey
-  const originalTimeHours = 200 / baselineSpeed;
-  const simulatedTimeHours = 200 / projectedSpeed;
+  // Travel time for an average passenger journey (mean distance of the fitted services)
+  const originalTimeHours = sim.avg_dist / baselineSpeed;
+  const simulatedTimeHours = sim.avg_dist / projectedSpeed;
   const minutesSavedPerRun = Math.round((originalTimeHours - simulatedTimeHours) * 60);
 
-  // AC coach supply expansion
-  const unequippedServices = 375;
+  // AC coach supply expansion on non-AC 300-700 km services
+  const unequippedServices = sim.non_ac_mid;
   const newlyEquippedServices = Math.round((unequippedServices * acAugmentPercent) / 100);
   const remainingAcGap = unequippedServices - newlyEquippedServices;
 
@@ -55,7 +56,7 @@ export const SimulatorModal: React.FC<SimulatorModalProps> = ({ isOpen, onClose 
             </div>
             <div>
               <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-amber-50 dark:bg-amber-500/10 border border-amber-200 dark:border-amber-500/20 text-amber-800 dark:text-amber-400 text-xs font-mono font-medium mb-1">
-                <Sparkles className="w-3 h-3" /> Predictive Transit Operations Simulator
+                <Sparkles className="w-3 h-3" /> What-if Simulator (illustrative)
               </div>
               <h2 className="text-xl sm:text-2xl font-heading font-bold text-slate-900 dark:text-white">
                 Stoppage Rationalization & Corridor Acceleration
@@ -73,7 +74,7 @@ export const SimulatorModal: React.FC<SimulatorModalProps> = ({ isOpen, onClose 
 
         {/* Introduction note */}
         <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-6 bg-slate-50 dark:bg-slate-950/70 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 font-sans">
-          This interactive model implements the statistical finding from the national timetable dataset (Pearson <strong>r = {NETWORK_STATS.haltSpeedCorrelation}</strong> between halts per 100km and average running speed). Adjust the policy levers below to simulate speed gains, time savings, and AC capacity additions.
+          This is a what-if illustration, not a forecast. It applies the slope from a regression of average speed on halts per 100 km (<strong>{sim.slope} km/h per halt/100km</strong>, {sim.n.toLocaleString()} passenger &amp; suburban services of 100 km or more) to the halt cut you choose. The network-wide correlation is <strong>r = {NETWORK_STATS.haltSpeedCorrelation}</strong> for average speed and <strong>{NETWORK_STATS.haltRunningSpeedCorrelation}</strong> for running speed. It shows association between trains, not that cutting stops will cause this speedup.
         </p>
 
         {/* Simulation Controls Grid */}
@@ -90,7 +91,7 @@ export const SimulatorModal: React.FC<SimulatorModalProps> = ({ isOpen, onClose 
               </span>
             </div>
             <p className="text-[11px] text-slate-500 dark:text-slate-400 mb-3">
-              Prune underutilized flag-stops on slow passenger services to reduce mechanical acceleration/deceleration cycles.
+              Cut the share of halts per 100 km on passenger &amp; suburban services (the data has no ridership, so it cannot say which stops are low-use).
             </p>
             <input
               type="range"
@@ -102,9 +103,9 @@ export const SimulatorModal: React.FC<SimulatorModalProps> = ({ isOpen, onClose 
               className="w-full accent-amber-500 cursor-pointer"
             />
             <div className="flex justify-between text-[10px] font-mono text-slate-400 dark:text-slate-500 mt-1">
-              <span>0% (Status Quo)</span>
-              <span>25% (Moderate)</span>
-              <span>50% (Express MEMU)</span>
+              <span>0% (today)</span>
+              <span>25%</span>
+              <span>50%</span>
             </div>
           </div>
 
@@ -119,7 +120,7 @@ export const SimulatorModal: React.FC<SimulatorModalProps> = ({ isOpen, onClose 
               </span>
             </div>
             <p className="text-[11px] text-slate-500 dark:text-slate-400 mb-3">
-              Add 3AC or AC Chair Cars to the 375 non-AC intercity services in the critical 300-700 km corridor.
+              Add 3AC or AC Chair Cars to the {sim.non_ac_mid} non-AC intercity services in the critical 300-700 km corridor.
             </p>
             <input
               type="range"
@@ -131,45 +132,12 @@ export const SimulatorModal: React.FC<SimulatorModalProps> = ({ isOpen, onClose 
               className="w-full accent-blue-600 dark:accent-blue-500 cursor-pointer"
             />
             <div className="flex justify-between text-[10px] font-mono text-slate-400 dark:text-slate-500 mt-1">
-              <span>0% (375 gap)</span>
-              <span>50% (+188 trains)</span>
-              <span>100% (Full AC)</span>
+              <span>0% ({sim.non_ac_mid} non-AC)</span>
+              <span>50% (+{Math.round(sim.non_ac_mid/2)} services)</span>
+              <span>100% (all AC)</span>
             </div>
           </div>
 
-          {/* Lever 3: Target Zone Scope */}
-          <div className="md:col-span-2 p-4 rounded-xl bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800">
-            <label className="text-xs font-mono font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-200 block mb-2">
-              3. Target Geographical Scope
-            </label>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <button
-                type="button"
-                onClick={() => setSelectedFocusZone('slow_three')}
-                className={`p-3 rounded-lg border text-left text-xs transition cursor-pointer ${
-                  selectedFocusZone === 'slow_three'
-                    ? 'bg-amber-50 border-amber-500 text-slate-900 dark:bg-amber-500/15 dark:border-amber-500 dark:text-white font-medium ring-1 ring-amber-400/40'
-                    : 'bg-white border-slate-200 text-slate-600 hover:text-slate-900 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-400 dark:hover:text-white'
-                }`}
-              >
-                <div className="font-semibold text-slate-900 dark:text-slate-200 mb-0.5">Priority Zones: SECR, ECR & NER</div>
-                <div className="text-[11px] text-slate-500 dark:text-slate-400">Target the 3 slowest zones (33.2–36.0 km/h) with 67–74% passenger fleet share</div>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => setSelectedFocusZone('all')}
-                className={`p-3 rounded-lg border text-left text-xs transition cursor-pointer ${
-                  selectedFocusZone === 'all'
-                    ? 'bg-amber-50 border-amber-500 text-slate-900 dark:bg-amber-500/15 dark:border-amber-500 dark:text-white font-medium ring-1 ring-amber-400/40'
-                    : 'bg-white border-slate-200 text-slate-600 hover:text-slate-900 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-400 dark:hover:text-white'
-                }`}
-              >
-                <div className="font-semibold text-slate-900 dark:text-slate-200 mb-0.5">Pan-India Network Fleet</div>
-                <div className="text-[11px] text-slate-500 dark:text-slate-400">Apply policy parameters across all 16 IR divisions simultaneously</div>
-              </button>
-            </div>
-          </div>
 
         </div>
 
@@ -178,7 +146,7 @@ export const SimulatorModal: React.FC<SimulatorModalProps> = ({ isOpen, onClose 
           <div className="flex items-center gap-2 mb-3">
             <TrendingUp className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
             <h4 className="font-heading font-bold text-base uppercase tracking-wider text-slate-900 dark:text-white">
-              Projected System Outcomes
+              Illustrative Outcomes
             </h4>
           </div>
 
@@ -201,7 +169,7 @@ export const SimulatorModal: React.FC<SimulatorModalProps> = ({ isOpen, onClose 
                 ~{minutesSavedPerRun} mins
               </div>
               <div className="text-[10px] text-slate-500 dark:text-slate-400 mt-0.5">
-                per 200 km run
+                per {sim.avg_dist} km run
               </div>
             </div>
 
@@ -231,13 +199,13 @@ export const SimulatorModal: React.FC<SimulatorModalProps> = ({ isOpen, onClose 
           <div className="mt-4 pt-3 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
             <span className="flex items-center gap-1.5 font-mono">
               <ShieldAlert className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
-              Terminal Headway freed up at major junctions: ~12–18%
+              Association across trains, not a forecast for any one train
             </span>
             <button
               onClick={() => {
                 setReductionPercent(20);
                 setAcAugmentPercent(40);
-                setSelectedFocusZone('slow_three');
+                
               }}
               className="inline-flex items-center gap-1 text-[11px] font-mono text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white cursor-pointer"
             >

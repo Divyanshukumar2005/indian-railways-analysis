@@ -16,7 +16,7 @@ ABB,Abada,40,142,182,,,,
 ABD,Ambli Road,6,90,96,,,,
 ABE,Ambikeshwar,4,2,6,Madhya Pradesh,NCR,26.368567,77.963828
 ABEO,Pattaravakkam,1,0,1,,SR,13.114499981582952,80.16618146561086
-ABFC,Ambari Falakata,12,74,86,,,,
+ABFC,Ambari Falakata,11,73,84,,,,
 ABGT,Arbagatta Halt,4,45,49,Karnataka,SWR,13.907468,76.13497100000001
 ABH,Ambarnath,6,93,99,,,,
 ABI,Ambaturai,10,54,64,,,,
@@ -351,7 +351,7 @@ ATG,Atgaon,2,138,140,,,,
 ATH,Antah,8,6,14,Rajasthan,WCR,25.1611771,76.3072684
 ATKS,Atwa Kursath,4,0,4,Uttar Pradesh,NR,27.134570267199997,80.2672099268
 ATL,Athmal Gola,24,115,139,,,,
-ATM,Altagram,4,70,74,,,,
+ATM,Altagram,3,69,72,,,,
 ATMO,Aithal,8,60,68,Uttarakhand,NR,29.8079295893,78.0436230264
 ATNR,Awatar Nagar,9,95,104,,,,
 ATP,Anantapur,57,14,71,,,,
@@ -365,7 +365,7 @@ ATU,Attur,7,0,7,,,,
 ATUL,Atul,12,168,180,Gujarat,WR,20.544593354,72.9271335858
 ATW,Atwa Muthia Halt,4,0,4,Uttar Pradesh,NR,27.273989999999998,80.415479
 ATX,Alinagar Tola,2,0,2,,,,
-AUB,Aluabari Road,30,93,123,,,,
+AUB,Aluabari Road,29,93,122,,,,
 AUBR,Anugraha Narayan Road,46,59,105,,,,
 AUI,Aurahi,6,0,6,Bihar,ECR,25.823021,87.135054
 AUL,Agsauli,7,9,16,,,,
@@ -892,7 +892,7 @@ BLGR,Balangir,30,1,31,,,,
 BLGT,Balurghat,8,0,8,,,,
 BLH,Belgharia,13,61,74,,,,
 BLHR,Balahapur Halt,0,19,19,,,,
-BLK,Belakoba,16,70,86,,,,
+BLK,Belakoba,15,69,84,,,,
 BLKR,Ballekere Halt,6,56,62,Karnataka,SWR,13.502322000000001,76.023514
 BLL,Bantanahal,8,22,30,Andhra Pradesh,SCR,15.16290019,77.27572365
 BLLI,Balli,3,40,43,Goa,KR,15.151725800000001,74.0209756
@@ -1417,7 +1417,7 @@ BYR,Bhayandar,3,105,108,Maharashtra,WR,19.311766,72.85303900000001
 BYS,Barsali,7,127,134,,,,
 BYSA,Basulyasutahata,0,4,4,West Bengal,SER,22.12030128,88.13056325
 BYT,Bhatapara,69,35,104,,,,
-BYXA,Betgara,4,70,74,,,,
+BYXA,Betgara,3,69,72,,,,
 BYY,Byree,7,111,118,,,,
 BZ,Bharur,12,23,35,Punjab,NR,30.165006839,75.8156104224
 BZA,Vijayawada Jn,257,5,262,,,,
@@ -1453,7 +1453,7 @@ CAPE,Kanyakumari,22,0,22,Tamil Nadu,SR,8.088028,77.542504
 CAR,Chunar,43,138,181,,,,
 CAS,Chas Road,13,10,23,,,,
 CASA,Chhansara,0,6,6,,,,
-CAT,Chattar Hat,2,121,123,,,,
+CAT,Chattar Hat,2,120,122,,,,
 CATA,Chhata Aschaura,6,44,50,,,,
 CATD,Chataud,6,0,6,,SECR,21.015051,81.73716
 CAZ,Chauhani,2,22,24,,,,
@@ -1876,7 +1876,7 @@ DBN,Dhablan,6,15,21,Punjab,NR,30.3379133215,76.276917865
 DBNR,Dibnapur,10,0,10,Uttar Pradesh,NER,28.524363,79.51619
 DBO,Dabhoda,14,2,16,Gujarat,WR,23.168331000000002,72.748038
 DBP,Debipur,4,76,80,,,,
-DBQ,Dhulabari,2,121,123,,,,
+DBQ,Dhulabari,2,120,122,,,,
 DBR,Dabhaura,20,89,109,Uttar Pradesh,NCR,25.11793,81.30312500000001
 DBRG,Dibrugarh,18,2,20,Assam,NFR,27.463606565899997,94.93525791020001
 DBRT,Dibrugarh Town,12,0,12,Assam,NFR,27.4781132774,94.9019739417
@@ -2123,7 +2123,7 @@ DMU,Dhamua,2,0,2,West Bengal,ER,22.290179,88.392178
 DMV,Dimapur,42,0,42,Nagaland,NFR,25.905701999999998,93.72781599999999
 DMW,Dalmau Junction,12,1,13,Uttar Pradesh,NR,26.075249999999997,81.05365
 DMYA,Damoy,4,3,7,Madhya Pradesh,WCR,23.971207999999997,80.99678700000001
-DMZ,Dumdangi,2,121,123,,,,
+DMZ,Dumdangi,2,120,122,,,,
 DN,Dhanari,6,8,14,Uttar Pradesh,NR,28.3284610746,78.50959573360001
 DNA,Degana Jn,46,2,48,,,,
 DND,Dandupur,12,16,28,,,,
@@ -2200,7 +2200,7 @@ DPU,Diphu,36,6,42,Assam,NFR,25.83725,93.438384
 DPW,Dhapewara,3,11,14,Madhya Pradesh,SECR,21.872721159199997,80.1913272595
 DPX,Dadpur,11,22,33,,,,
 DPZ,Devpura,4,42,46,,,,
-DQG,Dhupguri,34,40,74,,,,
+DQG,Dhupguri,33,39,72,,,,
 DQN,Dhanera,2,4,6,Gujarat,NWR,24.506528,72.032364
 DQR,Kacheguda Dbr,81,31,112,,,,
 DQV,Daula Kot Bhai,0,2,2,,,,
@@ -2417,7 +2417,7 @@ FKG,Furkating Jn,26,14,40,Assam,NFR,26.465652000000002,94.00269200000001
 FKM,Fakiragram Jn,23,72,95,,,,
 FL,Phulera Jn,56,58,114,,,,
 FLD,Phulad,4,0,4,Rajasthan,NWR,25.623979,73.81311799999999
-FLK,Falakata,14,60,74,,,,
+FLK,Falakata,13,59,72,,,,
 FLM,Falimari,1,0,1,West Bengal,NFR,26.0707762,89.5868746
 FLR,Phuleswar,46,136,182,,,,
 FLU,Phulia,2,0,2,West Bengal,ER,23.229896999999998,88.49634
@@ -2518,7 +2518,7 @@ GDQ,Godamgura,8,37,45,,,,
 GDR,Gudur Jn,123,57,180,,,,
 GDU,Gudru Halt,3,0,3,Madhya Pradesh,SECR,22.2718946035,80.1163395764
 GDV,Gudivada Jn,34,0,34,Andhra Pradesh,SCR,16.429888,80.987594
-GDX,Ghoksadanga,6,68,74,,,,
+GDX,Ghoksadanga,5,67,72,,,,
 GDY,Guindy,60,58,118,,,,
 GDYA,Ghoradongri,48,84,132,,,,
 GDZ,Gundardehi,4,0,4,Chhattisgarh,SECR,20.948836,81.302351
@@ -3383,7 +3383,7 @@ JOX,Janai Road,0,130,130,,,,
 JP,Jaipur,161,1,162,,,,
 JPAH,Jagdishpur Halt,4,0,4,,,,
 JPD,Jalalpur Dhai,4,4,8,,,,
-JPE,Jalpaiguri Road,20,54,74,,,,
+JPE,Jalpaiguri Road,19,53,72,,,,
 JPG,Jalpaiguri,12,0,12,,,,
 JPH,Jhantipahari,19,29,48,,,,
 JPI,Jhadupudi,2,93,95,,,,
@@ -3869,7 +3869,7 @@ KLE,Kaithal,8,0,8,Haryana,NR,29.792735,76.397796
 KLG,Kalunga,14,58,72,,,,
 KLGD,Kollengode,0,2,2,,,,
 KLGM,Kallagam,6,38,44,,,,
-KLGR,Khalaigram,4,70,74,,,,
+KLGR,Khalaigram,3,69,72,,,,
 KLH,Khemli,6,14,20,Rajasthan,NWR,24.690834,73.84238599999999
 KLHD,Kolhadi,0,45,45,,,,
 KLI,Kauli,8,15,23,Punjab,NR,30.418387999999997,76.51987899999999
@@ -5362,7 +5362,7 @@ MWZ,Mahishadahari,0,10,10,,,,
 MX,Mumbai Mahalakshmi,0,46,46,Maharashtra,WR,18.982103,72.823908
 MXA,Marauda,4,7,11,Chhattisgarh,SECR,21.15958,81.35973
 MXH,Makhu,6,2,8,Punjab,NR,31.105935,74.983505
-MXJ,Mangurjan,2,121,123,,,,
+MXJ,Mangurjan,2,120,122,,,,
 MXK,Mandrak,2,134,136,,,,
 MXL,Mokholi,6,79,85,Rajasthan,WCR,26.160967,76.460845
 MXM,Minatchipuram,0,2,2,,,,
@@ -5456,7 +5456,7 @@ NBS,New Baneswar,2,72,74,,,,
 NBT,Nayabagirthipur,6,30,36,,,,
 NBU,Narasambudhi,8,2,10,Karnataka,SWR,12.104692,76.70180500000001
 NBUE,Nibkarori,4,0,4,Uttar Pradesh,NCR,27.3287489158,79.40995965580001
-NCB,New Cooch Behar,74,5,79,,,,
+NCB,New Cooch Behar,73,5,78,,,,
 NCH,Nakachari,4,30,34,Assam,NFR,26.7081333353,94.3939129431
 NCHS,Nature Cure Hospital,108,61,169,,,,
 NCJ,Nagercoil Jn,61,4,65,Tamil Nadu,SR,8.17385,77.44347
@@ -5575,9 +5575,9 @@ NIRA,Nira,12,32,44,Maharashtra,CR,18.1049649229,74.20908244200001
 NIU,Nabipur,12,200,212,,,,
 NIV,Nivasar,2,48,50,Maharashtra,KR,16.946588000000002,73.454552
 NJA,Nagjua,8,0,8,Jharkhand,SER,23.3782939954,84.9668384277
-NJB,Nijbari,2,121,123,,,,
+NJB,Nijbari,2,120,122,,,,
 NJN,Naojan,4,34,38,Assam,NFR,26.13131,93.846465
-NJP,New Jalpaiguri,138,4,142,,,,
+NJP,New Jalpaiguri,137,3,140,,,,
 NJT,Nagercoil Town,12,24,36,Tamil Nadu,SR,8.199571810899998,77.4194318207
 NK,Nasik Road,123,20,143,,,,
 NKB,Nagrakota,6,24,30,West Bengal,NFR,26.885533,88.917581
@@ -5638,7 +5638,7 @@ NMN,Namanasamudram,2,8,10,Tamil Nadu,SR,10.327487,78.777507
 NMO,Nedi Mollyanur,0,30,30,,,,
 NMP,Nimpura,4,62,66,,,,
 NMT,Namtiali,4,34,38,Assam,NFR,26.851588,94.619336
-NMX,New Maynaguri,8,66,74,,,,
+NMX,New Maynaguri,7,65,72,,,,
 NMY,Noonmati,0,19,19,,,,
 NMZ,New Mal Jn,20,10,30,West Bengal,NFR,26.87368,88.724837
 NN,Nandura,28,61,89,,,,
@@ -5687,7 +5687,7 @@ NPV,Narpatganj,10,0,10,,,,
 NPW,Nipani Vadgaon,7,56,63,,,,
 NPX,Narindarpura,6,9,15,Punjab,NR,29.951767,75.476271
 NPZ,Nawapatra,0,20,20,,,,
-NQH,New Domohani,4,70,74,,,,
+NQH,New Domohani,3,69,72,,,,
 NQR,Naraj Marthapur,5,18,23,,,,
 NR,Niphad,18,125,143,,,,
 NRA,Nunkhar,8,78,86,,,,
@@ -6245,7 +6245,7 @@ PQS,Park Circus,6,5,11,,,,
 PQT,Puniyavant,4,0,4,Gujarat,WR,22.332118,73.95733100000001
 PQU,Parhana Mau,2,22,24,,,,
 PQY,Pabli Khas,13,44,57,Uttar Pradesh,NR,29.05601,77.698335
-PQZ,Pundibari,4,70,74,,,,
+PQZ,Pundibari,3,69,72,,,,
 PR,Mumbai Parel,0,99,99,Maharashtra,CR,19.009045,72.83750400000001
 PRAE,Palla Road,0,130,130,,,,
 PRAR,Paror,11,1,12,Himachal Pradesh,NR,32.08098,76.460155
@@ -6646,7 +6646,7 @@ RNE,Ranjani,10,32,42,Maharashtra,SCR,19.646129,76.107028
 RNG,Raniganj,64,101,165,,,,
 RNGG,Rangaliting,4,0,4,Assam,NFR,26.656417,93.918286
 RNH,Runkhera,9,100,109,,,,
-RNI,Rangapani,2,121,123,,,,
+RNI,Rangapani,2,120,122,,,,
 RNIR,Rajnarainpur,8,3,11,Uttar Pradesh,NER,28.313863,80.418359
 RNIS,Ranolishishu,11,5,16,Rajasthan,NWR,27.517012,75.301025
 RNJ,Runija,11,3,14,Madhya Pradesh,WR,23.06077,75.3768327
@@ -6701,7 +6701,7 @@ RPRL,Raparla Halt,3,175,178,,,,
 RPUR,Ratanpur,13,43,56,,,,
 RPV,Rajapatti,8,0,8,Bihar,NER,26.1808149265,84.80838331540001
 RPZ,Ranapratapnagar,14,6,20,Rajasthan,NWR,24.582417,73.72805600000001
-RQJ,Raninagar Jalpaigiri,16,70,86,,,,
+RQJ,Raninagar Jalpaigiri,15,69,84,,,,
 RQP,Radhakishorepur,5,18,23,,,,
 RR,Richha Road,6,9,15,Uttar Pradesh,NER,28.717268999999998,79.488904
 RRB,Birur Jn,65,2,67,Karnataka,SWR,13.591101,75.974749
@@ -7103,7 +7103,7 @@ SJPA,Sujalpur,0,11,11,,,,
 SJPM,Sujata Puram Halt,12,2,14,Karnataka,SWR,12.140253000000001,76.675521
 SJPR,Surjyapur,2,0,2,West Bengal,ER,22.293128,88.466557
 SJQ,Surajpur Road,6,2,8,Chhattisgarh,SECR,23.289233,82.880146
-SJRR,Sajherpar,4,70,74,,,,
+SJRR,Sajherpar,3,69,72,,,,
 SJS,Shamlaji Road,2,2,4,Gujarat,NWR,23.621619,73.335655
 SJSM,Salemgarhmasani,2,0,2,Rajasthan,NWR,29.550109363942525,74.46238562464714
 SJT,Shujaatpur,6,135,141,,,,
@@ -7606,7 +7606,7 @@ SXQ,Suaheri,0,5,5,,,,
 SXR,Serndanur,4,16,20,Tamil Nadu,SR,11.869105000000001,79.518251
 SXS,Shobhasan,7,61,68,Gujarat,WR,23.542306999999997,72.394212
 SXT,Salem Town,7,0,7,,,,
-SXX,Salbari,4,70,74,,,,
+SXX,Salbari,3,69,72,,,,
 SY,Sirkazhi,18,2,20,Tamil Nadu,SR,11.240305,79.726353
 SYA,Salaia,9,31,40,,,,
 SYAE,Liluah (Sorting Yard),0,28,28,,,,
@@ -7856,7 +7856,7 @@ TMB,Temburu,2,0,2,Andhra Pradesh,ECoR,18.633565,84.12696299999999
 TMC,Talamanchi,7,169,176,,,,
 TMD,Talmadla,8,24,32,Andhra Pradesh,SCR,18.239215,78.356638
 TME,Tuti Melur,9,3,12,Tamil Nadu,SR,8.808373999999999,78.145808
-TMH,Tin Mile Hat,2,121,123,,,,
+TMH,Tin Mile Hat,2,120,122,,,,
 TMKA,Tomka,4,0,4,Orissa,ECoR,21.107333,85.975352
 TMLP,Tirumalpur,12,5,17,Tamil Nadu,SR,12.956333,79.67348799999999
 TMLU,Tummalacheruvu,6,24,30,,,,

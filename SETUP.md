@@ -15,21 +15,20 @@ python sql/load.py                   # data/railways.db
 python sql/run_queries.py            # sql/outputs/
 python scripts/speed_vs_halts.py
 python scripts/check_numbers.py      # every line must say OK
-python scripts/build_dashboard.py    # refreshes both dashboards
+python scripts/build_dashboard.py    # refreshes dashboard-react/src/data/railwayData.ts
 ```
 If the download fails, put `trains.json`, `stations.json`, `schedules.json` from https://github.com/datameet/railways into `raw/` by hand.
 
-## 2. Dashboards
+## 2. Dashboard
 ```bash
-open dashboard/dashboard.html        # Windows: start dashboard\dashboard.html
 cd dashboard-react && npm install && npm run dev      # http://localhost:3000
 npm run build                                         # static site in dashboard-react/dist
 ```
 
 ## 3. GitHub
 ```bash
-git init && git add . && git status  # check venv/, raw/, node_modules/ are NOT listed
-git commit -m "Indian Railways service network analysis"
+git status                           # (run `git init` first only if this folder is not a repo yet) check venv/, raw/, node_modules/ are NOT listed
+git add . && git commit -m "Indian Railways service network analysis"
 git branch -M main
 git remote add origin https://github.com/<username>/indian-railways-analysis.git
 git push -u origin main

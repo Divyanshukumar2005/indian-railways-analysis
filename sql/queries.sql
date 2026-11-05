@@ -36,7 +36,10 @@ WITH r AS (
 SELECT rn, station_name, trains_halting, ROUND(100.0*running/total,1) AS cum_share_pct
 FROM r WHERE rn IN (1,10,85,425,850) ORDER BY rn;
 
--- Drill-down: slow, passenger-heavy services in the slowest zone
-SELECT number, name, from_station_name, to_station_name, distance, avg_speed_kmph, halts
-FROM trains WHERE zone='ECR' AND category='Passenger & Suburban' AND distance>100
-ORDER BY avg_speed_kmph LIMIT 10;
+-- Drill-down: slowest passenger routes (100 km or more) in SECR, the slowest zone in KPI 4.
+-- Grouped by route so the same route run by several train numbers appears once.
+SELECT from_station_name, to_station_name, distance, COUNT(*) AS services,
+       MIN(avg_speed_kmph) AS slowest_kmph, ROUND(AVG(avg_speed_kmph),1) AS avg_kmph
+FROM trains WHERE zone='SECR' AND category='Passenger & Suburban' AND distance>=100
+GROUP BY from_station_code, to_station_code, distance
+ORDER BY slowest_kmph LIMIT 10;

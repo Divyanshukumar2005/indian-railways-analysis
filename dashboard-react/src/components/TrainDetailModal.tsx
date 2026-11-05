@@ -13,7 +13,7 @@ import {
   GitCommit
 } from 'lucide-react';
 import { TrainService } from '../types';
-import { CATEGORIES, DISTANCE_BANDS } from '../data/railwayData';
+import { CATEGORIES, DISTANCE_BANDS, NETWORK_STATS } from '../data/railwayData';
 
 interface TrainDetailModalProps {
   train: TrainService | null;
@@ -38,8 +38,8 @@ export const TrainDetailModal: React.FC<TrainDetailModalProps> = ({
 
   // Approximate journey duration in hours
   const journeyDurationHours = train.spd > 0 ? train.dist / train.spd : 0;
-  // Estimate ~3 minutes deceleration + 2 min dwell time per intermediate halt (~5 mins per halt)
-  const estimatedHaltOverheadMinutes = Math.max(0, train.halts - 2) * 5;
+  // Standing time estimate: intermediate halts x the network-average dwell per halt (measured from the schedules)
+  const estimatedHaltOverheadMinutes = Math.max(0, train.halts - 2) * NETWORK_STATS.sim.dwell_per_halt;
   const haltTimeRatio = journeyDurationHours > 0 
     ? Math.min(60, (estimatedHaltOverheadMinutes / (journeyDurationHours * 60)) * 100) 
     : 0;
@@ -151,7 +151,7 @@ export const TrainDetailModal: React.FC<TrainDetailModalProps> = ({
           {/* Stoppage Time Overhead */}
           <div className="p-3 rounded-lg bg-slate-50/70 dark:bg-slate-950/60 border border-slate-200 dark:border-slate-800">
             <span className="text-[10px] font-mono uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-1">
-              <Timer className="w-3 h-3 text-purple-600 dark:text-purple-400" /> Halt Overhead
+              <Timer className="w-3 h-3 text-purple-600 dark:text-purple-400" /> Est. Standing Time
             </span>
             <div className="text-xl font-bold font-mono text-purple-700 dark:text-purple-300 mt-1 tabular-nums">
               ~{Math.round(estimatedHaltOverheadMinutes)} <span className="text-xs font-normal text-slate-400">mins</span>
@@ -217,7 +217,7 @@ export const TrainDetailModal: React.FC<TrainDetailModalProps> = ({
           </strong>
           {train.h100 > 6 ? (
             <p className="text-amber-800 dark:text-amber-300/90">
-              ⚠️ <strong>High Stoppage Penalty:</strong> With {train.h100.toFixed(1)} stops per 100 km, this service experiences heavy mechanical acceleration/braking penalties. Eliminating 20% of low-patronage flag stops could raise average speed by ~4 to 7 km/h and reduce journey time by ~{Math.round(estimatedHaltOverheadMinutes * 0.3)} minutes.
+              ⚠️ <strong>High Stoppage Penalty:</strong> With {train.h100.toFixed(1)} stops per 100 km, this service experiences heavy mechanical acceleration/braking penalties. Across passenger services, 20% fewer halts per 100 km goes with an average speed about {(-NETWORK_STATS.sim.slope * train.h100 * 0.2).toFixed(1)} km/h higher (an association between trains, not a guaranteed gain).
             </p>
           ) : train.spd > 65 ? (
             <p className="text-emerald-800 dark:text-emerald-300/90">

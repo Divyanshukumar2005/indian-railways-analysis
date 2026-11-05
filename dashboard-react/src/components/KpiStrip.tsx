@@ -41,7 +41,7 @@ export const KpiStrip: React.FC<KpiStripProps> = ({
       {/* 1. Services Volume */}
       <div className="relative overflow-hidden rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-4 shadow-xs hover:border-slate-300 dark:hover:border-slate-700 transition">
         <div className="flex items-center justify-between text-slate-500 dark:text-slate-400 mb-2">
-          <span className="text-[11px] font-mono uppercase tracking-wider font-semibold">Active Services</span>
+          <span className="text-[11px] font-mono uppercase tracking-wider font-semibold">Timetable Services</span>
           <TrainTrack className="w-4 h-4 text-amber-600 dark:text-amber-500" />
         </div>
         <div className="flex items-baseline gap-1.5">
@@ -69,7 +69,7 @@ export const KpiStrip: React.FC<KpiStripProps> = ({
           <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">km/h</span>
         </div>
         <div className="mt-2 text-xs flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80 pt-2 font-mono">
-          <span className="text-slate-500 dark:text-slate-400">Baseline (51.2):</span>
+          <span className="text-slate-500 dark:text-slate-400">Network avg ({networkAvgSpeed.toFixed(1)}):</span>
           <span className={`inline-flex items-center gap-0.5 font-semibold ${isAboveSpeed ? 'text-emerald-600 dark:text-emerald-400' : 'text-amber-700 dark:text-amber-400'}`}>
             {isAboveSpeed ? <TrendingUp className="w-3 h-3" /> : <TrendingDown className="w-3 h-3" />}
             {isAboveSpeed ? `+${speedDiff.toFixed(1)}` : speedDiff.toFixed(1)}

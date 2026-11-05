@@ -10,7 +10,7 @@ import {
   AlertTriangle,
   Lightbulb
 } from 'lucide-react';
-import { NETWORK_STATS } from '../data/railwayData';
+import { NETWORK_STATS, TRAINS_DATA } from '../data/railwayData';
 
 interface PolicyDossierProps {
   onApplyPreset: (type: 'slow_zones' | 'ac_gap' | 'peak_hours') => void;
@@ -30,12 +30,12 @@ export const PolicyDossier: React.FC<PolicyDossierProps> = ({ onApplyPreset }) =
             </h3>
           </div>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 max-w-3xl leading-relaxed font-sans">
-            Empirical findings derived from timetable parsing of 5,164 train services and 8,497 stations. Stoppage overhead and load skew require targeted structural remedies.
+            Empirical findings derived from timetable parsing of {TRAINS_DATA.length.toLocaleString()} train services and 8,497 stations. Stoppage overhead and load skew require targeted structural remedies.
           </p>
         </div>
 
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-xs font-mono text-slate-600 dark:text-slate-400">
-          <span>Pearson Correlation (Halts vs Speed):</span>
+          <span>Pearson r (halts/100km vs average speed):</span>
           <strong className="text-amber-700 dark:text-amber-400 font-bold">{NETWORK_STATS.haltSpeedCorrelation}</strong>
         </div>
       </div>
@@ -65,10 +65,10 @@ export const PolicyDossier: React.FC<PolicyDossierProps> = ({ onApplyPreset }) =
                 <AlertTriangle className="w-3 h-3 text-amber-600 dark:text-amber-500" /> Empirical Finding:
               </div>
               <p>
-                Passenger & suburban services comprise <strong>52.9%</strong> of the network but average only <strong>33.5 km/h</strong> (vs 50.4 km/h for express). They stop dramatically more often per 100 km.
+                Passenger & suburban services comprise <strong>52.9%</strong> of the network but average only <strong>33.4 km/h</strong> (vs 50.4 km/h for express). They stop dramatically more often per 100 km.
               </p>
               <p className="text-slate-500 dark:text-slate-400">
-                Standing dwell time accounts for ~8% of journey time mechanically. Running speed drops steadily as halts per 100km rise (r = -0.37 controlled, -0.51 raw). <strong>SECR, ECR, and NER</strong> are slowest at 33.2, 33.7, and 36.0 km/h with 67% to 74% passenger fleet share.
+                Standing dwell time accounts for ~8% of journey time mechanically. Speed falls as halts per 100km rise (r = -0.51 for average speed, -0.37 for running speed once standing time is removed; an association, not proof of cause). <strong>SECR, ECR, and NER</strong> are slowest at 33.2, 33.7, and 36.0 km/h with 67% to 74% passenger fleet share.
               </p>
             </div>
 
@@ -119,7 +119,7 @@ export const PolicyDossier: React.FC<PolicyDossierProps> = ({ onApplyPreset }) =
                 While 95% to 96% of services exceeding 700 km have AC classes, <strong>375 of 997 services (37.6%)</strong> in the 300–700 km intercity band operate with zero AC coaches (including AC Chair Car).
               </p>
               <p className="text-slate-500 dark:text-slate-400">
-                Within this distance band, <strong>NER (31% AC), NWR (39% AC), and WCR (41% AC)</strong> hold the lowest provision rates among major regional zones despite heavy inter-city commuter demand.
+                Within this distance band, <strong>NER (31% AC), NWR (39% AC), and WCR (41% AC)</strong> hold the lowest provision rates among major regional zones; the dataset has no ridership figures, so this is a supply gap, not a demand finding.
               </p>
             </div>
 
@@ -129,7 +129,7 @@ export const PolicyDossier: React.FC<PolicyDossierProps> = ({ onApplyPreset }) =
                 <Lightbulb className="w-3 h-3 text-emerald-600 dark:text-emerald-400" /> Strategic Action:
               </div>
               <p>
-                Prioritize deployment of 3AC Economy coaches and AC Chair Cars onto non-AC daytime 300–700 km intercity services in NER, NWR, and WCR before adding long-haul AC capacity.
+                Prioritize deployment of AC coaches (3AC or AC Chair Car) onto non-AC daytime 300–700 km intercity services in NER, NWR, and WCR before adding long-haul AC capacity.
               </p>
             </div>
           </div>

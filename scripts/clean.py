@@ -33,8 +33,11 @@ t['type_name']=t.type.str.strip().map(tm).fillna('Other')
 prem=['Rajdhani','Shatabdi','Jan Shatabdi','Duronto','Garib Rath','Sampark Kranti']
 t['category']=np.select([t.type_name.isin(prem),t.type_name.isin(['Superfast','Express','Mail']),t.type_name.isin(['Passenger','MEMU/DEMU'])],['Premium / Fast-track','Express & Superfast','Passenger & Suburban'],'Other / Local')
 t['avg_speed_kmph']=(t.distance/(t.duration_min/60)).round(1)
-bad=(t.avg_speed_kmph>140).sum(); t=t[t.avg_speed_kmph<=140]
-log.append(f"removed {bad} trains with impossible speed (>140 km/h)")
+# Speed sanity cap by category: premium trains (Rajdhani, Shatabdi, Duronto ...) up to 140 km/h,
+# every other service up to 110 km/h. A 'Passenger' timetable at 131 km/h is a data error, not a fast train.
+cap=np.where(t.category=='Premium / Fast-track',140,110)
+bad=(t.avg_speed_kmph>cap).sum(); t=t[t.avg_speed_kmph<=cap]
+log.append(f"removed {bad} trains with impossible speed (>140 km/h premium, >110 km/h other)")
 t['dep_hour']=t.departure.str[:2].astype(int)
 # AC = any of 1A, 2A, 3A or AC chair car (CC). In the datameet data chair_car is the CC flag (AC Chair Car);
 # Shatabdi is 100% chair_car, so leaving it out would call Shatabdi services non-AC.

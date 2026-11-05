@@ -3747,7 +3747,6 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 55741,Katihar Jogbani Fast Passenger,Pass,Passenger,Passenger & Suburban,NFR,KIR,KATIHAR JN,JBN,JOGBANI,108.0,185,35.0,14:55:00,18:00:00,14,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,15,15,13.89
 55743,Katihar Jogbani Passenger,Pass,Passenger,Passenger & Suburban,NFR,KIR,KATIHAR JN,JBN,JOGBANI,108.0,205,31.6,17:30:00,20:55:00,17,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,18,18,16.67
 55744,Jogbani Katihar Passenger,Pass,Passenger,Passenger & Suburban,NFR,JBN,JOGBANI,KIR,KATIHAR JN,108.0,165,39.3,03:35:00,06:20:00,3,Night (00-05),100-300 km,0,0,0,0,0,0,0,15,12,11.11
-55745,New Jalpaiguri Bamanhat Passenger,Pass,Passenger,Passenger & Suburban,NFR,NJP,NEW JALPAIGURI,AUB,ALUABARI ROAD,57.0,26,131.5,21:18:00,21:44:00,21,Evening (18-21),<100 km,0,0,0,0,0,0,0,41,18,31.58
 55746,Bamanhat New Jalpaiguri Passenger,Pass,Passenger,Passenger & Suburban,NFR,AUB,ALUABARI ROAD,NJP,NEW JALPAIGURI,306.0,331,55.5,05:09:00,10:40:00,5,Night (00-05),300-700 km,0,0,0,0,0,0,0,41,18,5.88
 55747,Siliguri Haldibari Passenger,Pass,Passenger,Passenger & Suburban,NFR,SGUJ,SILIGURI JN,HDB,HALDIBARI,63.0,165,22.9,16:50:00,19:35:00,16,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,9,9,14.29
 55748,Haldibari Siliguri Passenger,Pass,Passenger,Passenger & Suburban,NFR,HDB,HALDIBARI,SGUJ,SILIGURI JN,63.0,165,22.9,07:30:00,10:15:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,9,9,14.29

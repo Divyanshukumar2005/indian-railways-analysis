@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" /> Data Provenance & Cleaning
             </h5>
             <p className="text-slate-600 dark:text-slate-400">
-              Dataset parsed from the Indian Railways National Timetable (CC0 public open transit data). Cleaned via Pandas: removed train runs without valid distance or duration coordinates, resolved zone associations from originating station codes, and purged placeholder dummy junctions.
+              Dataset parsed from the Indian Railways National Timetable (CC0 public open transit data). Cleaned via Pandas: removed train runs without a valid distance or duration, resolved zone associations from originating station codes, and purged placeholder dummy junctions.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ export const Footer: React.FC = () => {
               <Train className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" /> Stoppage & AC Definitions
             </h5>
             <p className="text-slate-600 dark:text-slate-400">
-              A halt represents a timetable stop where arrival and departure times diverge; origin and terminus count as halts (+2 halts per train, averaging 11.9 halts/100km network-wide). AC denotes availability of 1A, 2A, 3A, or AC Chair Car. Figures describe service supply distribution across the national network.
+              A halt represents a timetable stop where arrival and departure times diverge; origin and terminus count as halts (+2 halts per train, averaging {NETWORK_STATS.avgHaltsPer100km} halts/100km network-wide). AC denotes availability of 1A, 2A, 3A, or AC Chair Car. Figures describe service supply distribution across the national network.
             </p>
           </div>
         </div>
@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
         {/* Portfolio / CV Signature */}
         <div className="pt-4 border-t border-slate-200 dark:border-slate-800/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] font-mono text-slate-500">
           <span>
-            Engineering Portfolio Project | Designed for Technical Recruitment & Systems Architecture Review
+            Data analytics portfolio project | Indian Railways timetable analysis
           </span>
           <span className="text-slate-600 dark:text-slate-400 font-medium">
             RailGati Dashboard &copy; {new Date().getFullYear()}
