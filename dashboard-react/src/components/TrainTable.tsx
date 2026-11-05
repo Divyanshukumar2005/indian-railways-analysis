@@ -71,7 +71,7 @@ export const TrainTable: React.FC<TrainTableProps> = ({
             </h3>
           </div>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-            Detailed operational metrics for all {eligibleTrains.length.toLocaleString()} matching train services. Click any service to inspect full telemetry.
+            Detailed operational metrics for all {eligibleTrains.length.toLocaleString()} matching train services. Click any service for its details.
           </p>
         </div>
 
@@ -272,7 +272,7 @@ export const TrainTable: React.FC<TrainTableProps> = ({
                           onSelectTrain(train);
                         }}
                         className="p-1 rounded bg-slate-100 hover:bg-amber-100 dark:bg-slate-800 dark:hover:bg-amber-500/20 text-slate-500 hover:text-amber-800 dark:text-slate-400 dark:hover:text-amber-400 border border-slate-200 dark:border-slate-700 transition cursor-pointer"
-                        title="Inspect full operational telemetry"
+                        title="Inspect service details"
                       >
                         <Eye className="w-3.5 h-3.5" />
                       </button>

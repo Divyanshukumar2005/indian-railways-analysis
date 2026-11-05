@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { 
   X, 
   Sliders, 
@@ -17,6 +17,13 @@ interface SimulatorModalProps {
 export const SimulatorModal: React.FC<SimulatorModalProps> = ({ isOpen, onClose }) => {
   const [reductionPercent, setReductionPercent] = useState<number>(20);
   const [acAugmentPercent, setAcAugmentPercent] = useState<number>(40);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 

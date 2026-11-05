@@ -17,6 +17,11 @@ interface PolicyDossierProps {
 }
 
 export const PolicyDossier: React.FC<PolicyDossierProps> = ({ onApplyPreset }) => {
+  const meanSpeed = (cat: number) => {
+    const rows = TRAINS_DATA.filter(t => t.cat === cat);
+    return rows.reduce((a, t) => a + t.spd, 0) / rows.length;
+  };
+  const speedDeficit = meanSpeed(2) - meanSpeed(1); // passenger & suburban minus express
   return (
     <section className="mt-8 rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 p-6 shadow-xs text-slate-800 dark:text-slate-100">
       
@@ -51,7 +56,7 @@ export const PolicyDossier: React.FC<PolicyDossierProps> = ({ onApplyPreset }) =
                 <Scissors className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" /> Pillar 01 // Speed Recovery
               </span>
               <span className="text-[11px] font-mono text-red-700 dark:text-red-400 flex items-center gap-1 font-semibold">
-                <TrendingDown className="w-3.5 h-3.5" /> -16.9 km/h speed deficit
+                <TrendingDown className="w-3.5 h-3.5" /> {speedDeficit.toFixed(1)} km/h vs express
               </span>
             </div>
 
@@ -78,7 +83,7 @@ export const PolicyDossier: React.FC<PolicyDossierProps> = ({ onApplyPreset }) =
                 <Lightbulb className="w-3 h-3 text-emerald-600 dark:text-emerald-400" /> Strategic Action:
               </div>
               <p>
-                Audit and prune low-patronage flag halts on SECR, ECR, and NER. Transition multi-stop long runs into high-acceleration MEMU or skip-stop fast-passenger operational patterns.
+                Review stoppage patterns on SECR, ECR, and NER first. Long passenger runs could be tested as fast-passenger or MEMU-style skip-stop patterns. The data has no ridership, so which halts are low-use needs separate data.
               </p>
             </div>
           </div>
@@ -167,10 +172,10 @@ export const PolicyDossier: React.FC<PolicyDossierProps> = ({ onApplyPreset }) =
                 <AlertTriangle className="w-3 h-3 text-amber-600 dark:text-amber-500" /> Empirical Finding:
               </div>
               <p>
-                The national station network exhibits extreme Pareto concentration: the top 10% busiest stations handle <strong>51.5%</strong> of all train halting events.
+                The national station network is highly concentrated: the top 10% busiest stations handle <strong>51.5%</strong> of all train halting events.
               </p>
               <p className="text-slate-500 dark:text-slate-400">
-                <strong>Kanpur Central (286 halts)</strong> and <strong>Howrah Jn (283 halts)</strong> bear immense platform turn-around strain. In contrast, <strong>{NETWORK_STATS.lowTrafficStationPercent}% of stations</strong> nationwide handle 3 or fewer train services in the entire timetable.
+                <strong>Kanpur Central (286 halts)</strong> and <strong>Howrah Jn (283 halts)</strong> have the most halting services (the data has no platform or track capacity figures, so this shows volume, not congestion). In contrast, <strong>{NETWORK_STATS.lowTrafficStationPercent}% of stations</strong> nationwide handle 3 or fewer train services in the entire timetable.
               </p>
             </div>
 
@@ -180,7 +185,7 @@ export const PolicyDossier: React.FC<PolicyDossierProps> = ({ onApplyPreset }) =
                 <Lightbulb className="w-3 h-3 text-emerald-600 dark:text-emerald-400" /> Strategic Action:
               </div>
               <p>
-                Expand satellite bypass terminals (e.g., Santragachi/Shalimar for Howrah; Panki/Govindpuri for Kanpur) to decongest central throat tracks and unlock express throughput.
+                Check platform and pit-line capacity at these top hubs, and review stoppages at the many stations with three or fewer halting services. Capacity itself needs infrastructure data that is not in this dataset.
               </p>
             </div>
           </div>
@@ -216,7 +221,7 @@ export const PolicyDossier: React.FC<PolicyDossierProps> = ({ onApplyPreset }) =
                 Timetable scheduling shows steep diurnal peak concentration: <strong>25.6% of all departures</strong> occur in the 4-hour morning window (05:00 to 08:59), while late night (00:00 to 03:59) accounts for only 2.5%.
               </p>
               <p className="text-slate-500 dark:text-slate-400">
-                The midday slot (10:00 to 12:59) experiences a noticeable dip in scheduled departures while terminal tracks remain fully staffed and powered.
+                The midday slot (10:00 to 12:59) holds 10.4% of departures, about 3.5% per hour against a 4.2% all-day average.
               </p>
             </div>
 
@@ -226,7 +231,7 @@ export const PolicyDossier: React.FC<PolicyDossierProps> = ({ onApplyPreset }) =
                 <Lightbulb className="w-3 h-3 text-emerald-600 dark:text-emerald-400" /> Strategic Action:
               </div>
               <p>
-                Slot newly planned intercity Vande Bharat and Jan Shatabdi turns into the 10:30–12:30 departure window to avoid peak morning throat lockouts and balance platform occupancy.
+                Test moving some new or extra services into the midday window (10:00 to 12:59) to ease the morning peak. Whether that helps depends on terminal capacity, which is not in this data.
               </p>
             </div>
           </div>

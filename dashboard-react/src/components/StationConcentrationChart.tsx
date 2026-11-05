@@ -38,11 +38,11 @@ export const StationConcentrationChart: React.FC<StationConcentrationChartProps>
             </h3>
           </div>
           <span className="text-[11px] font-mono text-purple-700 dark:text-purple-300 bg-purple-50 dark:bg-purple-500/10 px-2 py-0.5 rounded border border-purple-200 dark:border-purple-500/20">
-            Pareto Index: 10 / 51.5
+            Top 10% of stations: {top10Val.toFixed(1)}% of halts
           </span>
         </div>
         <p className="text-xs text-slate-500 dark:text-slate-400 mb-4 leading-relaxed font-sans">
-          The network is severely concentrated: the top 10% of stations handle <strong className="text-purple-700 dark:text-purple-300">{top10Val.toFixed(1)}%</strong> of all halting events, while <strong className="text-amber-700 dark:text-amber-400">{NETWORK_STATS.lowTrafficStationPercent}%</strong> of stations see 3 or fewer train services.
+          Halting events are concentrated: the top 10% of stations handle <strong className="text-purple-700 dark:text-purple-300">{top10Val.toFixed(1)}%</strong> of all halting events, while <strong className="text-amber-700 dark:text-amber-400">{NETWORK_STATS.lowTrafficStationPercent}%</strong> of stations see 3 or fewer train services.
         </p>
 
         {/* Lorenz curve SVG */}
@@ -161,7 +161,7 @@ export const StationConcentrationChart: React.FC<StationConcentrationChartProps>
           <TrendingUp className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" /> Kanpur Central (286) & Howrah (283) lead
         </span>
         <span className="text-amber-700 dark:text-amber-400 font-semibold">
-          30.3% stations have ≤3 halts
+          {NETWORK_STATS.lowTrafficStationPercent}% stations have ≤3 halts
         </span>
       </div>
     </div>

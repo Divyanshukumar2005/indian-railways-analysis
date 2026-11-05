@@ -204,7 +204,7 @@ export const TrainDetailModal: React.FC<TrainDetailModalProps> = ({
               )}
             </div>
             <div className="text-[11px] font-mono text-slate-500 dark:text-slate-400 mt-1">
-              {train.ac ? '1A / 2A / 3A / CC' : 'Sleeper & General Only'}
+              {train.ac ? '1A / 2A / 3A / CC' : 'No AC class listed'}
             </div>
           </div>
 
@@ -221,7 +221,7 @@ export const TrainDetailModal: React.FC<TrainDetailModalProps> = ({
             </p>
           ) : train.spd > 65 ? (
             <p className="text-emerald-800 dark:text-emerald-300/90">
-              ⚡ <strong>High-Efficiency Fast-Track Corridor:</strong> This train exhibits streamlined stoppage discipline ({train.h100.toFixed(2)} stops/100km), operating at {train.spd.toFixed(1)} km/h. It utilizes mainline clearway slots effectively.
+              ⚡ <strong>High-Efficiency Fast-Track Corridor:</strong> This train exhibits streamlined stoppage discipline ({train.h100.toFixed(2)} stops/100km), operating at {train.spd.toFixed(1)} km/h.
             </p>
           ) : (
             <p className="text-slate-700 dark:text-slate-300">

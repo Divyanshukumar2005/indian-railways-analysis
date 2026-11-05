@@ -24,10 +24,10 @@ export const DepartureHistogram: React.FC<DepartureHistogramProps> = ({ trains }
               When Services Depart (24-Hour Diurnal Cycle)
             </h3>
           </div>
-          <span className="text-[11px] font-mono text-slate-400 dark:text-slate-500">Departure Slot Telemetry</span>
+          <span className="text-[11px] font-mono text-slate-400 dark:text-slate-500">Departures by hour</span>
         </div>
         <p className="text-xs text-slate-500 dark:text-slate-400 mb-4 leading-relaxed font-sans">
-          Diurnal clustering creates terminal congestion: <strong className="text-emerald-700 dark:text-emerald-400">{morningRushPercent.toFixed(1)}%</strong> depart between 05:00–08:59, whereas only <strong className="text-slate-700 dark:text-slate-300">{nightDropPercent.toFixed(1)}%</strong> depart 00:00–03:59.
+          Departures cluster in the morning: <strong className="text-emerald-700 dark:text-emerald-400">{morningRushPercent.toFixed(1)}%</strong> depart between 05:00–08:59, whereas only <strong className="text-slate-700 dark:text-slate-300">{nightDropPercent.toFixed(1)}%</strong> depart 00:00–03:59.
         </p>
 
         {/* Hover readout indicator */}
@@ -87,7 +87,7 @@ export const DepartureHistogram: React.FC<DepartureHistogramProps> = ({ trains }
           <span className="w-2 h-2 rounded-xs bg-emerald-600 dark:bg-emerald-500"></span> 05:00-08:59 Peak ({peakCount.toLocaleString()} trains)
         </span>
         <span className="flex items-center gap-1.5">
-          <span className="w-2 h-2 rounded-xs bg-amber-500"></span> Midday Opportunity
+          <span className="w-2 h-2 rounded-xs bg-amber-500"></span> Midday window
         </span>
       </div>
     </div>

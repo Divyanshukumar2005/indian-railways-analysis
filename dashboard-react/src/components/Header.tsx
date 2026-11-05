@@ -94,6 +94,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={onOpenSimulator}
               className="inline-flex items-center gap-1 px-2.5 sm:px-3 py-1.5 text-xs font-semibold rounded-md bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-xs transition-all cursor-pointer hover:scale-[1.02] active:scale-[0.98]"
               title="Open Stoppage Rationalization Simulator"
+              aria-label="Open Policy Simulator"
             >
               <SlidersHorizontal className="w-3.5 h-3.5 shrink-0" />
               <span className="hidden sm:inline">Policy Simulator</span>
@@ -105,6 +106,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={onExportCSV}
               className="p-1.5 sm:px-2.5 sm:py-1.5 inline-flex items-center gap-1.5 text-xs font-medium rounded-md bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 transition cursor-pointer"
               title="Export filtered trains to CSV"
+              aria-label="Export CSV"
             >
               <Download className="w-3.5 h-3.5 text-slate-500 dark:text-slate-400 shrink-0" />
               <span className="hidden md:inline">Export CSV</span>
