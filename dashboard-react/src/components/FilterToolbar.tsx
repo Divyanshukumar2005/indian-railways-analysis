@@ -9,7 +9,7 @@ import {
   ChevronDown
 } from 'lucide-react';
 import { FilterState } from '../types';
-import { CATEGORIES, DISTANCE_BANDS } from '../data/railwayData';
+import { CATEGORIES, DISTANCE_BANDS, ZONE_COUNT } from '../data/railwayData';
 
 interface FilterToolbarProps {
   filters: FilterState;
@@ -61,7 +61,7 @@ export const FilterToolbar: React.FC<FilterToolbarProps> = ({
             onChange={(e) => onFilterChange('zone', e.target.value)}
             className="w-full appearance-none pl-3.5 pr-8 py-2 bg-slate-50 dark:bg-slate-950/80 border border-slate-300 dark:border-slate-700/80 rounded-lg text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-amber-500/30 focus:border-amber-500 font-sans transition cursor-pointer"
           >
-            <option value="">All Zones (16)</option>
+            <option value="">All Zones ({ZONE_COUNT})</option>
             {zones.map((z) => (
               <option key={z} value={z}>
                 Zone: {z}

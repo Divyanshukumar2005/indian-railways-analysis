@@ -19,6 +19,9 @@ import { TrainTable } from './components/TrainTable';
 import { TrainDetailModal } from './components/TrainDetailModal';
 import { SimulatorModal } from './components/SimulatorModal';
 import { PolicyDossier } from './components/PolicyDossier';
+import { ScrollProgress } from './components/ScrollProgress';
+import { SpeedGapDumbbell } from './components/SpeedGapDumbbell';
+import { SpeedHaltScatter } from './components/SpeedHaltScatter';
 import { Footer } from './components/Footer';
 
 const INITIAL_FILTERS: FilterState = {
@@ -142,6 +145,7 @@ export default function App() {
     <div className={`min-h-screen ${isDark ? 'dark bg-slate-950 text-slate-100' : 'bg-slate-100/75 text-slate-900'} font-sans antialiased transition-colors duration-150`}>
       
       {/* Executive Command Header */}
+      <ScrollProgress />
       <Header
         isDark={isDark}
         onToggleTheme={() => setIsDark(!isDark)}
@@ -197,15 +201,14 @@ export default function App() {
           activeFilterCount={activeFilterCount}
         />
 
-        {/* 3. Visual Benchmarks Grid (Speed by Category + AC Penetration) */}
-        <section aria-label="Operational Benchmarks" className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {/* 3. Benchmarks: equal-height pairs, then full-width zone panel */}
+        <section aria-label="Operational Benchmarks" className="pair">
           <SpeedByCategoryChart
             trains={filteredTrains}
             allTrainsWithoutCat={trainsWithoutCat}
             selectedCategory={filters.cat}
             onSelectCategory={(cat) => handleFilterChange('cat', cat)}
           />
-
           <AcAvailabilityChart
             trains={filteredTrains}
             allTrainsWithoutBand={trainsWithoutBand}
@@ -214,8 +217,7 @@ export default function App() {
           />
         </section>
 
-        {/* 4. Zone Performance & Diurnal Departures */}
-        <section aria-label="Geographic and Temporal Telemetry" className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <section aria-label="Zone performance">
           <ZonePerformanceChart
             zones={zones}
             allTrainsWithoutZone={trainsWithoutZone}
@@ -223,14 +225,19 @@ export default function App() {
             selectedZone={filters.zone}
             onSelectZone={(zone) => handleFilterChange('zone', zone)}
           />
+        </section>
 
-          <div className="flex flex-col gap-5">
-            <DepartureHistogram trains={filteredTrains} />
-            <StationConcentrationChart
-              onSelectHub={(station) => handleFilterChange('stationFilter', station)}
-              selectedStation={filters.stationFilter}
-            />
-          </div>
+        <section aria-label="Departures and speed vs halts" className="pair">
+          <DepartureHistogram trains={filteredTrains} />
+          <SpeedHaltScatter />
+        </section>
+
+        <section aria-label="Hubs and passenger vs express gap" className="pair">
+          <StationConcentrationChart
+            onSelectHub={(station) => handleFilterChange('stationFilter', station)}
+            selectedStation={filters.stationFilter}
+          />
+          <SpeedGapDumbbell />
         </section>
 
         {/* 5. Complete Services Explorer Table */}

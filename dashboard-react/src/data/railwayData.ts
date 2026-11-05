@@ -55,6 +55,7 @@ export const TRAINS_DATA: RawTrain[] = rawRailwayData.trains.map(r => ({
   to: String(r[12]),
 }));
 
+export const ZONE_COUNT = new Set(TRAINS_DATA.map(t => t.zone).filter(z => z !== 'Unknown')).size;
 export const CATEGORIES = rawRailwayData.cats;
 export const DISTANCE_BANDS = rawRailwayData.bands;
 export const STATION_HUBS: HubStation[] = rawRailwayData.hubs.map(h => ({

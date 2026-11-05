@@ -1,4 +1,5 @@
 import React from 'react';
+import { CountUp } from './CountUp';
 import { 
   Gauge, 
   Wind, 
@@ -46,7 +47,7 @@ export const KpiStrip: React.FC<KpiStripProps> = ({
         </div>
         <div className="flex items-baseline gap-1.5">
           <span className="text-2xl sm:text-3xl font-heading font-extrabold tabular-nums tracking-tight text-slate-900 dark:text-white">
-            {filteredCount.toLocaleString('en-IN')}
+            <CountUp value={filteredCount} />
           </span>
           <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">trains</span>
         </div>
@@ -64,7 +65,7 @@ export const KpiStrip: React.FC<KpiStripProps> = ({
         </div>
         <div className="flex items-baseline gap-1.5">
           <span className="text-2xl sm:text-3xl font-heading font-extrabold tabular-nums tracking-tight text-slate-900 dark:text-white">
-            {filteredCount ? avgSpeed.toFixed(1) : '-'}
+            {filteredCount ? <CountUp value={avgSpeed} decimals={1} /> : '-'}
           </span>
           <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">km/h</span>
         </div>
@@ -85,7 +86,7 @@ export const KpiStrip: React.FC<KpiStripProps> = ({
         </div>
         <div className="flex items-baseline gap-1.5">
           <span className="text-2xl sm:text-3xl font-heading font-extrabold tabular-nums tracking-tight text-slate-900 dark:text-white">
-            {filteredCount ? `${Math.round(acPercent)}%` : '-'}
+            {filteredCount ? <CountUp value={Math.round(acPercent)} suffix="%" /> : '-'}
           </span>
           <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">equipped</span>
         </div>
@@ -103,7 +104,7 @@ export const KpiStrip: React.FC<KpiStripProps> = ({
         </div>
         <div className="flex items-baseline gap-1.5">
           <span className="text-2xl sm:text-3xl font-heading font-extrabold tabular-nums tracking-tight text-slate-900 dark:text-white">
-            {filteredCount ? `${Math.round(passengerPercent)}%` : '-'}
+            {filteredCount ? <CountUp value={Math.round(passengerPercent)} suffix="%" /> : '-'}
           </span>
           <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">of volume</span>
         </div>
@@ -121,7 +122,7 @@ export const KpiStrip: React.FC<KpiStripProps> = ({
         </div>
         <div className="flex items-baseline gap-1.5">
           <span className="text-2xl sm:text-3xl font-heading font-extrabold tabular-nums tracking-tight text-purple-700 dark:text-purple-300">
-            {top10Concentration}%
+            <CountUp value={Number(top10Concentration)} decimals={1} suffix="%" />
           </span>
           <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">of all halts</span>
         </div>

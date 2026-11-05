@@ -24,7 +24,7 @@ export const AcAvailabilityChart: React.FC<AcAvailabilityChartProps> = ({
 
   return (
     <div className="rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 p-5 shadow-xs text-slate-800 dark:text-slate-100 flex flex-col justify-between">
-      <div>
+      <div className="flex flex-col flex-1">
         <div className="flex items-center justify-between mb-1.5">
           <div className="flex items-center gap-2">
             <Wind className="w-4 h-4 text-blue-600 dark:text-blue-400" />
@@ -38,7 +38,7 @@ export const AcAvailabilityChart: React.FC<AcAvailabilityChartProps> = ({
           Share of services offering 1A/2A/3A/CC. The 300–700 km intercity corridor represents the major coach deficit.
         </p>
 
-        <div className="space-y-3">
+        <div className="fill-list flex flex-col gap-3 flex-1 my-1">
           {bandStats.map((band) => {
             const isSelected = selectedBand === String(band.index);
             const isCriticalGap = band.index === 2; // 300-700 km

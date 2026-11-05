@@ -9,7 +9,7 @@ import {
   MapPin, 
   Layers
 } from 'lucide-react';
-import { NETWORK_STATS } from '../data/railwayData';
+import { NETWORK_STATS, ZONE_COUNT } from '../data/railwayData';
 
 interface HeaderProps {
   isDark: boolean;
@@ -83,7 +83,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 text-slate-600 dark:text-slate-300">
               <Layers className="w-3.5 h-3.5 text-blue-600 dark:text-cyan-400" />
               <span>ZONES:</span>
-              <strong className="text-slate-900 dark:text-slate-100 font-semibold">16 DIVISIONS</strong>
+              <strong className="text-slate-900 dark:text-slate-100 font-semibold">{ZONE_COUNT} DIVISIONS</strong>
             </div>
           </div>
 

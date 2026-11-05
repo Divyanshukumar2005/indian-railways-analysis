@@ -37,7 +37,7 @@ export const SpeedByCategoryChart: React.FC<SpeedByCategoryChartProps> = ({
 
   return (
     <div className="rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 p-5 shadow-xs text-slate-800 dark:text-slate-100 flex flex-col justify-between">
-      <div>
+      <div className="flex flex-col flex-1">
         <div className="flex items-center justify-between mb-1.5">
           <div className="flex items-center gap-2">
             <Gauge className="w-4 h-4 text-amber-600 dark:text-amber-500" />
@@ -51,7 +51,7 @@ export const SpeedByCategoryChart: React.FC<SpeedByCategoryChartProps> = ({
           Average end-to-end scheduled speed (km/h). Passenger services run slowest and suffer from high stoppage frequency.
         </p>
 
-        <div className="space-y-3">
+        <div className="fill-list flex flex-col gap-3 flex-1 my-1">
           {stats.map((cat, idx) => {
             const isSelected = selectedCategory === String(cat.index);
             const barWidth = Math.min(100, Math.max(5, (cat.avgSpd / maxSpd) * 100));

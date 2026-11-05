@@ -44,7 +44,7 @@ export const DepartureHistogram: React.FC<DepartureHistogramProps> = ({ trains }
         </div>
 
         {/* Bar chart container */}
-        <div className="h-40 flex items-end gap-1 sm:gap-1.5 pt-4 pb-1 border-b border-slate-200 dark:border-slate-800">
+        <div className="h-60 flex items-end gap-1 sm:gap-1.5 pt-4 pb-1 border-b border-slate-200 dark:border-slate-800">
           {hours.map((val, hr) => {
             const heightPercent = max > 0 ? (val / max) * 100 : 0;
             const isMorningRush = hr >= 5 && hr <= 8;

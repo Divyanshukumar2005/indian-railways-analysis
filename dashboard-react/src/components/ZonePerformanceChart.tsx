@@ -1,4 +1,5 @@
 import React from 'react';
+import { ZONE_COUNT } from '../data/railwayData';
 import { Layers, Check } from 'lucide-react';
 import { TrainService } from '../types';
 import { getZoneMetrics } from '../utils/analytics';
@@ -28,7 +29,7 @@ export const ZonePerformanceChart: React.FC<ZonePerformanceChartProps> = ({
           <div className="flex items-center gap-2">
             <Layers className="w-4 h-4 text-blue-600 dark:text-cyan-400" />
             <h3 className="font-heading font-bold text-lg tracking-wide uppercase text-slate-900 dark:text-white">
-              Speed by Railway Zone (16 Divisions)
+              Speed by Railway Zone ({ZONE_COUNT} Divisions)
             </h3>
           </div>
           <span className="text-[11px] font-mono text-slate-400 dark:text-slate-500">Sorted: Slowest first</span>
@@ -50,7 +51,7 @@ export const ZonePerformanceChart: React.FC<ZonePerformanceChartProps> = ({
         </div>
 
         {/* Scrollable list of 16 zones */}
-        <div className="space-y-2 max-h-[360px] overflow-y-auto pr-1">
+        <div className="zone-grid grid grid-cols-1 md:grid-cols-2 gap-2">
           {zoneMetrics.map((item) => {
             const isSelected = selectedZone === item.zone;
             const isBelowAvg = item.avgSpeed < networkAvgSpeed;
