@@ -1,6 +1,7 @@
 # Indian Railways Service Network Analysis
 
 ![Dashboard](docs/dashboard.png)
+Live demo: https://indian-railways-analysis.vercel.app
 
 Business question: where is the Indian Railways passenger network slow, short on AC, or overloaded, and what should a planner do first?
 
