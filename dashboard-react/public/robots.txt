@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://indian-railways-analysis.vercel.app/sitemap.xml
