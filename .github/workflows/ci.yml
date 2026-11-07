@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements-notebook.txt
+      - name: Cleaning is reproducible from the pinned raw data
+        run: |
+          python scripts/download_data.py
+          python scripts/clean.py
+          python scripts/speed_vs_halts.py
+          git diff --exit-code data/
+      - name: SQL queries run
+        run: |
+          python sql/load.py
+          python sql/run_queries.py
+      - name: README, notebook, dashboard data and SQL agree with the data
+        run: python scripts/check_numbers.py
+      - name: Notebook runs top to bottom
+        run: jupyter nbconvert --to notebook --execute --output-dir /tmp notebooks/01_eda_and_findings.ipynb
+
+  dashboard:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: dashboard-react
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: dashboard-react/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build

@@ -1,0 +1,62 @@
+number,name,type,distance,duration_min,reason
+52102,Matheran Neral Passenger,Toy,126.0,95.0,average speed above the cap for its category
+52103,Neral Matheran Passenger,Toy,126.0,130.0,average speed above the cap for its category
+52105,Neral Matheran Passenger,Toy,126.0,115.0,average speed above the cap for its category
+52106,Matheran Neral Passenger,Toy,126.0,95.0,average speed above the cap for its category
+52109,Neral Matheran Passenger,Toy,126.0,115.0,average speed above the cap for its category
+52110,Matheran Neral Passenger,Toy,126.0,100.0,average speed above the cap for its category
+54643,Jalandhar City - Firozpur Cant Passenger,Pass,450.0,175.0,average speed above the cap for its category
+54644,Firozpur Cant - Jalandhar City Passenger,Pass,117.0,13.0,average speed above the cap for its category
+55745,New Jalpaiguri Bamanhat Passenger,Pass,57.0,26.0,average speed above the cap for its category
+12163,DADAR - CHENNAI EGMORE SF Exp,,,,missing or zero distance / duration
+12164,DADAR - CHENNAI EGMORE SF Exp,,,,missing or zero distance / duration
+12373,SEALDAH - RAMPURHAT Intercity SF Exp,,,,missing or zero distance / duration
+12374,RAMPURHAT - SEALDAH Intercity SF Exp,,,,missing or zero distance / duration
+12735,SECUNDERABAD - YESVANTPUR Garib Rath Exp,,,,missing or zero distance / duration
+12736,YESVANTPUR - SECUNDERABAD Garib Rath Exp,,,,missing or zero distance / duration
+12889,TATANAGAR - YESVANTPUR SF Exp,,,,missing or zero distance / duration
+12890,YESVANTPUR - TATANAGAR SF Exp,,,,missing or zero distance / duration
+13257,DANAPUR - DELHI ANAND VIHAR Jan Sadharan Express,,,,missing or zero distance / duration
+13258,ANAND VIHAR DELHI - DANAPUR JanSadharan Exp,,,,missing or zero distance / duration
+24041,DELHI SARAI ROHILLA - KOTDWAR Mussoorie Exp,,,,missing or zero distance / duration
+33512,Hasanabad Sealdah EMU,MEMU,0.0,145.0,missing or zero distance / duration
+41064,VLCY MSB LOCAL,Pass,0.0,40.0,missing or zero distance / duration
+41066,Velachery Chennai Local,Pass,0.0,40.0,missing or zero distance / duration
+41112,Velachery Chennai Beach Passenger,Pass,0.0,40.0,missing or zero distance / duration
+52015,Bharuch Kavi Passenger,Pass,0.0,200.0,missing or zero distance / duration
+52501,BhikhnaThori Narkatiaganj Passenger,Pass,0.0,95.0,missing or zero distance / duration
+52502,Narkatiaganj Bhikhna Thori Passenger,Pass,0.0,90.0,missing or zero distance / duration
+52503,BhikhnaThori Narkatiaganj Passenger,Pass,0.0,95.0,missing or zero distance / duration
+52504,Narkatiaganj Bhikhna Thori Passenger,Pass,0.0,90.0,missing or zero distance / duration
+52505,BhikhnaThori Narkatiaganj Passenger,Pass,0.0,95.0,missing or zero distance / duration
+52506,Narkatiaganj Bhikhna Thori Passenger,Pass,0.0,95.0,missing or zero distance / duration
+52550,Darjeeling Joyride,Toy,0.0,0.0,missing or zero distance / duration
+53441,Mandar Parvat Bhagalpur Passenger,Pass,0.0,125.0,missing or zero distance / duration
+53442,Bhagalpur Mandar Hill Passenger,Pass,0.0,125.0,missing or zero distance / duration
+53445,Mandar Hill Bhagalpur Passenger,Pass,0.0,125.0,missing or zero distance / duration
+53446,Bhagalpur Mandar Hill Passenger,Pass,0.0,125.0,missing or zero distance / duration
+54582,Una Nangal Dam Passenger,Pass,0.0,40.0,missing or zero distance / duration
+55101,Bhatani Barhaj Passenger,Pass,0.0,80.0,missing or zero distance / duration
+55102,Barhaj Bazar Bhatni Passenger,Pass,0.0,115.0,missing or zero distance / duration
+55103,Bhatani Barhaj Passenger,Pass,0.0,90.0,missing or zero distance / duration
+55104,Barhaj Bazar Bhatni Passenger,Pass,0.0,85.0,missing or zero distance / duration
+55145,Salempur Barhaj Passenger,Pass,0.0,55.0,missing or zero distance / duration
+55146,Barhaj Bazar Salempur Passenger,Pass,0.0,60.0,missing or zero distance / duration
+55542,Phulwaria Hajipur Passenger,Pass,0.0,320.0,missing or zero distance / duration
+56100,ERODE - METUR DAM PASSENGER,,,,missing or zero distance / duration
+56101,METUR DAM - ERODE PASSENGER,,,,missing or zero distance / duration
+57325,KACHEGUDA - GUNTUR PASS,,,,missing or zero distance / duration
+57326,GUNTUR - KACHEGUDA PASS,,,,missing or zero distance / duration
+58101,Tatanagar Badampahar Passenger,Pass,0.0,310.0,missing or zero distance / duration
+58109,Tatanagar Gua Passenger,Pass,0.0,260.0,missing or zero distance / duration
+58110,Gua Tatanagar Passenger,Pass,0.0,360.0,missing or zero distance / duration
+06345,,Exp,638.0,700.0,"no usable stop times (arrival = departure at every stop, even origin and terminus)"
+06346,Palghat Town - Pollachi Passenger SPL,Exp,638.0,700.0,"no usable stop times (arrival = departure at every stop, even origin and terminus)"
+12411,Chandigarh - Amritsar Intercity SF Exp,SF,909.0,930.0,"no usable stop times (arrival = departure at every stop, even origin and terminus)"
+12412,Amritsar - Chandigarh Intercity SF Exp,SF,909.0,950.0,"no usable stop times (arrival = departure at every stop, even origin and terminus)"
+12519,Mumbai LTT - Kamakhya AC Exp,SF,1667.0,1475.0,"no usable stop times (arrival = departure at every stop, even origin and terminus)"
+12520,Kamakhya - Mumbai LTT AC Exp,SF,1667.0,1455.0,"no usable stop times (arrival = departure at every stop, even origin and terminus)"
+12583,Lucknow - Delhi Anand Vihar T Double Decker,SF,2071.0,2315.0,"no usable stop times (arrival = departure at every stop, even origin and terminus)"
+12584,Delhi Anand Vihar T - Lucknow Double Decker,SF,2071.0,2305.0,"no usable stop times (arrival = departure at every stop, even origin and terminus)"
+55348,LAL Kuan - Bareilly City  Passenger,Pass,105.0,160.0,"no usable stop times (arrival = departure at every stop, even origin and terminus)"
+55349,Bareilly City - LAL Kuan Passenger,Pass,105.0,200.0,"no usable stop times (arrival = departure at every stop, even origin and terminus)"

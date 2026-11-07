@@ -11,3 +11,5 @@ venv/
 .DS_Store
 node_modules/
 dist/
+.ipynb_checkpoints/
+dashboard-react/dist/

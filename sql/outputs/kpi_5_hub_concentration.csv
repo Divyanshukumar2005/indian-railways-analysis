@@ -1,0 +1,6 @@
+label,stations,cum_share_of_halts_pct
+busiest 1%,85,13.5
+busiest 5%,424,37.1
+busiest 10%,849,51.5
+busiest 25%,2122,72.5
+busiest 50%,4243,89.7

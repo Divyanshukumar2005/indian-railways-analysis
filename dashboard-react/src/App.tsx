@@ -1,7 +1,8 @@
-import React, { useState, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { 
   TRAINS_DATA, 
   NETWORK_STATS, 
+  FACTS,
 } from './data/railwayData';
 import { FilterState, TrainService } from './types';
 import { filterTrains, mean, exportToCSV } from './utils/analytics';
@@ -32,6 +33,7 @@ const INITIAL_FILTERS: FilterState = {
   ac: 'all',
   speedPreset: 'all',
   stationFilter: '',
+  depWindow: 'all',
 };
 
 export default function App() {
@@ -80,6 +82,7 @@ export default function App() {
     if (filters.ac !== 'all') count++;
     if (filters.speedPreset !== 'all') count++;
     if (filters.stationFilter) count++;
+    if (filters.depWindow !== 'all') count++;
     return count;
   }, [filters]);
 
@@ -121,7 +124,7 @@ export default function App() {
     if (type === 'slow_zones') {
       setFilters({
         ...INITIAL_FILTERS,
-        zone: 'SECR',
+        zone: FACTS.slow_zones[0].zone,
       });
     } else if (type === 'ac_gap') {
       setFilters({
@@ -132,7 +135,7 @@ export default function App() {
     } else if (type === 'peak_hours') {
       setFilters({
         ...INITIAL_FILTERS,
-        search: 'Shatabdi',
+        depWindow: 'morning',
       });
     }
   };
@@ -144,7 +147,7 @@ export default function App() {
   return (
     <div className={`min-h-screen ${isDark ? 'dark bg-slate-950 text-slate-100' : 'bg-slate-100/75 text-slate-900'} font-sans antialiased transition-colors duration-150`}>
       
-      {/* Executive Command Header */}
+      {/* Header */}
       <ScrollProgress />
       <Header
         isDark={isDark}
@@ -166,16 +169,16 @@ export default function App() {
               <span>Timetable & Speed Analytics</span>
             </div>
             <h1 className="text-2xl sm:text-4xl font-heading font-extrabold tracking-tight uppercase text-slate-900 dark:text-white">
-              RailGati // National Railway Network Intelligence
+              RailGati: Indian Railways Service Network Analysis
             </h1>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-3xl mt-1.5 leading-relaxed font-sans">
-              An empirical operational analysis of <strong>{TRAINS_DATA.length.toLocaleString()} timetable train services</strong> and <strong>8,497 stations</strong>. Identifies corridor speed bottlenecks, stoppage overhead penalties, AC class deficits, and junction terminal load concentration.
+              Where is the network slow, short on AC, or overloaded? A look at <strong>{TRAINS_DATA.length.toLocaleString()} timetable train services</strong> and <strong>{NETWORK_STATS.nStations.toLocaleString()} stations</strong>: speed bottlenecks, stoppage overhead, AC availability and how halting traffic concentrates at a few hubs.
             </p>
           </div>
 
           <div className="flex items-center gap-2 self-start md:self-auto font-mono text-xs">
-            <span className="px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 shadow-xs">
-              Network Benchmark: <strong className="text-blue-700 dark:text-amber-400">{networkAvgSpeed.toFixed(1)} km/h</strong>
+            <span className="px-3 py-1.5 whitespace-nowrap rounded-lg bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 shadow-xs">
+              Avg speed, all services: <strong className="text-blue-700 dark:text-amber-400">{networkAvgSpeed.toFixed(1)} km/h</strong>
             </span>
           </div>
         </div>
@@ -254,7 +257,7 @@ export default function App() {
 
       </main>
 
-      {/* Train Telemetry Inspector Modal */}
+      {/* Train detail modal */}
       {selectedTrain && (
         <TrainDetailModal
           train={selectedTrain}
@@ -263,13 +266,13 @@ export default function App() {
         />
       )}
 
-      {/* Predictive What-If Policy Simulator Modal */}
+      {/* What-if simulator (illustrative, not a forecast) */}
       <SimulatorModal
         isOpen={isSimulatorOpen}
         onClose={() => setIsSimulatorOpen(false)}
       />
 
-      {/* Engineering Portfolio Footer */}
+      {/* Footer */}
       <Footer />
 
     </div>

@@ -28,6 +28,7 @@ export interface FilterState {
   ac: 'all' | 'ac_only' | 'no_ac';
   speedPreset: 'all' | 'slow' | 'fast';
   stationFilter: string;
+  depWindow: 'all' | 'morning';
 }
 
 export type SortField = 'no' | 'name' | 'dist' | 'spd' | 'halts' | 'h100';

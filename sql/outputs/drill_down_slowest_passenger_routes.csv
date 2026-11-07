@@ -1,0 +1,11 @@
+from_station_name,to_station_name,distance_km,services,slowest_kmph,avg_kmph
+Jabalpur,Balaghat Junction,186.0,3,17.5,19.6
+Balaghat Junction,Jabalpur,186.0,5,18.8,20.3
+Nagpur,Jabalpur,398.0,1,20.4,20.4
+Nagpur,Chhindwara Junction,148.0,4,20.7,22.4
+Jabalpur,Nagpur,398.0,1,20.9,20.9
+Chhindwara Junction,Nagpur,148.0,4,21.4,23.2
+Chhindwara Junction,Nainpur Junction,141.0,4,21.7,22.8
+Chirmiri,Bilaspur Jn,238.0,1,22.3,22.3
+Nagpur,Nagbhir Junction,110.0,2,23.2,23.4
+Itwari,Nagbhir Junction,106.0,1,24.0,24.0

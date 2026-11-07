@@ -1,0 +1,6 @@
+zone,services_in_band,non_ac_services,ac_share_pct,lowest_ac_rank
+NER,39,27,30.8,1
+NWR,59,36,39.0,2
+WCR,22,13,40.9,3
+WR,89,44,50.6,4
+CR,81,40,50.6,5

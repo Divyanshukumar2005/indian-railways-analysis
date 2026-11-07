@@ -1,6 +1,6 @@
 import React from 'react';
 import { GitCommit, TrendingUp, Building2, MapPin } from 'lucide-react';
-import { CUMULATIVE_HALTS, STATION_HUBS, NETWORK_STATS } from '../data/railwayData';
+import { CUMULATIVE_HALTS, STATION_HUBS, NETWORK_STATS, FACTS } from '../data/railwayData';
 
 interface StationConcentrationChartProps {
   onSelectHub: (stationName: string) => void;
@@ -25,7 +25,7 @@ export const StationConcentrationChart: React.FC<StationConcentrationChartProps>
   const getY = (val: number) => paddingTop + chartH - (val / 100) * chartH;
 
   const points = CUMULATIVE_HALTS.map((val, idx) => `${getX(idx).toFixed(1)},${getY(val).toFixed(1)}`).join(' ');
-  const top10Val = CUMULATIVE_HALTS[10] || 51.5;
+  const top10Val = CUMULATIVE_HALTS[10];
 
   return (
     <div className="rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 p-5 shadow-xs text-slate-800 dark:text-slate-100 flex flex-col justify-between">
@@ -120,9 +120,9 @@ export const StationConcentrationChart: React.FC<StationConcentrationChartProps>
         <div>
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-mono font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
-              <Building2 className="w-3.5 h-3.5 text-amber-600 dark:text-amber-500" /> Top 10 National Junction Hubs
+              <Building2 className="w-3.5 h-3.5 text-amber-600 dark:text-amber-500" /> Top 10 busiest stations (by halts)
             </span>
-            <span className="text-[10px] font-mono text-slate-400 dark:text-slate-500">Click hub to filter timetable</span>
+            <span className="text-[10px] font-mono text-slate-400 dark:text-slate-500">Click a hub to list trains starting or ending there</span>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
@@ -138,7 +138,7 @@ export const StationConcentrationChart: React.FC<StationConcentrationChartProps>
                       ? 'bg-purple-50 border-purple-500 ring-1 ring-purple-300 text-purple-950 dark:bg-purple-950/60 dark:border-purple-500 dark:ring-purple-500/40 dark:text-white'
                       : 'bg-slate-50/70 border-slate-200 hover:border-purple-300 hover:bg-slate-100 dark:bg-slate-950/60 dark:border-slate-800 dark:hover:border-purple-500/40 dark:hover:bg-slate-800/40 text-slate-700 dark:text-slate-300'
                   }`}
-                  title={`Click to view trains passing through or terminating at ${hub.name}`}
+                  title={`Click to list trains that start or end at ${hub.name}`}
                 >
                   <div className="flex items-start gap-1 font-medium truncate mb-1">
                     <MapPin className="w-3 h-3 text-amber-600 dark:text-amber-500 shrink-0 mt-0.5" />
@@ -158,7 +158,7 @@ export const StationConcentrationChart: React.FC<StationConcentrationChartProps>
 
       <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400">
         <span className="flex items-center gap-1">
-          <TrendingUp className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" /> Kanpur Central (286) & Howrah (283) lead
+          <TrendingUp className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" /> {FACTS.hubs[0].name} ({FACTS.hubs[0].halts}) & {FACTS.hubs[1].name} ({FACTS.hubs[1].halts}) lead
         </span>
         <span className="text-amber-700 dark:text-amber-400 font-semibold">
           {NETWORK_STATS.lowTrafficStationPercent}% stations have ≤3 halts

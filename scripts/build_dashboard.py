@@ -1,43 +1,76 @@
-import pandas as pd, json, numpy as np
+"""Feed the React dashboard: rewrite the data block in dashboard-react/src/data/railwayData.ts.
+
+Reads only the committed files in data/ (trains_clean.csv, station_traffic.csv, speed_halts_*), so it runs
+without the raw download. Every number shown in the dashboard comes from here; nothing is typed by hand.
+
+Run from anywhere:  python scripts/build_dashboard.py
+"""
+import json
+import sys
 from pathlib import Path
-ROOT=Path(__file__).resolve().parent.parent
-D=str(ROOT/'data')+'/'
-t=pd.read_csv(D+'trains_clean.csv',dtype={'number':str}); h=pd.read_csv(D+'station_traffic.csv')
-t['name']=t['name'].fillna('Unnamed Service')   # a few trains have no name in the source data
-cats=['Premium / Fast-track','Express & Superfast','Passenger & Suburban','Other / Local']
-bands=['<100 km','100-300 km','300-700 km','700-1500 km','1500+ km']
-rows=[[r.number,r['name'],cats.index(r.category),r.zone,int(r.distance),float(r.avg_speed_kmph),int(r.halts),float(r.halts_per_100km),int(r.has_ac),int(r.dep_hour),bands.index(r.band),r.from_station_name.title(),r.to_station_name.title()] for _,r in t.iterrows()]
-x=h.sort_values('trains_halting',ascending=False).reset_index(drop=True); tot=x.trains_halting.sum(); n=len(x)
-cum=[round(100*x.trains_halting.head(int(round(n*p/100))).sum()/tot,2) for p in range(0,101)]
-hubs=[[r.station_name,int(r.trains_halting),int(r.trains_passing)] for _,r in x.head(10).iterrows()]
-corr=round(float(np.corrcoef(t.halts_per_100km,t.avg_speed_kmph)[0,1]),2)
-chk=pd.read_csv(D+'speed_halts_check.csv')            # written by scripts/speed_vs_halts.py
-corr_run=float(chk.loc[chk.group=='ALL','r_runspeed_vs_halts100'].iloc[0])
 
-# Simulator inputs, all measured from the data (nothing typed in by hand):
-#  slope = OLS slope of average speed on halts per 100 km, passenger & suburban services of 100 km or more
-#  dwell_per_halt = average minutes standing at an intermediate halt (from the schedules)
-pas=t[(t.category=='Passenger & Suburban')&(t.distance>=100)]
-slope,_=np.polyfit(pas.halts_per_100km,pas.avg_speed_kmph,1)
-c=pd.read_csv(D+'schedules_clean.csv',dtype={'train_number':str},na_values=['None']).dropna(subset=['arrival','departure'])
-def secs(v):
-    q=v.str.split(':',expand=True).astype(float); return q[0]*3600+q[1]*60+q[2]
-c['d']=(secs(c.departure)-secs(c.arrival))%86400; c=c[c.d<7200]
-d=c[c.train_number.isin(t.number)]
-mid_halts=(t.halts-2).clip(lower=0).sum()
-sim=dict(slope=round(float(slope),3),n=int(len(pas)),base_speed=round(float(pas.avg_speed_kmph.mean()),1),
-         base_h100=round(float(pas.halts_per_100km.mean()),1),avg_dist=round(float(pas.distance.mean())),
-         dwell_per_halt=round(float(d.d.sum()/60/mid_halts),1),
-         non_ac_mid=int(((t.band=='300-700 km')&(t.has_ac==0)).sum()))
-data=dict(trains=rows,cats=cats,bands=bands,cum=cum,hubs=hubs,nstations=n,low3=round(100*(x.trains_halting<=3).mean(),1),
-          corr=corr,corr_run=corr_run,avg_h100=round(float(t.halts_per_100km.mean()),1),sim=sim)
-print(data['low3'], data['corr'], data['corr_run'], data['avg_h100'], sim, cum[10])
+import numpy as np
+import pandas as pd
 
-# --- feed the React dashboard (dashboard-react/) ---
-ts=ROOT/'dashboard-react'/'src'/'data'/'railwayData.ts'
-if ts.exists():
-    src=ts.read_text()
-    a=src.index('export const rawRailwayData: RailwayDataset = ')+len('export const rawRailwayData: RailwayDataset = ')
-    b=src.index(';\n\nexport const TRAINS_DATA')
-    ts.write_text(src[:a]+json.dumps(data,separators=(',',':'))+src[b:])
-    print('updated', ts.relative_to(ROOT))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import facts  # noqa: E402
+
+ROOT = facts.ROOT
+TS_FILE = ROOT / "dashboard-react" / "src" / "data" / "railwayData.ts"
+START = "export const rawRailwayData: RailwayDataset = "
+END = ";\n\nexport const TRAINS_DATA"
+
+CATS = ["Premium / Fast-track", "Express & Superfast", "Passenger & Suburban", "Heritage / Toy"]
+BANDS = facts.BAND_ORDER
+
+
+def build():
+    t, stations, check, summary = facts.load()
+    t["name"] = t["name"].fillna("Unnamed Service")   # a few trains have no name in the source data
+
+    # one compact row per train; column order is the contract with src/data/railwayData.ts
+    rows = [
+        [num, name, CATS.index(cat), zone, int(dist), float(spd), int(halts), float(h100), int(ac),
+         int(hr), BANDS.index(band), origin.title(), dest.title()]
+        for num, name, cat, zone, dist, spd, halts, h100, ac, hr, band, origin, dest in zip(
+            t.number, t.name, t.category, t.zone, t.distance, t.avg_speed_kmph, t.halts, t.halts_per_100km,
+            t.has_ac, t.dep_hour, t.band, t.from_station_name, t.to_station_name)
+    ]
+
+    # Lorenz-style curve: cumulative share of halting events, busiest stations first, per 1% of stations
+    n = len(stations)
+    total = stations.trains_halting.sum()
+    cum = [round(100 * stations.trains_halting.head(int(round(n * p / 100))).sum() / total, 2) for p in range(101)]
+    hubs = [[r.station_name, int(r.trains_halting), int(r.trains_passing)] for r in stations.head(10).itertuples()]
+
+    # What-if simulator inputs, all measured from the data:
+    #   slope = OLS slope of average speed on halts per 100 km, passenger & suburban services of 100 km or more
+    pas = t[(t.category == facts.PASSENGER) & (t.distance >= 100)]
+    slope, _ = np.polyfit(pas.halts_per_100km, pas.avg_speed_kmph, 1)
+    sim = dict(slope=round(float(slope), 3), n=int(len(pas)),
+               base_speed=round(float(pas.avg_speed_kmph.mean()), 1),
+               base_h100=round(float(pas.halts_per_100km.mean()), 1),
+               avg_dist=round(float(pas.distance.mean())),
+               dwell_per_halt=summary["dwell_per_halt_min"],
+               non_ac_mid=int(((t.band == "300-700 km") & (t.has_ac == 0)).sum()))
+
+    return dict(trains=rows, cats=CATS, bands=BANDS, cum=cum, hubs=hubs, nstations=n,
+                low3=round(100 * (stations.trains_halting <= 3).mean(), 1),
+                corr=float(check.loc["ALL", "r_speed_vs_halts100"]),
+                corr_run=float(check.loc["ALL", "r_runspeed_vs_halts100"]),
+                avg_h100=round(float(t.halts_per_100km.mean()), 1),
+                sim=sim, facts=facts.compute())
+
+
+def main():
+    data = build()
+    src = TS_FILE.read_text()
+    a = src.index(START) + len(START)
+    b = src.index(END)
+    TS_FILE.write_text(src[:a] + json.dumps(data, separators=(",", ":")) + src[b:])
+    print(f"updated {TS_FILE.relative_to(ROOT)}: {len(data['trains'])} trains, {data['nstations']} stations, "
+          f"top-10% share {data['cum'][10]}%, simulator slope {data['sim']['slope']}")
+
+
+if __name__ == "__main__":
+    main()

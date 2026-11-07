@@ -1,7 +1,9 @@
 raw: trains=5208, stations=8990, schedule stops=417080
-stations with state+zone+coords: 4171 (dropped 4819 placeholder/incomplete)
+stations with coordinates: 8697 of 8990 (dropped 293 without coordinates); 4171 also have a railway zone
 trains with valid distance & duration: 5166 (dropped 42)
-zone imputed from origin station for 94 trains; 177 remain Unknown
-removed 3 trains with impossible speed (>140 km/h premium, >110 km/h other)
-schedule stops after dedupe & joining valid trains: 414477 (from 417080)
-stations in timetable: 8497; geo-tagged match: 4125; halting events: 103536, pass-through events: 310941
+zone filled from origin station for 94, return train for 28, destination station for 69 trains (own zone present for 4895); 80 remain Unknown
+removed 9 trains with impossible speed (above 140 km/h premium, 40 km/h toy trains, 110 km/h other)
+schedule stops after de-duplication and joining kept trains: 413396 (from 417080)
+stations in timetable: 8486; with coordinates: 8201 (99.3% of halting events); halting events: 103524, pass-through events: 309872
+excluded trains by reason: missing or zero distance / duration: 42; no usable stop times (arrival = departure at every stop, even origin and terminus): 10; average speed above the cap for its category: 9 (total 61)
+final: 5147 train services

@@ -15,10 +15,10 @@ export const Footer: React.FC = () => {
             </div>
             <div>
               <span className="font-heading font-bold text-sm tracking-wide text-slate-900 dark:text-white uppercase">
-                RailGati // Indian Railways Analysis
+                RailGati: Indian Railways Analysis
               </span>
               <p className="text-[11px] text-slate-500">
-                National Railway Timetable Analytics & Empirical Transit Infrastructure Engineering
+                Timetable analysis: speed, AC availability and station load
               </p>
             </div>
           </div>
@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
               <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" /> Data Provenance & Cleaning
             </h5>
             <p className="text-slate-600 dark:text-slate-400">
-              Dataset parsed from the Indian Railways National Timetable (CC0 public open transit data). Cleaned via Pandas: removed train runs without a valid distance or duration, resolved zone associations from originating station codes, and purged placeholder dummy junctions.
+              Timetable data from datameet/railways (CC0), a community-collected snapshot. Cleaned with pandas: trains without a valid distance or duration, with an impossible speed, or with no usable stop times are excluded, and missing railway zones are filled from the origin station, return train or destination station.
             </p>
           </div>
 
@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
         {/* Portfolio / CV Signature */}
         <div className="pt-4 border-t border-slate-200 dark:border-slate-800/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] font-mono text-slate-500">
           <span>
-            Data analytics portfolio project | Indian Railways timetable analysis
+            Data analytics project | Source: datameet/railways (CC0)
           </span>
           <span className="text-slate-600 dark:text-slate-400 font-medium">
             RailGati Dashboard &copy; {new Date().getFullYear()}

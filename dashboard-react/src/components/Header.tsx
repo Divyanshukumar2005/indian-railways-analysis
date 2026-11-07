@@ -65,13 +65,13 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
           </div>
 
-          {/* Center Telemetry Badges (Desktop) */}
+          {/* Summary badges (desktop) */}
           <div className="hidden lg:flex items-center gap-4 text-xs font-mono">
             <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 text-slate-600 dark:text-slate-300">
               <Activity className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
               <span>SERVICES:</span>
-              <strong className="text-slate-900 dark:text-slate-100 font-semibold tabular-nums">{filteredCount}</strong>
-              <span className="text-slate-400">/ {totalCount}</span>
+              <strong className="text-slate-900 dark:text-slate-100 font-semibold tabular-nums">{filteredCount.toLocaleString()}</strong>
+              {filteredCount !== totalCount && <span className="text-slate-400">/ {totalCount.toLocaleString()}</span>}
             </div>
 
             <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 text-slate-600 dark:text-slate-300">
@@ -83,7 +83,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/50 text-slate-600 dark:text-slate-300">
               <Layers className="w-3.5 h-3.5 text-blue-600 dark:text-cyan-400" />
               <span>ZONES:</span>
-              <strong className="text-slate-900 dark:text-slate-100 font-semibold">{ZONE_COUNT} DIVISIONS</strong>
+              <strong className="text-slate-900 dark:text-slate-100 font-semibold">{ZONE_COUNT}</strong>
             </div>
           </div>
 

@@ -9,7 +9,7 @@ import {
   TrendingDown, 
   TrainTrack
 } from 'lucide-react';
-import { CUMULATIVE_HALTS } from '../data/railwayData';
+import { CUMULATIVE_HALTS, FACTS } from '../data/railwayData';
 
 interface KpiStripProps {
   totalCount: number;
@@ -34,7 +34,9 @@ export const KpiStrip: React.FC<KpiStripProps> = ({
 }) => {
   const speedDiff = avgSpeed - networkAvgSpeed;
   const isAboveSpeed = speedDiff >= 0;
-  const top10Concentration = CUMULATIVE_HALTS[10] ? CUMULATIVE_HALTS[10].toFixed(1) : '51.5';
+  const atNetworkAvg = Math.abs(speedDiff) < 0.05;
+  const top10Concentration = CUMULATIVE_HALTS[10].toFixed(1);
+  const busiest = FACTS.hubs[0];
 
   return (
     <section aria-label="Key Performance Indicators" className="grid grid-cols-2 lg:grid-cols-5 gap-3.5 sm:gap-4">
@@ -70,11 +72,15 @@ export const KpiStrip: React.FC<KpiStripProps> = ({
           <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">km/h</span>
         </div>
         <div className="mt-2 text-xs flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80 pt-2 font-mono">
-          <span className="text-slate-500 dark:text-slate-400">Network avg ({networkAvgSpeed.toFixed(1)}):</span>
-          <span className={`inline-flex items-center gap-0.5 font-semibold ${isAboveSpeed ? 'text-emerald-600 dark:text-emerald-400' : 'text-amber-700 dark:text-amber-400'}`}>
-            {isAboveSpeed ? <TrendingUp className="w-3 h-3" /> : <TrendingDown className="w-3 h-3" />}
-            {isAboveSpeed ? `+${speedDiff.toFixed(1)}` : speedDiff.toFixed(1)}
-          </span>
+          <span className="text-slate-500 dark:text-slate-400">vs network avg ({networkAvgSpeed.toFixed(1)}):</span>
+          {atNetworkAvg ? (
+            <span className="font-semibold text-slate-700 dark:text-slate-300">same</span>
+          ) : (
+            <span className={`inline-flex items-center gap-0.5 font-semibold ${isAboveSpeed ? 'text-emerald-600 dark:text-emerald-400' : 'text-amber-700 dark:text-amber-400'}`}>
+              {isAboveSpeed ? <TrendingUp className="w-3 h-3" /> : <TrendingDown className="w-3 h-3" />}
+              {isAboveSpeed ? `+${speedDiff.toFixed(1)}` : speedDiff.toFixed(1)}
+            </span>
+          )}
         </div>
       </div>
 
@@ -91,7 +97,7 @@ export const KpiStrip: React.FC<KpiStripProps> = ({
           <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">equipped</span>
         </div>
         <div className="mt-2 text-xs text-slate-500 dark:text-slate-400 flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80 pt-2 font-mono">
-          <span>Non-AC Deficit:</span>
+          <span>Non-AC services:</span>
           <span className="text-amber-700 dark:text-amber-400/90 font-medium tabular-nums">{nonAcCount.toLocaleString('en-IN')} runs</span>
         </div>
       </div>
@@ -117,7 +123,7 @@ export const KpiStrip: React.FC<KpiStripProps> = ({
       {/* 5. Terminal Bottleneck Concentration */}
       <div className="relative overflow-hidden rounded-xl bg-white dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 p-4 shadow-xs hover:border-slate-300 dark:hover:border-slate-700 transition col-span-2 lg:col-span-1">
         <div className="flex items-center justify-between text-slate-500 dark:text-slate-400 mb-2">
-          <span className="text-[11px] font-mono uppercase tracking-wider font-semibold">Top 10% Junctions</span>
+          <span className="text-[11px] font-mono uppercase tracking-wider font-semibold">Top 10% stations</span>
           <GitMerge className="w-4 h-4 text-purple-600 dark:text-purple-400" />
         </div>
         <div className="flex items-baseline gap-1.5">
@@ -126,9 +132,9 @@ export const KpiStrip: React.FC<KpiStripProps> = ({
           </span>
           <span className="text-xs text-slate-500 dark:text-slate-400 font-mono">of all halts</span>
         </div>
-        <div className="mt-2 text-xs text-slate-500 dark:text-slate-400 flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80 pt-2 font-mono">
-          <span>Pareto Skew:</span>
-          <span className="text-slate-800 dark:text-slate-300 font-medium">High Load</span>
+        <div className="mt-2 text-xs text-slate-500 dark:text-slate-400 flex items-center justify-between gap-3 border-t border-slate-100 dark:border-slate-800/80 pt-2 font-mono">
+          <span className="shrink-0">Busiest:</span>
+          <span className="text-slate-800 dark:text-slate-300 font-medium truncate min-w-0" title={`${busiest.name}: ${busiest.halts} halting services`}>{busiest.name}</span>
         </div>
       </div>
 

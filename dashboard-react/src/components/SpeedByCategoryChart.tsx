@@ -14,7 +14,7 @@ const CATEGORY_COLORS = [
   'from-cyan-500 to-blue-600',       // Premium
   'from-amber-500 to-orange-600',    // Express & Superfast
   'from-emerald-500 to-teal-600',    // Passenger & Suburban
-  'from-purple-500 to-indigo-600',   // Other / Local
+  'from-purple-500 to-indigo-600',   // Heritage / Toy
 ];
 
 const CATEGORY_BORDER_COLORS = [

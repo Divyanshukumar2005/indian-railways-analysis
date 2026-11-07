@@ -1,5 +1,5 @@
 import React from 'react';
-import { ZONE_COUNT } from '../data/railwayData';
+import { ZONE_COUNT, FACTS } from '../data/railwayData';
 import { Layers, Check } from 'lucide-react';
 import { TrainService } from '../types';
 import { getZoneMetrics } from '../utils/analytics';
@@ -29,13 +29,13 @@ export const ZonePerformanceChart: React.FC<ZonePerformanceChartProps> = ({
           <div className="flex items-center gap-2">
             <Layers className="w-4 h-4 text-blue-600 dark:text-cyan-400" />
             <h3 className="font-heading font-bold text-lg tracking-wide uppercase text-slate-900 dark:text-white">
-              Speed by Railway Zone ({ZONE_COUNT} Divisions)
+              Speed by Railway Zone ({ZONE_COUNT} zones)
             </h3>
           </div>
           <span className="text-[11px] font-mono text-slate-400 dark:text-slate-500">Sorted: Slowest first</span>
         </div>
         <p className="text-xs text-slate-500 dark:text-slate-400 mb-3 leading-relaxed font-sans">
-          Zones below the national benchmark of <strong className="text-amber-700 dark:text-amber-400">{networkAvgSpeed.toFixed(1)} km/h</strong> are bottlenecked by heavy local passenger stoppage patterns (67–74% passenger fleet share).
+          Zones below the national benchmark of <strong className="text-amber-700 dark:text-amber-400">{networkAvgSpeed.toFixed(1)} km/h</strong> are marked amber. The slowest three ({FACTS.slow_zones.map(z => z.zone).join(', ')}) are also {Math.min(...FACTS.slow_zones.map(z => z.passenger_pct))}–{Math.max(...FACTS.slow_zones.map(z => z.passenger_pct))}% passenger &amp; suburban services.
         </p>
 
         {/* Legend */}
@@ -107,7 +107,7 @@ export const ZonePerformanceChart: React.FC<ZonePerformanceChartProps> = ({
 
       <div className="mt-3 pt-3 border-t border-slate-100 dark:border-slate-800/80 text-[11px] text-slate-500 dark:text-slate-400 flex items-center justify-between font-mono">
         <span>Slowest corridor zone:</span>
-        <span className="text-amber-700 dark:text-amber-400 font-bold">SECR (33.2 km/h)</span>
+        <span className="text-amber-700 dark:text-amber-400 font-bold">{FACTS.slow_zones[0].zone} ({FACTS.slow_zones[0].speed} km/h)</span>
       </div>
     </div>
   );

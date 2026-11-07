@@ -53,7 +53,12 @@ export const filterTrains = (
       if (filters.speedPreset === 'fast' && t.spd < 65) return false;
     }
 
-    // Specific station filter (e.g. from Hubs table)
+    // Departure window: morning rush = departures between 05:00 and 08:59
+    if (skipFilterKey !== 'depWindow' && filters.depWindow === 'morning') {
+      if (t.hr < 5 || t.hr > 8) return false;
+    }
+
+    // Specific station filter (matches origin or destination only)
     if (skipFilterKey !== 'stationFilter' && filters.stationFilter) {
       const st = filters.stationFilter.toLowerCase();
       const match = t.from.toLowerCase().includes(st) || t.to.toLowerCase().includes(st);
@@ -189,12 +194,14 @@ export const exportToCSV = (trains: TrainService[], filename = 'railgati_train_s
     `"${t.to.replace(/"/g, '""')}"`
   ]);
 
-  const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
-  const encodedUri = encodeURI(csvContent);
+  // Blob download: works with any characters in train names (a data: URI breaks on '#')
+  const csvContent = [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+  const url = URL.createObjectURL(new Blob(['\ufeff' + csvContent], { type: 'text/csv;charset=utf-8' }));
   const link = document.createElement('a');
-  link.setAttribute('href', encodedUri);
-  link.setAttribute('download', filename);
+  link.href = url;
+  link.download = filename;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
+  URL.revokeObjectURL(url);
 };
