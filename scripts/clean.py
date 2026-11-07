@@ -70,10 +70,19 @@ def tidy_station(x):
     return x.title() if isinstance(x, str) and x.isupper() else x
 
 
+def tidy_word(w):
+    # SAHARSA or saharsa -> Saharsa; mixed case and short codes (EMU, SF ...) stay as they are
+    core = w.strip("()")                      # "(via" is the word "via", not a 4-letter word
+    if len(core) > 3 and core not in KEEP_UPPER and (core.isupper() or core.islower()):
+        return w.title()
+    return w
+
+
 def tidy_name(x):
+    """Fix ALL CAPS and all-lowercase words in train names, also inside hyphenated names."""
     if not isinstance(x, str):
         return x
-    return " ".join(w.title() if (w.isupper() and len(w) > 3 and w not in KEEP_UPPER) else w for w in x.split(" "))
+    return " ".join("-".join(tidy_word(part) for part in w.split("-")) for w in x.split(" "))
 
 
 def secs(s):

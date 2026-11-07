@@ -48,6 +48,22 @@ check("17 railway zones (Unknown excluded)", f["n_zones"] == 17)
 check("raw trains = services + excluded (5,208)", len(t) + len(exc) == 5208)
 check("stations_geo has no state spelled 'Orissa'", "Orissa" not in pd.read_csv(ROOT / "data" / "stations_geo.csv").state.values)
 
+# no data figure typed by hand in the dashboard source: hub names, zone speeds or "|| 51.5"-style fallbacks
+import re  # noqa: E402
+src_files = list((ROOT / "dashboard-react" / "src").rglob("*.tsx")) + list((ROOT / "dashboard-react" / "src").rglob("*.ts"))
+hand_typed = []
+hub_names = list(stations.head(10).station_name)
+for fp in src_files:
+    if fp.name == "railwayData.ts":
+        continue
+    text = fp.read_text()
+    for pat in [r"\(\d+(\.\d+)? km/h\)", r"\|\|\s*\d+\.\d+"] + [re.escape(n) for n in hub_names]:
+        if re.search(pat, text):
+            hand_typed.append(f"{fp.name}: /{pat}/")
+check("no hand-typed figures or hub names in dashboard components", not hand_typed)
+for h in hand_typed:
+    print("   found", h)
+
 # ---- 2. README and notebook quote the current numbers ------------------------------------------
 by_reason = exc.reason.value_counts()
 n_dist = int(by_reason[[r for r in by_reason.index if r.startswith("missing")]].sum())

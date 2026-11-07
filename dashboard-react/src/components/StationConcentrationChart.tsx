@@ -1,6 +1,6 @@
 import React from 'react';
 import { GitCommit, TrendingUp, Building2, MapPin } from 'lucide-react';
-import { CUMULATIVE_HALTS, STATION_HUBS, NETWORK_STATS } from '../data/railwayData';
+import { CUMULATIVE_HALTS, STATION_HUBS, NETWORK_STATS, FACTS } from '../data/railwayData';
 
 interface StationConcentrationChartProps {
   onSelectHub: (stationName: string) => void;
@@ -25,7 +25,7 @@ export const StationConcentrationChart: React.FC<StationConcentrationChartProps>
   const getY = (val: number) => paddingTop + chartH - (val / 100) * chartH;
 
   const points = CUMULATIVE_HALTS.map((val, idx) => `${getX(idx).toFixed(1)},${getY(val).toFixed(1)}`).join(' ');
-  const top10Val = CUMULATIVE_HALTS[10] || 51.5;
+  const top10Val = CUMULATIVE_HALTS[10];
 
   return (
     <div className="rounded-xl bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 p-5 shadow-xs text-slate-800 dark:text-slate-100 flex flex-col justify-between">
@@ -158,7 +158,7 @@ export const StationConcentrationChart: React.FC<StationConcentrationChartProps>
 
       <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400">
         <span className="flex items-center gap-1">
-          <TrendingUp className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" /> Kanpur Central (286) & Howrah (283) lead
+          <TrendingUp className="w-3.5 h-3.5 text-purple-600 dark:text-purple-400" /> {FACTS.hubs[0].name} ({FACTS.hubs[0].halts}) & {FACTS.hubs[1].name} ({FACTS.hubs[1].halts}) lead
         </span>
         <span className="text-amber-700 dark:text-amber-400 font-semibold">
           {NETWORK_STATS.lowTrafficStationPercent}% stations have ≤3 halts

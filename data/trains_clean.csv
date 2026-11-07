@@ -64,7 +64,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 06011,Chennai Central Kollam (Weekly) SF Special,SF,Superfast,Express & Superfast,SR,MAS,Chennai Central,QLN,Kollam Jn,858.0,870,59.2,15:15:00,05:45:00,15,Afternoon (12-17),700-1500 km,1,0,1,1,1,0,0,149,17,1.98
 06201,Mysore-Sainagar Shirdi Special,Exp,Express,Express & Superfast,SWR,MYS,Mysore Jn,SNSI,Sainagar Shirdi,1304.0,1800,43.5,05:30:00,11:30:00,5,Night (00-05),700-1500 km,1,0,1,1,1,0,0,158,24,1.84
 06202,Sainagar Shirdi - Mysore Special,Exp,Express,Express & Superfast,SWR,SNSI,Sainagar Shirdi,MYS,Mysore Jn,1304.0,1875,41.7,23:55:00,07:10:00,23,Late night (22-23),700-1500 km,1,0,1,1,1,0,0,158,25,1.92
-06215,Mysore Nanjangud Town passenger,Pass,Passenger,Passenger & Suburban,SWR,MYS,Mysore Jn,NTW,Nanjangud Town,25.0,55,27.3,16:10:00,17:05:00,16,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,7,7,28.0
+06215,Mysore Nanjangud Town Passenger,Pass,Passenger,Passenger & Suburban,SWR,MYS,Mysore Jn,NTW,Nanjangud Town,25.0,55,27.3,16:10:00,17:05:00,16,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,7,7,28.0
 06216,Nanjangud Town Mysore Passenger,Pass,Passenger,Passenger & Suburban,SWR,NTW,Nanjangud Town,MYS,Mysore Jn,25.0,50,30.0,17:30:00,18:20:00,17,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,7,7,28.0
 06228,Shimoga Mysore Express,Exp,Express,Express & Superfast,SWR,SMET,Shimoga Town,MYS,Mysore Jn,276.0,530,31.2,22:10:00,07:00:00,22,Late night (22-23),100-300 km,0,0,0,0,1,0,0,21,11,3.99
 06301,Nagercoil-Mangalore Special,Exp,Express,Express & Superfast,SR,NCJ,Nagercoil Jn,MAJN,Mangalore Jn,711.0,1060,40.2,16:50:00,10:30:00,16,Afternoon (12-17),700-1500 km,1,0,1,1,1,0,0,133,24,3.38
@@ -113,13 +113,13 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 08055,Shalimar-Tirupati Special,SF,Superfast,Express & Superfast,SER,SHM,Kolkata Shalimar,TPTY,Tirupati Main,1616.0,1570,61.8,15:50:00,18:00:00,15,Afternoon (12-17),1500+ km,1,0,1,1,1,0,0,265,20,1.24
 08113,Tatanagar Bilaspur Passenger,Pass,Passenger,Passenger & Suburban,SER,TATA,Tatanagar Jn,BSP,Bilaspur Jn,470.0,855,33.0,16:30:00,06:45:00,16,Afternoon (12-17),300-700 km,0,0,0,0,0,0,0,60,53,11.28
 08114,Bilaspur Tatanagar Passenger,Pass,Passenger,Passenger & Suburban,SER,BSP,Bilaspur Jn,TATA,Tatanagar Jn,470.0,1060,26.6,18:50:00,12:30:00,18,Evening (18-21),300-700 km,0,0,0,0,0,0,0,60,53,11.28
-08469,Puri-Bangalore weekly Garib Rath special,GR,Garib Rath,Premium / Fast-track,ECoR,PURI,Puri,SBC,Bangalore City Jn,1529.0,1935,47.4,14:30:00,22:45:00,14,Afternoon (12-17),1500+ km,1,0,0,1,0,0,0,208,21,1.37
+08469,Puri-Bangalore Weekly Garib Rath Special,GR,Garib Rath,Premium / Fast-track,ECoR,PURI,Puri,SBC,Bangalore City Jn,1529.0,1935,47.4,14:30:00,22:45:00,14,Afternoon (12-17),1500+ km,1,0,0,1,0,0,0,208,21,1.37
 08470,Bangalore-Puri Garib Rath Special,GR,Garib Rath,Premium / Fast-track,ECoR,SBC,Bangalore City Jn,PURI,Puri,1529.0,1795,51.1,23:55:00,05:50:00,23,Late night (22-23),1500+ km,1,0,0,1,0,0,0,208,21,1.37
 08471,Bhubaneswar - Tirupati Weekly Special,Exp,Express,Express & Superfast,ECoR,BBS,Bhubaneswar,TPTY,Tirupati Main,1205.0,1320,54.8,11:45:00,09:45:00,11,Morning (06-11),700-1500 km,1,0,1,1,1,0,0,180,22,1.83
 08472,Tirupati - Bhubaneswar Weekly Special,Exp,Express,Express & Superfast,ECoR,TPTY,Tirupati Main,BBS,Bhubaneswar,1205.0,1440,50.2,14:00:00,14:00:00,14,Afternoon (12-17),700-1500 km,1,0,1,1,1,0,0,180,22,1.83
 08565,Visakhapatnam-Secunderabad Special,Exp,Express,Express & Superfast,ECoR,VSKP,Vishakapatnam,SC,Secunderabad Jn,701.0,800,52.6,19:40:00,09:00:00,19,Evening (18-21),700-1500 km,1,0,1,1,1,0,0,102,14,2.0
 08566,Secunderabad Vishakaptnam Special,Exp,Express,Express & Superfast,ECoR,SC,Secunderabad Jn,VSKP,Vishakapatnam,701.0,765,55.0,21:30:00,10:15:00,21,Evening (18-21),700-1500 km,1,0,1,1,1,0,0,102,14,2.0
-08567,Visakhapatnam Sainagar Shirdi special,Exp,Express,Express & Superfast,ECoR,VSKP,Vishakapatnam,SNSI,Sainagar Shirdi,1403.0,1770,47.6,05:30:00,11:00:00,5,Night (00-05),700-1500 km,1,0,1,1,1,0,0,190,27,1.92
+08567,Visakhapatnam Sainagar Shirdi Special,Exp,Express,Express & Superfast,ECoR,VSKP,Vishakapatnam,SNSI,Sainagar Shirdi,1403.0,1770,47.6,05:30:00,11:00:00,5,Night (00-05),700-1500 km,1,0,1,1,1,0,0,190,27,1.92
 08568,Shirdi-Visakhapatnam Weekly Special,Exp,Express,Express & Superfast,ECoR,SNSI,Sainagar Shirdi,VSKP,Vishakapatnam,1405.0,1705,49.4,18:20:00,22:45:00,18,Evening (18-21),700-1500 km,1,0,1,1,1,0,0,190,27,1.92
 08569,Visakhapatnam-Kollam Sabarimalai Special,Exp,Express,Express & Superfast,ECoR,VSKP,Vishakapatnam,QLN,Kollam Jn,1568.0,1830,51.4,09:00:00,15:30:00,9,Morning (06-11),1500+ km,1,0,1,1,1,0,0,239,27,1.72
 08786,Dalli Rajhara Durg Pass,Pass,Passenger,Passenger & Suburban,SECR,DRZ,Dalli Rajhara,DURG,Durg,88.0,125,42.2,18:05:00,20:10:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,9,8,9.09
@@ -185,15 +185,15 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 56304,Nagercoil Kottayam Passenger,Pass,Passenger,Passenger & Suburban,SR,NCJ,Nagercoil Jn,KTYM,Kottayam,231.0,450,30.8,12:20:00,19:50:00,12,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,44,44,19.05
 56386,Kottayam Ernakulam Passenger,Pass,Passenger,Passenger & Suburban,SR,KTYM,Kottayam,ERS,Ernakulam Jn,60.0,100,36.0,05:25:00,07:05:00,5,Night (00-05),<100 km,0,0,0,0,0,0,0,12,9,15.0
 56390,Kottayam Ernakulam Passenger,Pass,Passenger,Passenger & Suburban,SR,KTYM,Kottayam,ERS,Ernakulam Jn,60.0,100,36.0,17:15:00,18:55:00,17,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,12,9,15.0
-02082,Loharu - Jaipur Passenger Spl (Mg),Pass,Passenger,Passenger & Suburban,NWR,LHU,Loharu,JP,Jaipur,229.0,415,33.1,02:40:00,09:35:00,2,Night (00-05),100-300 km,0,0,0,0,0,0,0,28,25,10.92
+02082,Loharu - Jaipur Passenger Spl (MG),Pass,Passenger,Passenger & Suburban,NWR,LHU,Loharu,JP,Jaipur,229.0,415,33.1,02:40:00,09:35:00,2,Night (00-05),100-300 km,0,0,0,0,0,0,0,28,25,10.92
 02083,Jaipur-Loharu MG Passenger Special,Pass,Passenger,Passenger & Suburban,NWR,JP,Jaipur,LHU,Loharu,229.0,400,34.4,23:30:00,06:10:00,23,Late night (22-23),100-300 km,0,0,0,0,0,0,0,28,17,7.42
-02084,Loharu - Jaipur Passenger Spl (Mg),Pass,Passenger,Passenger & Suburban,NWR,LHU,Loharu,JP,Jaipur,230.0,395,34.9,23:10:00,05:45:00,23,Late night (22-23),100-300 km,0,0,0,0,0,0,0,24,17,7.39
-02085,Jaipur - Churu Passenger Spl (Mg),Pass,Passenger,Passenger & Suburban,NWR,JP,Jaipur,CUR,Churu,198.0,320,37.1,16:55:00,22:15:00,16,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,23,23,11.62
-02086,Churu - Jaipur Passenger Spl (Mg),Pass,Passenger,Passenger & Suburban,NWR,CUR,Churu,JP,Jaipur,198.0,350,33.9,05:15:00,11:05:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,23,22,11.11
-02087,Jaipur - Churu Passenger Spl (Mg),Pass,Passenger,Passenger & Suburban,NWR,JP,Jaipur,CUR,Churu,198.0,435,27.3,20:30:00,03:45:00,20,Evening (18-21),100-300 km,0,0,0,0,0,0,0,23,16,8.08
-02088,Churu - Jaipur Passenger Spl (Mg),Pass,Passenger,Passenger & Suburban,NWR,CUR,Churu,JP,Jaipur,198.0,310,38.3,03:05:00,08:15:00,3,Night (00-05),100-300 km,0,0,0,0,0,0,0,23,17,8.59
-02089,Sikar - Churu Passenger Spl (Mg),Pass,Passenger,Passenger & Suburban,NWR,SIKR,Sikar Junction,CUR,Churu,90.0,150,36.0,11:05:00,13:35:00,11,Morning (06-11),<100 km,0,0,0,0,0,0,0,9,9,10.0
-02090,Sikar - Churu Passenger Spl (Mg),Pass,Passenger,Passenger & Suburban,NWR,CUR,Churu,SIKR,Sikar Junction,90.0,125,43.2,14:00:00,16:05:00,14,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,9,9,10.0
+02084,Loharu - Jaipur Passenger Spl (MG),Pass,Passenger,Passenger & Suburban,NWR,LHU,Loharu,JP,Jaipur,230.0,395,34.9,23:10:00,05:45:00,23,Late night (22-23),100-300 km,0,0,0,0,0,0,0,24,17,7.39
+02085,Jaipur - Churu Passenger Spl (MG),Pass,Passenger,Passenger & Suburban,NWR,JP,Jaipur,CUR,Churu,198.0,320,37.1,16:55:00,22:15:00,16,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,23,23,11.62
+02086,Churu - Jaipur Passenger Spl (MG),Pass,Passenger,Passenger & Suburban,NWR,CUR,Churu,JP,Jaipur,198.0,350,33.9,05:15:00,11:05:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,23,22,11.11
+02087,Jaipur - Churu Passenger Spl (MG),Pass,Passenger,Passenger & Suburban,NWR,JP,Jaipur,CUR,Churu,198.0,435,27.3,20:30:00,03:45:00,20,Evening (18-21),100-300 km,0,0,0,0,0,0,0,23,16,8.08
+02088,Churu - Jaipur Passenger Spl (MG),Pass,Passenger,Passenger & Suburban,NWR,CUR,Churu,JP,Jaipur,198.0,310,38.3,03:05:00,08:15:00,3,Night (00-05),100-300 km,0,0,0,0,0,0,0,23,17,8.59
+02089,Sikar - Churu Passenger Spl (MG),Pass,Passenger,Passenger & Suburban,NWR,SIKR,Sikar Junction,CUR,Churu,90.0,150,36.0,11:05:00,13:35:00,11,Morning (06-11),<100 km,0,0,0,0,0,0,0,9,9,10.0
+02090,Sikar - Churu Passenger Spl (MG),Pass,Passenger,Passenger & Suburban,NWR,CUR,Churu,SIKR,Sikar Junction,90.0,125,43.2,14:00:00,16:05:00,14,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,9,9,10.0
 02093,Jaipur Loharu Passenger,Pass,Passenger,Passenger & Suburban,NWR,JP,Jaipur,LHU,Loharu,229.0,415,33.1,07:45:00,14:40:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,28,20,8.73
 02411,Ratangarh-Sardarshahar Passenger,Pass,Passenger,Passenger & Suburban,NR,RTGH,Ratangarh Junction,SRDR,Sardarshahr,46.0,100,27.6,11:30:00,13:10:00,11,Morning (06-11),<100 km,0,0,0,0,0,0,0,3,3,6.52
 02412,Sardarshahr-Ratangarh Passenger Special,Pass,Passenger,Passenger & Suburban,NR,SRDR,Sardarshahr,RTGH,Ratangarh Junction,46.0,100,27.6,13:40:00,15:20:00,13,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,3,3,6.52
@@ -219,7 +219,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 02081,Jaipur Luharu Special,Exp,Express,Express & Superfast,NWR,JP,Jaipur,LHU,Loharu,229.0,395,34.8,18:25:00,01:00:00,18,Evening (18-21),100-300 km,0,0,0,0,0,0,0,28,26,11.35
 04116,Mumbai LTT-Allahabad Special,Exp,Express,Express & Superfast,NCR,LTT,Lokmanya Tilak Term,ALD,Allahabad Jn,1533.0,1800,51.1,15:50:00,21:50:00,15,Afternoon (12-17),1500+ km,1,0,0,1,1,0,0,194,18,1.17
 04201,Lucknow -New Delhi Special,Exp,Express,Express & Superfast,NR,LKO,Lucknow,NDLS,New Delhi,493.0,575,51.4,22:45:00,08:20:00,22,Late night (22-23),300-700 km,1,0,1,1,1,0,0,79,4,0.81
-04202,New Delhi-Lucknow tri-weekly Special,Exp,Express,Express & Superfast,NR,NDLS,New Delhi,LKO,Lucknow,493.0,590,50.1,23:55:00,09:45:00,23,Late night (22-23),300-700 km,1,0,1,1,1,0,0,79,4,0.81
+04202,New Delhi-Lucknow tri-Weekly Special,Exp,Express,Express & Superfast,NR,NDLS,New Delhi,LKO,Lucknow,493.0,590,50.1,23:55:00,09:45:00,23,Late night (22-23),300-700 km,1,0,1,1,1,0,0,79,4,0.81
 04203,Varanasi-Old Delhi Special,Exp,Express,Express & Superfast,NR,BSB,Varanasi Jn,DLI,Old Delhi,770.0,850,54.4,20:00:00,10:10:00,20,Evening (18-21),700-1500 km,1,0,1,1,1,0,0,111,6,0.78
 11067-Slip,Saket Express Slip,Exp,Express,Express & Superfast,CR,LTT,Lokmanya Tilak Term,RBL,Rae Bareli Jn,1502.0,1620,55.6,05:20:00,08:20:00,5,Night (00-05),1500+ km,1,0,1,1,1,0,0,187,20,1.33
 11108,Varanasi-Gwalior Bundelkhand Express,Exp,Express,Express & Superfast,NCR,BSB,Varanasi Jn,GWL,Gwalior Jn,624.0,890,42.1,18:05:00,08:55:00,18,Evening (18-21),300-700 km,1,1,1,1,1,0,0,67,36,5.77
@@ -355,7 +355,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 12114,Nagpur-Pune Garib Rath,GR,Garib Rath,Premium / Fast-track,CR,NGP,Nagpur,PUNE,Pune Jn,890.0,910,58.7,18:35:00,09:45:00,18,Evening (18-21),700-1500 km,1,0,0,1,0,0,0,101,9,1.01
 12115,Siddheshwar Express,SF,Superfast,Express & Superfast,CR,CSTM,Mumbai Cst,SUR,Solapur Jn,455.0,495,55.2,22:42:00,06:57:00,22,Late night (22-23),300-700 km,1,1,1,1,1,0,0,88,14,3.08
 12116,Siddheshwar Express,SF,Superfast,Express & Superfast,CR,SUR,Solapur Jn,CSTM,Mumbai Cst,455.0,495,55.2,22:45:00,07:00:00,22,Late night (22-23),300-700 km,1,1,1,1,1,0,0,87,15,3.3
-12117,Mumbai Ltt- Manmad Express,SF,Superfast,Express & Superfast,CR,LTT,Lokmanya Tilak Term,MMR,Manmad Jn,245.0,265,55.5,15:00:00,19:25:00,15,Afternoon (12-17),100-300 km,1,0,0,0,0,1,0,39,10,4.08
+12117,Mumbai LTT- Manmad Express,SF,Superfast,Express & Superfast,CR,LTT,Lokmanya Tilak Term,MMR,Manmad Jn,245.0,265,55.5,15:00:00,19:25:00,15,Afternoon (12-17),100-300 km,1,0,0,0,0,1,0,39,10,4.08
 12119,Amaravati Nagpur Express,SF,Superfast,Express & Superfast,CR,AMI,Amravati,NGP,Nagpur,184.0,200,55.2,05:15:00,08:35:00,5,Night (00-05),100-300 km,1,0,0,0,0,1,0,23,7,3.8
 12120,Nagpur Amravati Express,SF,Superfast,Express & Superfast,CR,NGP,Nagpur,AMI,Amravati,184.0,200,55.2,18:25:00,21:45:00,18,Evening (18-21),100-300 km,1,0,0,0,0,1,0,23,7,3.8
 12122,Delhi H Nizamuddin - Jabalpur S Kranti Exp,SKr,Sampark Kranti,Premium / Fast-track,WCR,NZM,Delhi H Nizamuddin,JBP,Jabalpur,909.0,875,62.3,17:25:00,08:00:00,17,Afternoon (12-17),700-1500 km,1,1,1,1,1,0,0,115,7,0.77
@@ -476,8 +476,8 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 12243,Chennai Central-Coimbatore AC Duronto Express,Drnt,Duronto,Premium / Fast-track,SR,MAS,Chennai Central,CBE,Coimbatore Jn,497.0,400,74.6,06:50:00,13:30:00,6,Morning (06-11),300-700 km,1,0,0,0,0,1,0,89,2,0.4
 12244,Coimbatore-Chennai Central AC Duronto Express,Drnt,Duronto,Premium / Fast-track,SR,CBE,Coimbatore Jn,MAS,Chennai Central,497.0,405,73.6,15:05:00,21:50:00,15,Afternoon (12-17),300-700 km,1,0,0,0,0,1,0,88,2,0.4
 12245,Howrah - Yesvantpur AC Duronto Exp,Drnt,Duronto,Premium / Fast-track,SER,HWH,Howrah Jn,YPR,Yesvantpur Jn,1946.0,1740,67.1,11:00:00,16:00:00,11,Morning (06-11),1500+ km,1,1,1,1,1,0,0,337,2,0.1
-12251,Wainganga express,SF,Superfast,Express & Superfast,SWR,YPR,Yesvantpur Jn,KRBA,Korba,1614.0,1730,56.0,23:40:00,04:30:00,23,Late night (22-23),1500+ km,1,0,1,1,1,0,0,192,25,1.55
-12252,Wainganga express,SF,Superfast,Express & Superfast,SWR,KRBA,Korba,YPR,Yesvantpur Jn,1605.0,1770,54.4,08:00:00,13:30:00,8,Morning (06-11),1500+ km,1,0,1,1,1,0,0,192,26,1.62
+12251,Wainganga Express,SF,Superfast,Express & Superfast,SWR,YPR,Yesvantpur Jn,KRBA,Korba,1614.0,1730,56.0,23:40:00,04:30:00,23,Late night (22-23),1500+ km,1,0,1,1,1,0,0,192,25,1.55
+12252,Wainganga Express,SF,Superfast,Express & Superfast,SWR,KRBA,Korba,YPR,Yesvantpur Jn,1605.0,1770,54.4,08:00:00,13:30:00,8,Morning (06-11),1500+ km,1,0,1,1,1,0,0,192,26,1.62
 12253,Yesvantpur - Bhagalpur Anga SF Exp,SF,Superfast,Express & Superfast,SWR,YPR,Yesvantpur Jn,BGP,Bhagalpur,2473.0,2580,57.5,13:30:00,08:30:00,13,Afternoon (12-17),1500+ km,1,0,1,1,1,0,0,458,25,1.01
 12254,Bhagalpur - Yesvantpur Anga SF Exp,SF,Superfast,Express & Superfast,SWR,BGP,Bhagalpur,YPR,Yesvantpur Jn,2474.0,2615,56.8,13:30:00,09:05:00,13,Afternoon (12-17),1500+ km,1,0,1,1,1,0,0,458,27,1.09
 12261,Mumbai CST - Howrah AC Duronto Exp,Drnt,Duronto,Premium / Fast-track,SER,CSTM,Mumbai Cst,HWH,Howrah Jn,1968.0,1585,74.5,17:15:00,19:40:00,17,Afternoon (12-17),1500+ km,1,1,1,1,0,0,0,314,2,0.1
@@ -593,7 +593,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 12404,Mathura Allahabad SF Express,SF,Superfast,Express & Superfast,NCR,MTJ,Mathura Jn,ALD,Allahabad Jn,507.0,520,58.5,20:20:00,05:00:00,20,Evening (18-21),300-700 km,1,1,1,1,1,0,0,73,6,1.18
 12408,Amritsar - NEW Jalpaiguri Karmabhoomi Exp,SF,Superfast,Express & Superfast,NR,ASR,Amritsar Jn,NJP,New Jalpaiguri,1834.0,1985,55.4,09:30:00,18:35:00,9,Morning (06-11),1500+ km,0,0,0,0,0,0,0,303,14,0.76
 12410,Gondwana Express,SF,Superfast,Express & Superfast,NR,NZM,Delhi H Nizamuddin,RIG,Raigarh,1626.0,1660,58.8,15:25:00,19:05:00,15,Afternoon (12-17),1500+ km,1,0,1,1,1,0,0,195,32,1.97
-12413,Pooja express,SF,Superfast,Express & Superfast,NR,AII,Ajmer Jn,JAT,Jammu Tawi,1017.0,1070,57.0,14:15:00,08:05:00,14,Afternoon (12-17),700-1500 km,1,1,1,1,1,0,0,153,21,2.06
+12413,Pooja Express,SF,Superfast,Express & Superfast,NR,AII,Ajmer Jn,JAT,Jammu Tawi,1017.0,1070,57.0,14:15:00,08:05:00,14,Afternoon (12-17),700-1500 km,1,1,1,1,1,0,0,153,21,2.06
 12414,Pooja Express,SF,Superfast,Express & Superfast,NR,JAT,Jammu Tawi,AII,Ajmer Jn,1017.0,1080,56.5,18:15:00,12:15:00,18,Evening (18-21),700-1500 km,1,1,1,1,1,0,0,153,21,2.06
 12419,Gomti Express,SF,Superfast,Express & Superfast,NR,LKO,Lucknow,NDLS,New Delhi,511.0,515,59.5,05:25:00,14:00:00,5,Night (00-05),300-700 km,1,1,1,0,0,1,0,74,13,2.54
 12420,Gomti Express,SF,Superfast,Express & Superfast,NR,NDLS,New Delhi,LKO,Lucknow,511.0,525,58.4,12:40:00,21:25:00,12,Afternoon (12-17),300-700 km,1,1,1,0,0,1,0,74,12,2.35
@@ -824,7 +824,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 12695,Chennai-Trivandrum SuperFast Express,SF,Superfast,Express & Superfast,SR,MAS,Chennai Central,TVC,Trivandrum Central,922.0,975,56.7,15:25:00,07:40:00,15,Afternoon (12-17),700-1500 km,1,0,1,1,1,0,1,166,21,2.28
 12696,Trivandrum-Chennai Superfast Express,SF,Superfast,Express & Superfast,SR,TVC,Trivandrum Central,MAS,Chennai Central,922.0,1000,55.3,17:10:00,09:50:00,17,Afternoon (12-17),700-1500 km,1,0,1,1,1,0,1,165,21,2.28
 12697,Chennai-Thiruvananthapuram Express,SF,Superfast,Express & Superfast,SR,MAS,Chennai Central,TVC,Trivandrum Central,909.0,920,59.3,15:15:00,06:35:00,15,Afternoon (12-17),700-1500 km,1,0,1,1,1,0,0,162,12,1.32
-12698,Thiruvananthapuram Central Chennai Central weekly express,SF,Superfast,Express & Superfast,SR,TVC,Trivandrum Central,MAS,Chennai Central,909.0,975,55.9,20:10:00,12:25:00,20,Evening (18-21),700-1500 km,1,0,1,1,1,0,0,161,11,1.21
+12698,Thiruvananthapuram Central Chennai Central Weekly Express,SF,Superfast,Express & Superfast,SR,TVC,Trivandrum Central,MAS,Chennai Central,909.0,975,55.9,20:10:00,12:25:00,20,Evening (18-21),700-1500 km,1,0,1,1,1,0,0,161,11,1.21
 12701,Hussain Sagar Express,SF,Superfast,Express & Superfast,SCR,CSTM,Mumbai Cst,HYB,Hyderabad Deccan,790.0,860,55.1,21:50:00,12:10:00,21,Evening (18-21),700-1500 km,1,1,1,1,1,0,0,138,16,2.03
 12702,Hussain Sagar Express,SF,Superfast,Express & Superfast,SCR,HYB,Hyderabad Deccan,CSTM,Mumbai Cst,790.0,860,55.1,14:45:00,05:05:00,14,Afternoon (12-17),700-1500 km,1,0,1,1,1,0,0,138,17,2.15
 12703,Howrah - Secunderabad Falaknuma SF Express,SF,Superfast,Express & Superfast,SCR,HWH,Howrah Jn,SC,Secunderabad Jn,1545.0,1570,59.0,07:25:00,09:35:00,7,Morning (06-11),1500+ km,1,1,1,1,1,0,0,245,24,1.55
@@ -1044,7 +1044,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 12976,Jaipur-Mysore SF Express,SF,Superfast,Express & Superfast,NWR,JP,Jaipur,MYS,Mysore Jn,2479.0,2680,55.5,19:40:00,16:20:00,19,Evening (18-21),1500+ km,1,1,1,1,1,0,0,290,40,1.61
 12977,Ernakulam - Ajmer Marusagar Exp,SF,Superfast,Express & Superfast,NWR,ERS,Ernakulam Jn,AII,Ajmer Jn,2859.0,2665,64.4,19:50:00,16:15:00,19,Evening (18-21),1500+ km,1,1,1,1,1,0,0,355,30,1.05
 12978,Ajmer - Ernakulam Marusagar Exp,SF,Superfast,Express & Superfast,NWR,AII,Ajmer Jn,ERS,Ernakulam Jn,2859.0,2680,64.0,07:40:00,04:20:00,7,Morning (06-11),1500+ km,1,1,1,1,1,0,0,355,30,1.05
-12979,Mumbai Bandra (T.) - Jaipur (Tri-weekly) SF Exp,SF,Superfast,Express & Superfast,WR,BDTS,Mumbai Bandra Terminus,JP,Jaipur,1148.0,1125,61.2,15:45:00,10:30:00,15,Afternoon (12-17),700-1500 km,1,1,1,1,1,0,0,160,17,1.48
+12979,Mumbai Bandra (T.) - Jaipur (Tri-Weekly) SF Exp,SF,Superfast,Express & Superfast,WR,BDTS,Mumbai Bandra Terminus,JP,Jaipur,1148.0,1125,61.2,15:45:00,10:30:00,15,Afternoon (12-17),700-1500 km,1,1,1,1,1,0,0,160,17,1.48
 12981,Chetak Express,SF,Superfast,Express & Superfast,NWR,DEE,Delhi Sarai Rohilla,UDZ,Udaipur City,673.0,730,55.3,19:40:00,07:50:00,19,Evening (18-21),300-700 km,1,0,1,1,1,0,0,88,17,2.53
 12982,Chetak Express,SF,Superfast,Express & Superfast,NWR,UDZ,Udaipur City,DEE,Delhi Sarai Rohilla,673.0,710,56.9,17:20:00,05:10:00,17,Afternoon (12-17),300-700 km,1,0,1,1,1,0,0,88,17,2.53
 12983,Ajmer-Chandigarh GaribRath Express,GR,Garib Rath,Premium / Fast-track,NWR,AII,Ajmer Jn,CDG,Chandigarh,740.0,765,58.0,17:55:00,06:40:00,17,Afternoon (12-17),700-1500 km,1,0,0,1,0,0,0,91,15,2.03
@@ -1525,7 +1525,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 15716,Garib Nawaz Express Slip,Exp,Express,Express & Superfast,NFR,AII,Ajmer Jn,KNE,Kishanganj,1816.0,2410,45.2,11:20:00,03:30:00,11,Morning (06-11),1500+ km,1,0,0,1,1,0,0,280,26,1.43
 15716-Slip,Garib Nawaz Express,Exp,Express,Express & Superfast,NFR,AII,Ajmer Jn,RDP,Radhikapur,1812.0,2410,45.1,11:20:00,03:30:00,11,Morning (06-11),1500+ km,1,0,0,1,1,0,0,283,26,1.43
 15717,Guwahati Mariani Intercity Express,Exp,Express,Express & Superfast,NFR,GHY,Guwahati,MXN,Mariani Jn,404.0,645,37.6,11:45:00,22:30:00,11,Morning (06-11),300-700 km,0,0,0,0,0,0,0,50,19,4.7
-15719,Katihar sguj InterCity Express,Exp,Express,Express & Superfast,NFR,KIR,Katihar Jn,SGUJ,Siliguri Jn,190.0,250,45.6,06:05:00,10:15:00,6,Morning (06-11),100-300 km,0,0,0,0,0,0,0,27,12,6.32
+15719,Katihar Sguj InterCity Express,Exp,Express,Express & Superfast,NFR,KIR,Katihar Jn,SGUJ,Siliguri Jn,190.0,250,45.6,06:05:00,10:15:00,6,Morning (06-11),100-300 km,0,0,0,0,0,0,0,27,12,6.32
 15720,Siliguri Katihar InterCity Express,Exp,Express,Express & Superfast,NFR,SGUJ,Siliguri Jn,KIR,Katihar Jn,190.0,290,39.3,17:00:00,21:50:00,17,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,27,12,6.32
 15721,Paharia Express,Exp,Express,Express & Superfast,NFR,DGHA,Digha Flag Station,NJP,New Jalpaiguri,752.0,975,46.3,16:30:00,08:45:00,16,Afternoon (12-17),700-1500 km,1,1,0,1,1,0,0,158,16,2.13
 15722,Paharia Express,Exp,Express,Express & Superfast,NFR,NJP,New Jalpaiguri,DGHA,Digha Flag Station,752.0,885,51.0,21:15:00,12:00:00,21,Evening (18-21),700-1500 km,1,1,0,1,1,0,0,158,16,2.13
@@ -1823,7 +1823,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 18004,Purulia Jhargram Express,Exp,Express,Express & Superfast,SER,PRR,Purulia Jn,JGM,Jhargram,187.0,190,59.1,14:45:00,17:55:00,14,Afternoon (12-17),100-300 km,1,0,0,0,0,1,0,27,10,5.35
 18007,Shalimar-Baripada Express,Exp,Express,Express & Superfast,SER,SHM,Kolkata Shalimar,BPO,Baripada,265.0,300,53.0,06:40:00,11:40:00,6,Morning (06-11),100-300 km,0,0,0,0,0,0,0,53,10,3.77
 18008,Baripada-Shalimar Express,Exp,Express,Express & Superfast,SER,BPO,Baripada,SHM,Kolkata Shalimar,265.0,310,51.3,12:50:00,18:00:00,12,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,53,10,3.77
-18048,Vasco-Da-Gama - Howrah Amaravati Exp,Exp,Express,Express & Superfast,SER,VSG,Vasco Da Gama,HWH,Howrah Jn,2147.0,2355,54.7,07:10:00,22:25:00,7,Morning (06-11),1500+ km,1,0,1,1,1,0,0,340,42,1.96
+18048,Vasco-DA-Gama - Howrah Amaravati Exp,Exp,Express,Express & Superfast,SER,VSG,Vasco Da Gama,HWH,Howrah Jn,2147.0,2355,54.7,07:10:00,22:25:00,7,Morning (06-11),1500+ km,1,0,1,1,1,0,0,340,42,1.96
 18102,Jammu-Rourkela Express,Exp,Express,Express & Superfast,SER,JAT,Jammu Tawi,ROU,Rourkela,2158.0,2855,45.4,14:30:00,14:05:00,14,Afternoon (12-17),1500+ km,1,0,1,1,1,0,0,263,77,3.57
 18105,Rourkela-Bhubaneswar InterCity,Exp,Express,Express & Superfast,SER,ROU,Rourkela,BBS,Bhubaneswar,419.0,450,55.9,05:30:00,13:00:00,5,Night (00-05),300-700 km,1,0,0,1,0,1,0,53,11,2.63
 18106,Bhubaneswar-Rourkela InterCity,Exp,Express,Express & Superfast,SER,BBS,Bhubaneswar,ROU,Rourkela,419.0,475,52.9,13:35:00,21:30:00,13,Afternoon (12-17),300-700 km,1,0,0,1,0,1,0,53,11,2.63
@@ -2078,7 +2078,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 22811,Bhubaneshwar-New Delhi Rajdhani Express,Raj,Rajdhani,Premium / Fast-track,ECoR,BBS,Bhubaneswar,NDLS,New Delhi,1724.0,1385,74.7,11:30:00,10:35:00,11,Morning (06-11),1500+ km,1,1,1,1,0,0,0,245,12,0.7
 22812,New Delhi-Bhubaneswar Rajdhani Express,Raj,Rajdhani,Premium / Fast-track,ECoR,NDLS,New Delhi,BBS,Bhubaneswar,1724.0,1360,76.1,17:20:00,16:00:00,17,Afternoon (12-17),1500+ km,1,1,1,1,0,0,0,245,12,0.7
 22835,Shalimar-Puri Express,SF,Superfast,Express & Superfast,SER,SHM,Kolkata Shalimar,PURI,Puri,500.0,535,56.1,21:00:00,05:55:00,21,Evening (18-21),300-700 km,1,0,1,1,1,0,0,100,11,2.2
-22836,Puri-Shalimar weekly superfast express,SF,Superfast,Express & Superfast,SER,PURI,Puri,SHM,Kolkata Shalimar,500.0,545,55.0,22:15:00,07:20:00,22,Late night (22-23),300-700 km,1,0,1,1,1,0,0,100,11,2.2
+22836,Puri-Shalimar Weekly Superfast Express,SF,Superfast,Express & Superfast,SER,PURI,Puri,SHM,Kolkata Shalimar,500.0,545,55.0,22:15:00,07:20:00,22,Late night (22-23),300-700 km,1,0,1,1,1,0,0,100,11,2.2
 22845,Pune - Hatia SF Exp,Exp,Express,Express & Superfast,SER,PUNE,Pune Jn,HTE,Hatia,1774.0,1825,58.3,10:45:00,17:10:00,10,Morning (06-11),1500+ km,1,0,1,1,1,0,0,234,18,1.01
 22846,Hatia - Pune SF Exp,SF,Superfast,Express & Superfast,SER,HTE,Hatia,PUNE,Pune Jn,1774.0,1845,57.7,20:00:00,02:45:00,20,Evening (18-21),1500+ km,1,0,1,1,1,0,0,234,18,1.01
 22855,Santragachi-Tirupati Superfast Express,SF,Superfast,Express & Superfast,SER,SRC,Santragachi Jn,TPTY,Tirupati Main,1597.0,1555,61.6,16:05:00,18:00:00,16,Afternoon (12-17),1500+ km,1,0,1,1,1,0,0,259,16,1.0
@@ -2100,7 +2100,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 22688,Chandigarh Chennai Express,SF,Superfast,Express & Superfast,SR,CDG,Chandigarh,MAS,Chennai Central,2509.0,2550,59.0,07:45:00,02:15:00,7,Morning (06-11),1500+ km,1,0,0,1,1,0,0,314,21,0.84
 22815,Bilaspur-Ernakulam Express,SF,Superfast,Express & Superfast,SECR,BSP,Bilaspur Jn,ERS,Ernakulam Jn,2155.0,2245,57.6,08:10:00,21:35:00,8,Morning (06-11),1500+ km,1,0,1,1,1,0,0,286,23,1.07
 22816,Ernakulam-Bilaspur Express,SF,Superfast,Express & Superfast,SECR,ERS,Ernakulam Jn,BSP,Bilaspur Jn,2156.0,2225,58.1,08:30:00,21:35:00,8,Morning (06-11),1500+ km,1,0,1,1,1,0,0,286,23,1.07
-22853,Kolkata Shalimar-Visakhapatnam Superfast express,SF,Superfast,Express & Superfast,SER,SHM,Kolkata Shalimar,VSKP,Vishakapatnam,880.0,845,62.5,18:15:00,08:20:00,18,Evening (18-21),700-1500 km,1,0,1,1,1,0,0,149,16,1.82
+22853,Kolkata Shalimar-Visakhapatnam Superfast Express,SF,Superfast,Express & Superfast,SER,SHM,Kolkata Shalimar,VSKP,Vishakapatnam,880.0,845,62.5,18:15:00,08:20:00,18,Evening (18-21),700-1500 km,1,0,1,1,1,0,0,149,16,1.82
 22854,Visakhapatnam-Shalimar Express,SF,Superfast,Express & Superfast,SER,VSKP,Vishakapatnam,SHM,Kolkata Shalimar,880.0,825,64.0,13:45:00,03:30:00,13,Afternoon (12-17),700-1500 km,1,0,1,1,1,0,0,149,16,1.82
 22861,Rajya Rani Express,SF,Superfast,Express & Superfast,SER,SHM,Kolkata Shalimar,BQA,Bankura,229.0,255,53.9,06:40:00,10:55:00,6,Morning (06-11),100-300 km,0,0,0,0,0,0,0,46,8,3.49
 22862,Rajya Rani Express,SF,Superfast,Express & Superfast,SER,BQA,Bankura,SHM,Kolkata Shalimar,229.0,255,53.9,13:45:00,18:00:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,46,8,3.49
@@ -2159,7 +2159,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 34166,Sealdah-Budge Budge Local,MEMU,MEMU/DEMU,Passenger & Suburban,ER,SDAH,Kolkata Sealdah,BGB,Budge Budge,25.0,53,28.3,11:32:00,12:25:00,11,Morning (06-11),<100 km,0,0,0,0,0,0,0,12,12,48.0
 34431,Sonarpur Sealdah Local,MEMU,MEMU/DEMU,Passenger & Suburban,ER,SPR,Sonarpur Junction,SDAH,Kolkata Sealdah,16.0,31,31.0,18:04:00,18:35:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,9,9,56.25
 34434,Sealdah-Sonarpur Local,MEMU,MEMU/DEMU,Passenger & Suburban,ER,SDAH,Kolkata Sealdah,SPR,Sonarpur Junction,16.0,27,35.6,17:15:00,17:42:00,17,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,9,9,56.25
-34502,Sealdah Canning ladies special EMU,Klkt,Kolkata suburban,Passenger & Suburban,ER,SDAH,Kolkata Sealdah,CG,Canning,45.0,70,38.6,18:30:00,19:40:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,18,18,40.0
+34502,Sealdah Canning Ladies Special EMU,Klkt,Kolkata suburban,Passenger & Suburban,ER,SDAH,Kolkata Sealdah,CG,Canning,45.0,70,38.6,18:30:00,19:40:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,18,18,40.0
 34554,Sealdah-Canning Local,MEMU,MEMU/DEMU,Passenger & Suburban,ER,SDAH,Kolkata Sealdah,CG,Canning,45.0,85,31.8,14:02:00,15:27:00,14,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,18,18,40.0
 34557,Canning Sealdah Local,MEMU,MEMU/DEMU,Passenger & Suburban,ER,CG,Canning,SDAH,Kolkata Sealdah,45.0,82,32.9,15:40:00,17:02:00,15,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,18,18,40.0
 34793,Namkhana Sealdah Local,MEMU,MEMU/DEMU,Passenger & Suburban,ER,NMKA,Namkhana,SDAH,Kolkata Sealdah,108.0,168,38.6,04:10:00,06:58:00,4,Night (00-05),100-300 km,0,0,0,0,0,0,0,33,26,24.07
@@ -2243,7 +2243,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 40517,Chennai Beach Chengulpet Emu(12 car),MEMU,MEMU/DEMU,Passenger & Suburban,SR,MSB,Chennai Beach,CGL,Chengalpattu,63.0,100,37.8,06:55:00,08:35:00,6,Morning (06-11),<100 km,0,0,0,0,0,0,0,29,28,44.44
 40519,Chennai Beach Chengulpet EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MSB,Chennai Beach,CGL,Chengalpattu,59.0,112,31.6,07:38:00,09:30:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,29,28,47.46
 40701,Chennai Beach Tirumalpur EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MSB,Chennai Beach,TMLP,Tirumalpur,112.0,180,37.3,07:05:00,10:05:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,38,36,32.14
-40705,Chennai Beach Tirumalpur local,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MSB,Chennai Beach,TMLP,Tirumalpur,108.0,165,39.3,10:45:00,13:30:00,10,Morning (06-11),100-300 km,0,0,0,0,0,0,0,38,37,34.26
+40705,Chennai Beach Tirumalpur Local,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MSB,Chennai Beach,TMLP,Tirumalpur,108.0,165,39.3,10:45:00,13:30:00,10,Morning (06-11),100-300 km,0,0,0,0,0,0,0,38,37,34.26
 40707,Chennai Beach Tirumalpur Fast EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MSB,Chennai Beach,TMLP,Tirumalpur,108.0,145,44.7,18:10:00,20:35:00,18,Evening (18-21),100-300 km,0,0,0,0,0,0,0,38,12,11.11
 40711,Chennai Beach Tirumalpur Semi Fast EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MSB,Chennai Beach,TMLP,Tirumalpur,108.0,160,40.5,20:20:00,23:00:00,20,Evening (18-21),100-300 km,0,0,0,0,0,0,0,38,20,18.52
 41001,Chennai Beach Velachery EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MSB,Chennai Beach,VLCY,Velachery,18.0,40,27.0,04:15:00,04:55:00,4,Night (00-05),<100 km,0,0,0,0,0,0,0,17,16,88.89
@@ -2323,7 +2323,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 42404,Spe-Mas Emu Local,MEMU,MEMU/DEMU,Passenger & Suburban,SR,SPE,Sullurupeta,MAS,Chennai Central,83.0,125,39.8,06:40:00,08:45:00,6,Morning (06-11),<100 km,0,0,0,0,0,0,1,22,21,25.3
 42406,Spe-Mas Emu Local,MEMU,MEMU/DEMU,Passenger & Suburban,SR,SPE,Sullurupeta,MAS,Chennai Central,83.0,130,38.3,09:45:00,11:55:00,9,Morning (06-11),<100 km,0,0,0,0,0,0,1,22,21,25.3
 42408,Sullurpetta Chennai Central EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,SPE,Sullurupeta,MAS,Chennai Central,83.0,120,41.5,11:10:00,13:10:00,11,Morning (06-11),<100 km,0,0,0,0,0,0,0,22,21,25.3
-52941,Gandhigram - Sbi-Btd Passenger,Pass,Passenger,Passenger & Suburban,WR,GG,Gandhigram,BTDF,Botad Jn,155.0,250,37.2,09:00:00,13:10:00,9,Morning (06-11),100-300 km,0,0,0,0,0,0,0,18,16,10.32
+52941,Gandhigram - SBI-BTD Passenger,Pass,Passenger,Passenger & Suburban,WR,GG,Gandhigram,BTDF,Botad Jn,155.0,250,37.2,09:00:00,13:10:00,9,Morning (06-11),100-300 km,0,0,0,0,0,0,0,18,16,10.32
 54308,Delhi Moradabad Passenger,Pass,Passenger,Passenger & Suburban,NR,DLI,Old Delhi,MB,Moradabad,175.0,345,30.4,01:45:00,07:30:00,1,Night (00-05),100-300 km,0,0,0,0,0,0,0,29,21,12.0
 41125,Chennai Beach Velachery EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MSB,Chennai Beach,VLCY,Velachery,18.0,40,27.0,20:20:00,21:00:00,20,Evening (18-21),<100 km,0,0,0,0,0,0,0,17,17,94.44
 41127,Chennai Beach Velachery EMU,Pass,Passenger,Passenger & Suburban,SR,MSB,Chennai Beach,VLCY,Velachery,18.0,40,27.0,20:45:00,21:25:00,20,Evening (18-21),<100 km,0,0,0,0,0,0,0,17,17,94.44
@@ -2338,13 +2338,13 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 42420,Sullurpeta Chennai EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,SPE,Sullurupeta,MAS,Chennai Central,83.0,125,39.8,20:20:00,22:25:00,20,Evening (18-21),<100 km,0,0,0,0,0,0,1,22,21,25.3
 42422,Spe-Mas Emu Local,MEMU,MEMU/DEMU,Passenger & Suburban,SR,SPE,Sullurupeta,MAS,Chennai Central,83.0,125,39.8,21:40:00,23:45:00,21,Evening (18-21),<100 km,0,0,0,0,0,0,1,22,21,25.3
 42452,Sullupetta Gummidipoondi EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,SPE,Sullurupeta,GPD,Gummidipundi,35.0,45,46.7,22:50:00,23:35:00,22,Late night (22-23),<100 km,0,0,0,0,0,0,1,6,5,14.29
-42802,Spe-Msb Emu local,MEMU,MEMU/DEMU,Passenger & Suburban,SR,SPE,Sullurupeta,MSB,Chennai Beach,83.0,140,35.6,07:25:00,09:45:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,1,23,22,26.51
+42802,Spe-Msb Emu Local,MEMU,MEMU/DEMU,Passenger & Suburban,SR,SPE,Sullurupeta,MSB,Chennai Beach,83.0,140,35.6,07:25:00,09:45:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,1,23,22,26.51
 43205,Chennai Central Tiruvallur EMU,MEMU,MEMU/DEMU,Passenger & Suburban,Unknown,MAS,Chennai Central,TRL,Tiruvallur,42.0,75,33.6,05:55:00,07:10:00,5,Night (00-05),<100 km,0,0,0,0,0,0,1,21,21,50.0
 43216,Tiruvallur Chennai Central Fast,MEMU,MEMU/DEMU,Passenger & Suburban,SR,TRL,Tiruvallur,MAS,Chennai Central,41.0,60,41.0,08:20:00,09:20:00,8,Morning (06-11),<100 km,0,0,0,0,0,0,0,21,6,14.63
 43222,Tiruvallur Chennai Central Fast,MEMU,MEMU/DEMU,Passenger & Suburban,Unknown,TRL,Tiruvallur,MAS,Chennai Central,41.0,50,49.2,09:25:00,10:15:00,9,Morning (06-11),<100 km,0,0,0,0,0,0,0,21,7,17.07
 43401,Chennai Central Arakkonam Fast,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MAS,Chennai Central,AJJ,Arakkonam,68.0,85,48.0,05:30:00,06:55:00,5,Night (00-05),<100 km,0,0,0,0,0,0,0,29,8,11.76
-43408,Arakkonam chennai Central Fast,MEMU,MEMU/DEMU,Passenger & Suburban,Unknown,AJJ,Arakkonam,MAS,Chennai Central,68.0,95,42.9,06:40:00,08:15:00,6,Morning (06-11),<100 km,0,0,0,0,0,0,0,29,14,20.59
-43501,Chennai tiruttani EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MAS,Chennai Central,TRT,Tiruttani,82.0,135,36.4,04:00:00,06:15:00,4,Night (00-05),<100 km,0,0,0,0,0,0,0,30,30,36.59
+43408,Arakkonam Chennai Central Fast,MEMU,MEMU/DEMU,Passenger & Suburban,Unknown,AJJ,Arakkonam,MAS,Chennai Central,68.0,95,42.9,06:40:00,08:15:00,6,Morning (06-11),<100 km,0,0,0,0,0,0,0,29,14,20.59
+43501,Chennai Tiruttani EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MAS,Chennai Central,TRT,Tiruttani,82.0,135,36.4,04:00:00,06:15:00,4,Night (00-05),<100 km,0,0,0,0,0,0,0,30,30,36.59
 43506,Tiruttani Chennai Central Local,Pass,Passenger,Passenger & Suburban,Unknown,TRT,Tiruttani,MAS,Chennai Central,83.0,145,34.3,09:40:00,12:05:00,9,Morning (06-11),<100 km,0,0,0,0,0,0,0,30,30,36.14
 43551,Arakkonam Tiruttani EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,AJJ,Arakkonam,TRT,Tiruttani,14.0,30,28.0,04:20:00,04:50:00,4,Night (00-05),<100 km,0,0,0,0,0,0,0,2,2,14.29
 43552,Tiruttani Arakkonam EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,TRT,Tiruttani,AJJ,Arakkonam,14.0,20,42.0,04:55:00,05:15:00,4,Night (00-05),<100 km,0,0,0,0,0,0,0,2,2,14.29
@@ -2352,7 +2352,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 43554,Tiruttani Arakkonam EMU,MEMU,MEMU/DEMU,Passenger & Suburban,Unknown,TRT,Tiruttani,AJJ,Arakkonam,14.0,20,42.0,21:00:00,21:20:00,21,Evening (18-21),<100 km,0,0,0,0,0,0,0,2,2,14.29
 43801,Chennai Beach Arakkonam EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MSB,Chennai Beach,AJJ,Arakkonam,70.0,120,35.0,01:20:00,03:20:00,1,Night (00-05),<100 km,0,0,0,0,0,0,0,30,30,42.86
 43803,Chennai Beach Arakkonam EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,MSB,Chennai Beach,AJJ,Arakkonam,69.0,120,34.5,04:30:00,06:30:00,4,Night (00-05),<100 km,0,0,0,0,0,0,0,30,30,43.48
-43806,Arakkonam chennai Beach Fast,MEMU,MEMU/DEMU,Passenger & Suburban,Unknown,AJJ,Arakkonam,MSB,Chennai Beach,69.0,90,46.0,07:50:00,09:20:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,29,10,14.49
+43806,Arakkonam Chennai Beach Fast,MEMU,MEMU/DEMU,Passenger & Suburban,Unknown,AJJ,Arakkonam,MSB,Chennai Beach,69.0,90,46.0,07:50:00,09:20:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,29,10,14.49
 43823,Chennai Beach Tiruttani Fast,MEMU,MEMU/DEMU,Passenger & Suburban,Unknown,MSB,Chennai Beach,TRT,Tiruttani,83.0,125,39.8,18:20:00,20:25:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,30,17,20.48
 43851,Ponneri Tiruvallur EMU,MEMU,MEMU/DEMU,Passenger & Suburban,Unknown,PON,Ponneri,TRL,Tiruvallur,71.0,115,37.0,15:40:00,17:35:00,15,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,33,31,43.66
 43892,Pattabiram East Avadi EMU,MEMU,MEMU/DEMU,Passenger & Suburban,SR,PRES,Pattabiram East,AVD,Avadi,10.0,20,30.0,23:35:00,23:55:00,23,Late night (22-23),<100 km,0,0,0,0,0,0,0,4,4,40.0
@@ -2557,7 +2557,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 51432,Londa-Miraj Passenger,Pass,Passenger,Passenger & Suburban,CR,LD,Londa Jn,MRJ,Miraj Jn,189.0,275,41.2,11:40:00,16:15:00,11,Morning (06-11),100-300 km,0,0,0,0,0,0,0,22,21,11.11
 54394,Gajraula Moradabad Passenger,Pass,Passenger,Passenger & Suburban,NR,GJL,Gajraula Jn,MB,Moradabad,54.0,145,22.3,13:00:00,15:25:00,13,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,10,8,14.81
 54397,Moradabad Sambahal Hatim Sarai Pass,Pass,Passenger,Passenger & Suburban,NR,SHTS,Sambhal Hatim Sarai,MB,Moradabad,45.0,165,16.4,15:15:00,18:00:00,15,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,8,8,17.78
-55302,Kgm-Mb Pass.,Pass,Passenger,Passenger & Suburban,NER,KGM,Kathgodam,MB,Moradabad,116.0,290,24.0,07:30:00,12:20:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,14,12,10.34
+55302,KGM-MB Pass.,Pass,Passenger,Passenger & Suburban,NER,KGM,Kathgodam,MB,Moradabad,116.0,290,24.0,07:30:00,12:20:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,14,12,10.34
 55304,Kathgodam - Moradabad Pass,Pass,Passenger,Passenger & Suburban,NER,KGM,Kathgodam,MB,Moradabad,131.0,380,20.7,16:15:00,22:35:00,16,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,18,12,9.16
 12368,Vikramshila Express,SF,Superfast,Express & Superfast,ER,ANVT,Anand Vihar Trm,BGP,Bhagalpur,1206.0,1305,55.4,14:40:00,12:25:00,14,Afternoon (12-17),700-1500 km,1,1,1,1,1,0,0,175,19,1.58
 51284,Amravati Bhusaval Passenger,Pass,Passenger,Passenger & Suburban,WCR,AMI,Amravati,BSL,Bhusaval Jn,225.0,360,37.5,13:00:00,19:00:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,25,21,9.33
@@ -2577,7 +2577,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 51450,Solapur Pune Passenger,Pass,Passenger,Passenger & Suburban,CR,SUR,Solapur Jn,PUNE,Pune Jn,264.0,435,36.4,23:00:00,06:15:00,23,Late night (22-23),100-300 km,0,0,0,0,1,0,0,33,30,11.36
 51455,Pune Solapur Passenger,Pass,Passenger,Passenger & Suburban,CR,PUNE,Pune Jn,SUR,Solapur Jn,264.0,510,31.1,22:50:00,07:20:00,22,Late night (22-23),100-300 km,0,0,0,0,1,0,0,33,30,11.36
 51456,Sholapur Pune Passenger,Pass,Passenger,Passenger & Suburban,CR,SUR,Solapur Jn,PUNE,Pune Jn,263.0,415,38.0,12:10:00,19:05:00,12,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,33,30,11.41
-51458,Dharwad hubli Passenger,Pass,Passenger,Passenger & Suburban,CR,DWR,Dharwar,UBL,Hubli Jn,21.0,45,28.0,21:00:00,21:45:00,21,Evening (18-21),<100 km,0,0,0,0,0,0,0,5,2,9.52
+51458,Dharwad Hubli Passenger,Pass,Passenger,Passenger & Suburban,CR,DWR,Dharwar,UBL,Hubli Jn,21.0,45,28.0,21:00:00,21:45:00,21,Evening (18-21),<100 km,0,0,0,0,0,0,0,5,2,9.52
 51461,Miraj Belgaum Passenger,Pass,Passenger,Passenger & Suburban,CR,MRJ,Miraj Jn,BGM,Belgaum,137.0,205,40.1,09:50:00,13:15:00,9,Morning (06-11),100-300 km,0,0,0,0,0,0,0,17,16,11.68
 51462,Belgaum Miraj Passenger,Pass,Passenger,Passenger & Suburban,CR,BGM,Belgaum,MRJ,Miraj Jn,137.0,175,47.0,06:00:00,08:55:00,6,Morning (06-11),100-300 km,0,0,0,0,0,0,0,17,16,11.68
 51463,Miraj Belgaum Passenger,Pass,Passenger,Passenger & Suburban,CR,MRJ,Miraj Jn,BGM,Belgaum,137.0,210,39.1,19:00:00,22:30:00,19,Evening (18-21),100-300 km,0,0,0,0,0,0,0,17,16,11.68
@@ -2655,7 +2655,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 51832,Agra Jhansi Passenger,Pass,Passenger,Passenger & Suburban,NCR,AGC,Agra Cantt,JHS,Jhansi Jn,216.0,305,42.5,06:20:00,11:25:00,6,Morning (06-11),100-300 km,0,0,0,0,0,0,0,24,24,11.11
 51861,Ait Konch Passenger,Pass,Passenger,Passenger & Suburban,NCR,AIT,Ait,KNH,Konch,13.0,35,22.3,05:40:00,06:15:00,5,Night (00-05),<100 km,0,0,0,0,0,0,0,2,2,15.38
 55306,Ramnagar - Moradabad Fast Passenger,Pass,Passenger,Passenger & Suburban,NER,RMR,Ramnagar,MB,Moradabad,77.0,145,31.9,07:00:00,09:25:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,14,13,16.88
-51823,Farukhabad Allahabad kanpur Passenger,Pass,Passenger,Passenger & Suburban,NCR,ALD,Allahabad Jn,FBD,Farrukhabad,334.0,600,33.4,07:00:00,17:00:00,7,Morning (06-11),300-700 km,0,0,0,0,0,0,0,55,46,13.77
+51823,Farukhabad Allahabad Kanpur Passenger,Pass,Passenger,Passenger & Suburban,NCR,ALD,Allahabad Jn,FBD,Farrukhabad,334.0,600,33.4,07:00:00,17:00:00,7,Morning (06-11),300-700 km,0,0,0,0,0,0,0,55,46,13.77
 51824,Farrukhabad Allahabad Passenger,Pass,Passenger,Passenger & Suburban,NCR,FBD,Farrukhabad,ALD,Allahabad Jn,334.0,605,33.1,10:00:00,20:05:00,10,Morning (06-11),300-700 km,0,0,0,0,0,0,0,55,44,13.17
 51825,Kanpur Farrukhabaad Passenger,Pass,Passenger,Passenger & Suburban,NCR,CNB,Kanpur Central,FBD,Farrukhabad,140.0,240,35.0,05:20:00,09:20:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,25,24,17.14
 51826,Farrukhabad Kanpur Passenger,Pass,Passenger,Passenger & Suburban,NCR,FBD,Farrukhabad,CNB,Kanpur Central,140.0,230,36.5,20:40:00,00:30:00,20,Evening (18-21),100-300 km,0,0,0,0,0,0,0,25,23,16.43
@@ -2848,7 +2848,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 52302,Katwa Balgona Local,Pass,Passenger,Passenger & Suburban,ER,KWF,Katwa,BGNA,Balgona,27.0,120,13.5,03:50:00,05:50:00,3,Night (00-05),<100 km,0,0,0,0,0,0,0,8,8,29.63
 52322,Saharsa-Forbesganj Passenger,Pass,Passenger,Passenger & Suburban,ECR,SHC,Saharsa Jn,FBG,Forbesganj,112.0,430,15.6,03:00:00,10:10:00,3,Night (00-05),100-300 km,0,0,0,0,0,0,0,11,10,8.93
 52323,Forbesganj-Saharsa Passenger,Pass,Passenger,Passenger & Suburban,ECR,FBG,Forbesganj,SHC,Saharsa Jn,112.0,420,16.0,10:15:00,17:15:00,10,Morning (06-11),100-300 km,0,0,0,0,0,0,0,11,10,8.93
-52324,Saharsa-forbesganj Passenger,Pass,Passenger,Passenger & Suburban,ECR,SHC,Saharsa Jn,FBG,Forbesganj,112.0,420,16.0,08:15:00,15:15:00,8,Morning (06-11),100-300 km,0,0,0,0,0,0,0,11,10,8.93
+52324,Saharsa-Forbesganj Passenger,Pass,Passenger,Passenger & Suburban,ECR,SHC,Saharsa Jn,FBG,Forbesganj,112.0,420,16.0,08:15:00,15:15:00,8,Morning (06-11),100-300 km,0,0,0,0,0,0,0,11,10,8.93
 52325,Forbesganj-Saharsa Passenger,Pass,Passenger,Passenger & Suburban,ECR,FBG,Forbesganj,SHC,Saharsa Jn,112.0,420,16.0,13:00:00,20:00:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,11,10,8.93
 52326,Saharsa-Forbesganj Passenger,Pass,Passenger,Passenger & Suburban,ECR,SHC,Saharsa Jn,FBG,Forbesganj,112.0,415,16.2,13:45:00,20:40:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,11,10,8.93
 52327,Forbesganj-Saharsa Passenger,Pass,Passenger,Passenger & Suburban,ECR,FBG,Forbesganj,SHC,Saharsa Jn,112.0,420,16.0,18:15:00,01:15:00,18,Evening (18-21),100-300 km,0,0,0,0,0,0,0,11,10,8.93
@@ -2955,7 +2955,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 52937,Fatehabad Chowk Ujjain Passenger,Pass,Passenger,Passenger & Suburban,WR,FTD,Fatehabad Chowk Junction,UJN,Ujjain Jn,23.0,40,34.5,11:55:00,12:35:00,11,Morning (06-11),<100 km,0,0,0,0,0,0,0,4,4,17.39
 52938,Botad Ahmedabad Passenger,Pass,Passenger,Passenger & Suburban,WR,BTD,Botad Jn,GG,Gandhigram,155.0,230,40.4,17:05:00,20:55:00,17,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,20,11,7.1
 52939,Gandhigram Botad Passenger,Pass,Passenger,Passenger & Suburban,WR,GG,Gandhigram,BTD,Botad Jn,155.0,235,39.6,07:15:00,11:10:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,20,11,7.1
-52942,Sbi-Btd - Gandhigram Passenger,Pass,Passenger,Passenger & Suburban,WR,BTDF,Botad Jn,GG,Gandhigram,155.0,210,44.3,07:15:00,10:45:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,12,10,6.45
+52942,SBI-BTD - Gandhigram Passenger,Pass,Passenger,Passenger & Suburban,WR,BTDF,Botad Jn,GG,Gandhigram,155.0,210,44.3,07:15:00,10:45:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,12,10,6.45
 52943,Ahmedabad Botad Passenger,Pass,Passenger,Passenger & Suburban,WR,GG,Gandhigram,BTD,Botad Jn,155.0,200,46.5,17:45:00,21:05:00,17,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,20,11,7.1
 52945,Ahmedabad Botad Passenger,Pass,Passenger,Passenger & Suburban,WR,GG,Gandhigram,BTD,Botad Jn,155.0,215,43.3,19:15:00,22:50:00,19,Evening (18-21),100-300 km,0,0,0,0,0,0,0,20,13,8.39
 52946,Dhasa Veraval Passenger,Pass,Passenger,Passenger & Suburban,WR,DAS,Dhasa Jn,VRL,Veraval,190.0,350,32.6,07:35:00,13:25:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,17,17,8.95
@@ -3123,7 +3123,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 53352,Chunar Chopan Passenger,Pass,Passenger,Passenger & Suburban,ECR,CAR,Chunar,CPU,Chopan,103.0,190,32.5,14:00:00,17:10:00,14,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,8,7,6.8
 53358,Dehari On Sone - Barkakana Passenger,Pass,Passenger,Passenger & Suburban,Unknown,DOS,Dehri On Sone,BRKA,Barkakana,319.0,495,38.7,15:40:00,23:55:00,15,Afternoon (12-17),300-700 km,0,0,0,0,0,0,0,44,43,13.48
 53359,Gomoh Barka Kana Passenger,Pass,Passenger,Passenger & Suburban,ECR,GMO,Gomoh Jn,BRKA,Barkakana,100.0,200,30.0,18:00:00,21:20:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,16,14,14.0
-53360,Barkakana-NSBC Gomoh Passenger,Pass,Passenger,Passenger & Suburban,ECR,BRKA,Barkakana,GMO,Gomoh Jn,100.0,200,30.0,03:30:00,06:50:00,3,Night (00-05),<100 km,0,0,0,0,0,0,0,16,14,14.0
+53360,Barkakana-Nsbc Gomoh Passenger,Pass,Passenger,Passenger & Suburban,ECR,BRKA,Barkakana,GMO,Gomoh Jn,100.0,200,30.0,03:30:00,06:50:00,3,Night (00-05),<100 km,0,0,0,0,0,0,0,16,14,14.0
 53361,Barka Kana Varanasi Passenger,Pass,Passenger,Passenger & Suburban,ECR,BRKA,Barkakana,BSB,Varanasi Jn,456.0,742,36.9,05:43:00,18:05:00,5,Night (00-05),300-700 km,0,0,0,0,0,0,0,60,55,12.06
 53362,Varanasi-Barkakana Passenger,Pass,Passenger,Passenger & Suburban,ECR,BSB,Varanasi Jn,BRKA,Barkakana,456.0,780,35.1,07:00:00,20:00:00,7,Morning (06-11),300-700 km,0,0,0,0,0,0,0,60,49,10.75
 53364,Dehri On Sone Gaya Passenger,Pass,Passenger,Passenger & Suburban,ECR,DOS,Dehri On Sone,GAYA,Gaya Jn,85.0,130,39.2,13:20:00,15:30:00,13,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,13,12,14.12
@@ -3136,7 +3136,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 53418,Malda Town Barddhaman Passenger,Pass,Passenger,Passenger & Suburban,ER,MLDT,Malda Town,BWN,Barddhaman Jn,233.0,400,34.9,15:00:00,21:40:00,15,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,39,39,16.74
 53551,Jasidih-Dumka Passenger,Pass,Passenger,Passenger & Suburban,ER,JSME,Jasidih Jn,DUMK,Dumka,72.0,105,41.1,07:25:00,09:10:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,9,9,12.5
 53553,Jasidih-Dumka Passenger,Pass,Passenger,Passenger & Suburban,ER,JSME,Jasidih Jn,DUMK,Dumka,72.0,105,41.1,13:00:00,14:45:00,13,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,9,9,12.5
-53567,asansol jhajha mEMU,Pass,Passenger,Passenger & Suburban,ER,ASN,Asansol Jn,JAJ,Jhajha,155.0,200,46.5,09:35:00,12:55:00,9,Morning (06-11),100-300 km,0,0,0,0,0,0,0,20,20,12.9
+53567,Asansol Jhajha mEMU,Pass,Passenger,Passenger & Suburban,ER,ASN,Asansol Jn,JAJ,Jhajha,155.0,200,46.5,09:35:00,12:55:00,9,Morning (06-11),100-300 km,0,0,0,0,0,0,0,20,20,12.9
 11055,Mumbai LTT - Gorakhpur Exp,Exp,Express,Express & Superfast,CR,LTT,Lokmanya Tilak Term,GKP,Gorakhpur Jn,1733.0,2000,52.0,10:55:00,20:15:00,10,Morning (06-11),1500+ km,1,0,1,1,1,0,0,236,23,1.33
 11107,Gwalior-Varanasi Bundelkhand Express,Exp,Express,Express & Superfast,NCR,GWL,Gwalior Jn,BSB,Varanasi Jn,624.0,850,44.0,20:40:00,10:50:00,20,Evening (18-21),300-700 km,1,1,1,1,1,0,0,67,30,4.81
 15270,Ahmedabad - Muzaffarpur Jan Sadharan Exp,Exp,Express,Express & Superfast,NER,ADI,Ahmedabad Jn,MFP,Muzaffarpur Jn,1752.0,2145,49.0,16:15:00,04:00:00,16,Afternoon (12-17),1500+ km,0,0,0,0,0,0,0,285,25,1.43
@@ -3360,7 +3360,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 54342,Dehradun Saharanpur Passenger,Pass,Passenger,Passenger & Suburban,NR,DDN,Dehradun,SRE,Saharanpur,132.0,295,26.8,08:15:00,13:10:00,8,Morning (06-11),100-300 km,0,0,0,0,0,0,0,21,18,13.64
 54354,Bareilly - Aligarh Passenger,Pass,Passenger,Passenger & Suburban,NR,BE,Bareilly,ALJN,Aligarh Jn,160.0,350,27.4,09:00:00,14:50:00,9,Morning (06-11),100-300 km,0,0,0,0,0,0,0,27,27,16.88
 54355,Roza Bareilly Passenger,Pass,Passenger,Passenger & Suburban,NR,ROZA,Roza Jn,BE,Bareilly,78.0,150,31.2,06:10:00,08:40:00,6,Morning (06-11),<100 km,0,0,0,0,0,0,0,13,11,14.1
-54356,Bareilley Roza junction passenger,Pass,Passenger,Passenger & Suburban,NR,BE,Bareilly,ROZA,Roza Jn,78.0,135,34.7,17:55:00,20:10:00,17,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,13,11,14.1
+54356,Bareilley Roza Junction Passenger,Pass,Passenger,Passenger & Suburban,NR,BE,Bareilly,ROZA,Roza Jn,78.0,135,34.7,17:55:00,20:10:00,17,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,13,11,14.1
 54371,Prayag Faizabad Passenger,Pass,Passenger,Passenger & Suburban,NR,PRG,Prayag,FD,Faizabad Jn,151.0,330,27.5,05:35:00,11:05:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,21,20,13.25
 54372,Faizabad Prayag Passenger,Pass,Passenger,Passenger & Suburban,NR,FD,Faizabad Jn,PRG,Prayag,151.0,375,24.2,13:20:00,19:35:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,21,20,13.25
 54374,Faizabad Prayag Passenger,Pass,Passenger,Passenger & Suburban,NR,FD,Faizabad Jn,PRG,Prayag,151.0,335,27.0,17:45:00,23:20:00,17,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,21,20,13.25
@@ -3476,7 +3476,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 54635,Hisar Ludhiana Passenger,Pass,Passenger,Passenger & Suburban,NR,HSR,Hisar,LDH,Ludhiana Jn,210.0,360,35.0,16:00:00,22:00:00,16,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,29,27,12.86
 54646,Ludhiana Firozpur Passenger,Pass,Passenger,Passenger & Suburban,NR,FZR,Firozpur Cant,LDH,Ludhiana Jn,124.0,210,35.4,05:15:00,08:45:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,19,19,15.32
 54702,Bikaner Abohar Passenger,Pass,Passenger,Passenger & Suburban,NWR,LGH,Lalgarh Jn,ABS,Abohar,394.0,560,42.2,09:05:00,18:25:00,9,Morning (06-11),300-700 km,0,0,0,0,1,0,0,38,35,8.88
-54703,Abohar Jodhpur passenger,Pass,Passenger,Passenger & Suburban,NWR,ABS,Abohar,JU,Jodhpur Jn,675.0,1080,37.5,19:00:00,13:00:00,19,Evening (18-21),300-700 km,0,0,0,0,1,0,0,66,57,8.44
+54703,Abohar Jodhpur Passenger,Pass,Passenger,Passenger & Suburban,NWR,ABS,Abohar,JU,Jodhpur Jn,675.0,1080,37.5,19:00:00,13:00:00,19,Evening (18-21),300-700 km,0,0,0,0,1,0,0,66,57,8.44
 54751,Rewari Shri Ganganagar,Pass,Passenger,Passenger & Suburban,NWR,RE,Rewari,SGNR,Shri Ganganagar,427.0,670,38.2,13:40:00,00:50:00,13,Afternoon (12-17),300-700 km,0,0,0,0,0,0,0,45,23,5.39
 54752,Shri Ganganagar Rewari,Pass,Passenger,Passenger & Suburban,NWR,SGNR,Shri Ganganagar,RE,Rewari,427.0,660,38.8,01:30:00,12:30:00,1,Night (00-05),300-700 km,0,0,0,0,0,0,0,45,31,7.26
 54753,Bhatinda Shri Ganganagar Passenger,Pass,Passenger,Passenger & Suburban,NWR,BTI,Bhatinda Jn,SGNR,Shri Ganganagar,127.0,195,39.1,10:40:00,13:55:00,10,Morning (06-11),100-300 km,0,0,0,0,0,0,0,18,18,14.17
@@ -3529,8 +3529,8 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 54820,Jodhpur - Jaisalmer Passenger,Pass,Passenger,Passenger & Suburban,NWR,JU,Jodhpur Jn,JSM,Jaisalmer,300.0,420,42.9,08:30:00,15:30:00,8,Morning (06-11),100-300 km,0,0,0,0,0,0,0,23,21,7.0
 54821,Jodhpur Bhildi Passenger,Pass,Passenger,Passenger & Suburban,NWR,JU,Jodhpur Jn,BLDI,Bhildi,304.0,475,38.4,06:35:00,14:30:00,6,Morning (06-11),300-700 km,0,0,0,0,0,0,0,33,32,10.53
 54822,Bhildi Jodhpur Passenger,Pass,Passenger,Passenger & Suburban,NWR,BLDI,Bhildi,JU,Jodhpur Jn,304.0,425,42.9,16:00:00,23:05:00,16,Afternoon (12-17),300-700 km,0,0,0,0,0,0,0,35,35,11.51
-54823,Jodhpur Hissar passenger,Pass,Passenger,Passenger & Suburban,NWR,JU,Jodhpur Jn,HSR,Hisar,470.0,615,45.9,11:10:00,21:25:00,11,Morning (06-11),300-700 km,0,0,0,0,0,0,0,38,31,6.6
-54824,Hissar Jodhpur passenger,Pass,Passenger,Passenger & Suburban,NWR,HSR,Hisar,JU,Jodhpur Jn,470.0,680,41.5,05:15:00,16:35:00,5,Night (00-05),300-700 km,0,0,0,0,0,0,0,43,42,8.94
+54823,Jodhpur Hissar Passenger,Pass,Passenger,Passenger & Suburban,NWR,JU,Jodhpur Jn,HSR,Hisar,470.0,615,45.9,11:10:00,21:25:00,11,Morning (06-11),300-700 km,0,0,0,0,0,0,0,38,31,6.6
+54824,Hissar Jodhpur Passenger,Pass,Passenger,Passenger & Suburban,NWR,HSR,Hisar,JU,Jodhpur Jn,470.0,680,41.5,05:15:00,16:35:00,5,Night (00-05),300-700 km,0,0,0,0,0,0,0,43,42,8.94
 54881,Barmer Munabao Passenger,Pass,Passenger,Passenger & Suburban,NWR,BME,Barmer,MBF,Munabao,119.0,130,54.9,07:30:00,09:40:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,8,8,6.72
 54882,Munabao Barmer Passenger,Pass,Passenger,Passenger & Suburban,NWR,MBF,Munabao,BME,Barmer,119.0,140,51.0,10:40:00,13:00:00,10,Morning (06-11),100-300 km,0,0,0,0,0,0,0,8,8,6.72
 55005,Raxaul Sugauli Passenger,Pass,Passenger,Passenger & Suburban,NER,RXL,Raxaul Jn,SGL,Sagauli Jn,29.0,45,38.7,23:10:00,23:55:00,23,Late night (22-23),<100 km,0,0,0,0,0,0,0,4,4,13.79
@@ -3813,13 +3813,13 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 56150,CoimbatoreMettupalayam Passenger,Pass,Passenger,Passenger & Suburban,SR,CBE,Coimbatore Jn,MTP,Mettupalayam,35.0,50,42.0,15:00:00,15:50:00,15,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,5,5,14.29
 56151,MettupalayamCoimbatore Passenger,Pass,Passenger,Passenger & Suburban,SR,MTP,Mettupalayam,CBE,Coimbatore Jn,35.0,50,42.0,16:20:00,17:10:00,16,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,5,5,14.29
 56201,Chamrajnagar Mysore Passenger,Pass,Passenger,Passenger & Suburban,SWR,CMNR,Chamarajanagar,MYS,Mysore Jn,61.0,110,33.3,07:10:00,09:00:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,14,13,21.31
-56202,Mysore Chamrajnagar passenger,Pass,Passenger,Passenger & Suburban,SWR,MYS,Mysore Jn,CMNR,Chamarajanagar,61.0,105,34.9,05:00:00,06:45:00,5,Night (00-05),<100 km,0,0,0,0,0,0,0,14,13,21.31
-56203,Chamarajnagar Mysore passenger,Pass,Passenger,Passenger & Suburban,SWR,CMNR,Chamarajanagar,MYS,Mysore Jn,61.0,110,33.3,11:10:00,13:00:00,11,Morning (06-11),<100 km,0,0,0,0,0,0,0,14,13,21.31
+56202,Mysore Chamrajnagar Passenger,Pass,Passenger,Passenger & Suburban,SWR,MYS,Mysore Jn,CMNR,Chamarajanagar,61.0,105,34.9,05:00:00,06:45:00,5,Night (00-05),<100 km,0,0,0,0,0,0,0,14,13,21.31
+56203,Chamarajnagar Mysore Passenger,Pass,Passenger,Passenger & Suburban,SWR,CMNR,Chamarajanagar,MYS,Mysore Jn,61.0,110,33.3,11:10:00,13:00:00,11,Morning (06-11),<100 km,0,0,0,0,0,0,0,14,13,21.31
 56204,Mysore Chamrajnagar Passenger,Pass,Passenger,Passenger & Suburban,SWR,MYS,Mysore Jn,CMNR,Chamarajanagar,61.0,110,33.3,07:20:00,09:10:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,14,13,21.31
 56205,Nanjangud Mysore Passenger,Pass,Passenger,Passenger & Suburban,SWR,NTW,Nanjangud Town,MYS,Mysore Jn,25.0,55,27.3,10:45:00,11:40:00,10,Morning (06-11),<100 km,0,0,0,0,0,0,0,7,7,28.0
 56206,Nanjangud Mysore Passenger,Pass,Passenger,Passenger & Suburban,SWR,MYS,Mysore Jn,NTW,Nanjangud Town,25.0,45,33.3,09:15:00,10:00:00,9,Morning (06-11),<100 km,0,0,0,0,0,0,0,7,7,28.0
 56209,Chamrajnagar Mysore Passenger,Pass,Passenger,Passenger & Suburban,SWR,CMNR,Chamarajanagar,MYS,Mysore Jn,61.0,110,33.3,18:00:00,19:50:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,14,13,21.31
-56210,Mysore Chamrajnagar passenger,Pass,Passenger,Passenger & Suburban,SWR,MYS,Mysore Jn,CMNR,Chamarajanagar,61.0,110,33.3,12:30:00,14:20:00,12,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,14,13,21.31
+56210,Mysore Chamrajnagar Passenger,Pass,Passenger,Passenger & Suburban,SWR,MYS,Mysore Jn,CMNR,Chamarajanagar,61.0,110,33.3,12:30:00,14:20:00,12,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,14,13,21.31
 56211,Chamrajnagar Mysore Passenger,Pass,Passenger,Passenger & Suburban,SWR,CMNR,Chamarajanagar,MYS,Mysore Jn,61.0,110,33.3,20:50:00,22:40:00,20,Evening (18-21),<100 km,0,0,0,0,0,0,0,14,13,21.31
 56212,Chamrajnagar Passenger,Pass,Passenger,Passenger & Suburban,SWR,MYS,Mysore Jn,CMNR,Chamarajanagar,61.0,110,33.3,18:45:00,20:35:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,14,13,21.31
 56221,Bangalore Tumkur Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,TK,Tumkur,70.0,105,40.0,09:20:00,11:05:00,9,Morning (06-11),<100 km,0,0,0,0,0,0,0,14,14,20.0
@@ -3827,7 +3827,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 56223,Bangalore Arisikere Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,ASK,Arsikere Jn,167.0,265,37.8,18:20:00,22:45:00,18,Evening (18-21),100-300 km,0,0,0,0,0,0,0,29,29,17.37
 56224,Arisikere Bangalore Passenger,Pass,Passenger,Passenger & Suburban,SWR,ASK,Arsikere Jn,SBC,Bangalore City Jn,167.0,250,40.1,05:00:00,09:10:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,29,29,17.37
 56225,Bangalore Tumkur Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,TK,Tumkur,70.0,105,40.0,13:40:00,15:25:00,13,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,14,14,20.0
-56226,Tumkur Bangalore passenger,Pass,Passenger,Passenger & Suburban,SWR,TK,Tumkur,SBC,Bangalore City Jn,70.0,110,38.2,15:50:00,17:40:00,15,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,14,14,20.0
+56226,Tumkur Bangalore Passenger,Pass,Passenger,Passenger & Suburban,SWR,TK,Tumkur,SBC,Bangalore City Jn,70.0,110,38.2,15:50:00,17:40:00,15,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,14,14,20.0
 56227,Bangalore Shimoga Town Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,SMET,Shimoga Town,276.0,430,38.5,16:45:00,23:55:00,16,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,41,40,14.49
 56228,Shimoga Bangalore Passenger,Pass,Passenger,Passenger & Suburban,SWR,SMET,Shimoga Town,SBC,Bangalore City Jn,276.0,440,37.6,04:00:00,11:20:00,4,Night (00-05),100-300 km,0,0,0,0,0,0,0,41,40,14.49
 56229,Mysore Bangalore Passenger,Pass,Passenger,Passenger & Suburban,SWR,MYS,Mysore Jn,SBC,Bangalore City Jn,137.0,230,35.7,08:20:00,12:10:00,8,Morning (06-11),100-300 km,0,0,0,0,0,0,0,23,20,14.6
@@ -3841,8 +3841,8 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 56238,Bangalore Mysore (Push-Pull) Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,MYS,Mysore Jn,137.0,220,37.4,19:00:00,22:40:00,19,Evening (18-21),100-300 km,0,0,0,0,0,0,0,23,20,14.6
 56239,Shimoga Birur Passenger,Pass,Passenger,Passenger & Suburban,SWR,SMET,Shimoga Town,RRB,Birur Jn,63.0,105,36.0,08:10:00,09:55:00,8,Morning (06-11),<100 km,0,0,0,0,0,0,0,8,8,12.7
 56240,Birur Shimoga Passenger,Pass,Passenger,Passenger & Suburban,SWR,RRB,Birur Jn,SMET,Shimoga Town,63.0,110,34.4,17:45:00,19:35:00,17,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,8,8,12.7
-56241,Salem Yesvantpur passenger,Pass,Passenger,Passenger & Suburban,SWR,SA,Salem Jn,YPR,Yesvantpur Jn,225.0,325,41.5,05:20:00,10:45:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,23,21,9.33
-56242,Yesvantpur Salem passenger,Pass,Passenger,Passenger & Suburban,SWR,YPR,Yesvantpur Jn,SA,Salem Jn,225.0,320,42.2,16:05:00,21:25:00,16,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,23,21,9.33
+56241,Salem Yesvantpur Passenger,Pass,Passenger,Passenger & Suburban,SWR,SA,Salem Jn,YPR,Yesvantpur Jn,225.0,325,41.5,05:20:00,10:45:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,23,21,9.33
+56242,Yesvantpur Salem Passenger,Pass,Passenger,Passenger & Suburban,SWR,YPR,Yesvantpur Jn,SA,Salem Jn,225.0,320,42.2,16:05:00,21:25:00,16,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,23,21,9.33
 56262,Bangalore - Arakkonam Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,AJJ,Arakkonam,290.0,690,25.2,09:20:00,20:50:00,9,Morning (06-11),100-300 km,0,0,0,0,0,0,0,39,38,13.1
 56263,Night Queen Passenger,Pass,Passenger,Passenger & Suburban,SWR,MYS,Mysore Jn,SBC,Bangalore City Jn,139.0,245,34.0,23:55:00,04:00:00,23,Late night (22-23),100-300 km,0,0,0,0,1,0,0,23,17,12.23
 56264,Night Queen Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,MYS,Mysore Jn,139.0,245,34.0,23:55:00,04:00:00,23,Late night (22-23),100-300 km,0,0,0,0,1,0,0,23,17,12.23
@@ -3907,18 +3907,18 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 56392,Kollam Ernakulam Passenger,Pass,Passenger,Passenger & Suburban,SR,QLN,Kollam Jn,ERS,Ernakulam Jn,156.0,260,36.0,04:20:00,08:40:00,4,Night (00-05),100-300 km,0,0,0,0,0,0,0,25,25,16.03
 56501,Vijayawada Hubli Passenger,Pass,Passenger,Passenger & Suburban,SWR,BZA,Vijayawada Jn,UBL,Hubli Jn,693.0,1280,32.5,07:10:00,04:30:00,7,Morning (06-11),300-700 km,0,0,0,0,1,0,0,81,65,9.38
 56502,Hubli Vijayawada Passenger,Pass,Passenger,Passenger & Suburban,SWR,UBL,Hubli Jn,BZA,Vijayawada Jn,693.0,1140,36.5,23:30:00,18:30:00,23,Late night (22-23),300-700 km,0,0,0,0,1,0,0,81,63,9.09
-56507,Swarna passenger Marikuppam Bangalore,Pass,Passenger,Passenger & Suburban,SWR,MKM,Marikuppam,SBC,Bangalore City Jn,86.0,175,29.5,06:20:00,09:15:00,6,Morning (06-11),<100 km,0,0,0,0,0,0,0,16,16,18.6
+56507,Swarna Passenger Marikuppam Bangalore,Pass,Passenger,Passenger & Suburban,SWR,MKM,Marikuppam,SBC,Bangalore City Jn,86.0,175,29.5,06:20:00,09:15:00,6,Morning (06-11),<100 km,0,0,0,0,0,0,0,16,16,18.6
 56508,Bangalore-Marikuppam Swarna Pass.,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,MKM,Marikuppam,86.0,150,34.4,18:05:00,20:35:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,16,16,18.6
 56509,Marikuppam Bangalore Passenger,Pass,Passenger,Passenger & Suburban,SWR,MKM,Marikuppam,SBC,Bangalore City Jn,86.0,180,28.7,14:00:00,17:00:00,14,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,16,16,18.6
-56510,Bangalore Marikuppam passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,MKM,Marikuppam,86.0,155,33.3,07:00:00,09:35:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,16,16,18.6
-56512,Marikuppam Bangarpet passenger,Pass,Passenger,Passenger & Suburban,SWR,MKM,Marikuppam,BWT,Bangarapet,16.0,35,27.4,20:50:00,21:25:00,20,Evening (18-21),<100 km,0,0,0,0,0,0,0,6,6,37.5
-56513,Salem Bangalore passenger,Pass,Passenger,Passenger & Suburban,SWR,SA,Salem Jn,SBC,Bangalore City Jn,218.0,330,39.6,13:30:00,19:00:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,22,21,9.63
+56510,Bangalore Marikuppam Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,MKM,Marikuppam,86.0,155,33.3,07:00:00,09:35:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,16,16,18.6
+56512,Marikuppam Bangarpet Passenger,Pass,Passenger,Passenger & Suburban,SWR,MKM,Marikuppam,BWT,Bangarapet,16.0,35,27.4,20:50:00,21:25:00,20,Evening (18-21),<100 km,0,0,0,0,0,0,0,6,6,37.5
+56513,Salem Bangalore Passenger,Pass,Passenger,Passenger & Suburban,SWR,SA,Salem Jn,SBC,Bangalore City Jn,218.0,330,39.6,13:30:00,19:00:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,22,21,9.63
 56514,Bangalore Salem Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,SA,Salem Jn,218.0,335,39.0,07:15:00,12:50:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,22,21,9.63
 56517,Chitradurga Harihar Passenger,Pass,Passenger,Passenger & Suburban,SWR,CTA,Chitradurg,HRR,Harihar,91.0,150,36.4,17:45:00,20:15:00,17,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,13,13,14.29
 56518,Harihar Chitradurga Passenger,Pass,Passenger,Passenger & Suburban,SWR,HRR,Harihar,CTA,Chitradurg,91.0,150,36.4,07:10:00,09:40:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,13,13,14.29
 56519,Bangalore Chitradurga Passenger,Pass,Passenger,Passenger & Suburban,SWR,JRU,Chikjajur Jn,CTA,Chitradurg,33.0,65,30.5,15:25:00,16:30:00,15,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,6,6,18.18
 56520,Chitradura Bangalore Passenger,Pass,Passenger,Passenger & Suburban,SWR,CTA,Chitradurg,JRU,Chikjajur Jn,33.0,55,36.0,10:40:00,11:35:00,10,Morning (06-11),<100 km,0,0,0,0,0,0,0,6,6,18.18
-56525,Bangalore Chik ballapur Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,CBP,Chik Ballapur,64.0,110,34.9,18:00:00,19:50:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,13,12,18.75
+56525,Bangalore Chik Ballapur Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,CBP,Chik Ballapur,64.0,110,34.9,18:00:00,19:50:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,13,12,18.75
 56526,Chik Ballapur Bangalore Passenger,Pass,Passenger,Passenger & Suburban,SWR,CBP,Chik Ballapur,SBC,Bangalore City Jn,64.0,110,34.9,07:55:00,09:45:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,13,12,18.75
 56527,Kanyakumari Nagercoil Passenger,Pass,Passenger,Passenger & Suburban,SWR,CAPE,Kanyakumari,NCJ,Nagercoil Jn,15.0,20,45.0,20:40:00,21:00:00,20,Evening (18-21),<100 km,0,0,0,0,0,0,0,3,2,13.33
 56528,Nagercoil Kanyakumari Passenger,Pass,Passenger,Passenger & Suburban,SWR,NCJ,Nagercoil Jn,CAPE,Kanyakumari,15.0,25,36.0,09:10:00,09:35:00,9,Morning (06-11),<100 km,0,0,0,0,0,0,0,3,3,20.0
@@ -4048,10 +4048,10 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 56909,Bangalore Hospet Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,UBL,Hubli Jn,469.0,750,37.5,22:15:00,10:45:00,22,Late night (22-23),300-700 km,0,0,0,0,1,0,0,63,36,7.68
 56909-Slip,Bangalore Hospet Passenger Slip,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,HPT,Hospet Jn,529.0,865,36.7,22:15:00,12:40:00,22,Late night (22-23),300-700 km,0,0,0,0,1,0,0,64,36,6.81
 56910,Bangalore Passenger,Pass,Passenger,Passenger & Suburban,SWR,HPT,Hospet Jn,SBC,Bangalore City Jn,529.0,945,33.6,13:30:00,05:15:00,13,Afternoon (12-17),300-700 km,0,0,0,0,1,0,0,64,35,6.62
-56911,Bangalore Hubli passenger,Pass,Passenger,Passenger & Suburban,SWR,JRU,Chikjajur Jn,UBL,Hubli Jn,189.0,315,36.0,05:30:00,10:45:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,22,19,10.05
+56911,Bangalore Hubli Passenger,Pass,Passenger,Passenger & Suburban,SWR,JRU,Chikjajur Jn,UBL,Hubli Jn,189.0,315,36.0,05:30:00,10:45:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,22,19,10.05
 56912,Hubli Bangalore Passenger,Pass,Passenger,Passenger & Suburban,SWR,UBL,Hubli Jn,SBC,Bangalore City Jn,469.0,715,39.4,17:20:00,05:15:00,17,Afternoon (12-17),300-700 km,0,0,0,0,1,0,0,63,35,7.46
 56913,Bangalore Hubli Fast Passenger,Pass,Passenger,Passenger & Suburban,SWR,SBC,Bangalore City Jn,UBL,Hubli Jn,471.0,675,41.9,06:30:00,17:45:00,6,Morning (06-11),300-700 km,0,0,0,0,0,0,0,63,43,9.13
-56914,Hubli Bangalore passenger,Pass,Passenger,Passenger & Suburban,SWR,UBL,Hubli Jn,SBC,Bangalore City Jn,471.0,685,41.3,09:45:00,21:10:00,9,Morning (06-11),300-700 km,0,0,0,0,0,0,0,63,42,8.92
+56914,Hubli Bangalore Passenger,Pass,Passenger,Passenger & Suburban,SWR,UBL,Hubli Jn,SBC,Bangalore City Jn,471.0,685,41.3,09:45:00,21:10:00,9,Morning (06-11),300-700 km,0,0,0,0,0,0,0,63,42,8.92
 56915,Hubli Passenger Slip,Pass,Passenger,Passenger & Suburban,SWR,JRU,Chikjajur Jn,UBL,Hubli Jn,189.0,320,35.4,03:30:00,08:50:00,3,Night (00-05),100-300 km,0,0,0,0,1,0,0,22,22,11.64
 56916,Hubli Chikjajur Passenger,Pass,Passenger,Passenger & Suburban,SWR,UBL,Hubli Jn,JRU,Chikjajur Jn,189.0,275,41.2,18:50:00,23:25:00,18,Evening (18-21),100-300 km,0,0,0,0,0,0,0,22,22,11.64
 56917,Bangalore Shimoga Slip,Pass,Passenger,Passenger & Suburban,SWR,RRB,Birur Jn,SMET,Shimoga Town,63.0,105,36.0,11:30:00,13:15:00,11,Morning (06-11),<100 km,0,0,0,0,0,0,0,8,5,7.94
@@ -4101,7 +4101,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 57232,Kakinada Port Vijayawada Passenger,Pass,Passenger,Passenger & Suburban,SCR,COA,Kakinada Port,BZA,Vijayawada Jn,213.0,305,41.9,04:40:00,09:45:00,4,Night (00-05),100-300 km,0,0,0,0,0,0,0,42,27,12.68
 57240,Bitragunta Chennai Passenger,Pass,Passenger,Passenger & Suburban,SCR,BTTR,Bitragunta,MAS,Chennai Central,210.0,400,31.5,05:20:00,12:00:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,37,32,15.24
 57241,Bitragunta Vijayawada Passenger,Pass,Passenger,Passenger & Suburban,SCR,BTTR,Bitragunta,BZA,Vijayawada Jn,221.0,315,42.1,04:00:00,09:15:00,4,Night (00-05),100-300 km,0,0,0,0,0,0,0,36,33,14.93
-57242,Vijayawada bitragunta Passenger,Pass,Passenger,Passenger & Suburban,SCR,BZA,Vijayawada Jn,BTTR,Bitragunta,221.0,330,40.2,15:15:00,20:45:00,15,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,36,34,15.38
+57242,Vijayawada Bitragunta Passenger,Pass,Passenger,Passenger & Suburban,SCR,BZA,Vijayawada Jn,BTTR,Bitragunta,221.0,330,40.2,15:15:00,20:45:00,15,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,36,34,15.38
 57254,Vijayawada Bhadrachalam Passenger,Pass,Passenger,Passenger & Suburban,SCR,BZA,Vijayawada Jn,BDCR,Bhadrachalam Road,177.0,280,37.9,08:00:00,12:40:00,8,Morning (06-11),100-300 km,0,0,0,0,0,0,0,24,21,11.86
 57257,Tirupati Kakinada Port Passenger,Pass,Passenger,Passenger & Suburban,SCR,TPTY,Tirupati Main,COA,Kakinada Port,601.0,1180,30.6,01:05:00,20:45:00,1,Night (00-05),300-700 km,0,0,0,0,1,0,0,99,90,14.98
 57258,Kakinada Port Tirupati Passenger,Pass,Passenger,Passenger & Suburban,SCR,COA,Kakinada Port,TPTY,Tirupati Main,601.0,1190,30.3,07:00:00,02:50:00,7,Morning (06-11),300-700 km,0,0,0,0,1,0,0,99,90,14.98
@@ -4123,7 +4123,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 57238,Vijaywada Kazipet Passenger,Pass,Passenger,Passenger & Suburban,SCR,BZA,Vijayawada Jn,KZJ,Kazipet Jn,218.0,380,34.4,12:45:00,19:05:00,12,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,28,27,12.39
 57239,Chennai Gudur Passenger,Pass,Passenger,Passenger & Suburban,SCR,MAS,Chennai Central,GDR,Gudur Jn,137.0,310,26.5,16:00:00,21:10:00,16,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,27,25,18.25
 57253,Bhadrachalam Vijayawada Passenger,Pass,Passenger,Passenger & Suburban,SCR,BDCR,Bhadrachalam Road,BZA,Vijayawada Jn,177.0,335,31.7,13:45:00,19:20:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,24,20,11.3
-57256,Visakhapatnam Kakinada Port passenger,Pass,Passenger,Passenger & Suburban,SCR,VSKP,Vishakapatnam,COA,Kakinada Port,164.0,245,40.2,17:00:00,21:05:00,17,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,24,22,13.41
+57256,Visakhapatnam Kakinada Port Passenger,Pass,Passenger,Passenger & Suburban,SCR,VSKP,Vishakapatnam,COA,Kakinada Port,164.0,245,40.2,17:00:00,21:05:00,17,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,24,22,13.41
 57262,Nidadavolu Bhimavaram Passenger,Pass,Passenger,Passenger & Suburban,SCR,NDD,Nidadavolu Jn,BVRM,Bhimavaram Junction,46.0,80,34.5,07:30:00,08:50:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,13,12,26.09
 57263,Narasapur Nidadavolu Passenger,Pass,Passenger,Passenger & Suburban,SCR,NS,Narasapur,NDD,Nidadavolu Jn,76.0,140,32.6,04:20:00,06:40:00,4,Night (00-05),<100 km,0,0,0,0,0,0,0,20,11,14.47
 57264,Narasapur Visakhapatnam (Link) Passenger,Pass,Passenger,Passenger & Suburban,SCR,NS,Narasapur,VSKP,Vishakapatnam,300.0,475,37.9,23:05:00,07:00:00,23,Late night (22-23),100-300 km,0,0,0,0,1,0,0,56,26,8.67
@@ -4205,7 +4205,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 58001,Howrah Puri Santragachi Passenger,Pass,Passenger,Passenger & Suburban,SER,HWH,Howrah Jn,PURI,Puri,520.0,1150,27.1,23:50:00,19:00:00,23,Late night (22-23),300-700 km,0,0,0,0,0,0,0,109,89,17.12
 58003,Howrah Bhadrak Passenger,Pass,Passenger,Passenger & Suburban,SER,HWH,Howrah Jn,BHC,Bhadrakh,294.0,405,43.6,15:30:00,22:15:00,15,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,61,38,12.93
 58005,Kharagpur Khurda Fast Passenger,Pass,Passenger,Passenger & Suburban,SER,KGP,Kharagpur Jn,KUR,Khurda Road Jn,341.0,455,45.0,04:40:00,12:15:00,4,Night (00-05),300-700 km,0,0,0,0,0,0,0,60,26,7.62
-58006,Kurdha road Kharagpur passenger,Pass,Passenger,Passenger & Suburban,SER,KUR,Khurda Road Jn,KGP,Kharagpur Jn,341.0,445,46.0,16:20:00,23:45:00,16,Afternoon (12-17),300-700 km,0,0,0,0,0,0,0,60,26,7.62
+58006,Kurdha Road Kharagpur Passenger,Pass,Passenger,Passenger & Suburban,SER,KUR,Khurda Road Jn,KGP,Kharagpur Jn,341.0,445,46.0,16:20:00,23:45:00,16,Afternoon (12-17),300-700 km,0,0,0,0,0,0,0,60,26,7.62
 58007,Kharagpur Balasore Bhadrakh Passenger,Pass,Passenger,Passenger & Suburban,SER,KGP,Kharagpur Jn,BHC,Bhadrakh,179.0,265,40.5,06:35:00,11:00:00,6,Morning (06-11),100-300 km,0,0,0,0,0,0,0,29,28,15.64
 58011,Howrah Chakradharpur Passenger,Pass,Passenger,Passenger & Suburban,SER,HWH,Howrah Jn,CKP,Chakradharpur,438.0,625,42.0,23:05:00,09:30:00,23,Late night (22-23),300-700 km,0,0,0,0,1,0,0,76,45,10.27
 58012,Chakradharpur Howrah Passenger,Pass,Passenger,Passenger & Suburban,SER,CKP,Chakradharpur,HWH,Howrah Jn,438.0,670,39.2,17:10:00,04:20:00,17,Afternoon (12-17),300-700 km,1,0,0,1,1,0,0,76,45,10.27
@@ -4225,7 +4225,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 57685,Solapur Bijapur Passenger,Pass,Passenger,Passenger & Suburban,SCR,SUR,Solapur Jn,BJP,Bijapur,110.0,165,40.0,20:10:00,22:55:00,20,Evening (18-21),100-300 km,0,0,0,0,0,0,0,15,9,8.18
 57686,Bijapur Solapur Passenger,Pass,Passenger,Passenger & Suburban,SCR,BJP,Bijapur,SUR,Solapur Jn,110.0,145,45.5,00:05:00,02:30:00,0,Night (00-05),100-300 km,0,0,0,0,0,0,0,15,7,6.36
 58002,Puri Santargachi Passenger,Pass,Passenger,Passenger & Suburban,SER,PURI,Puri,SRC,Santragachi Jn,513.0,965,31.9,09:40:00,01:45:00,9,Morning (06-11),300-700 km,0,0,0,0,0,0,0,104,89,17.35
-58008,Jajpur Keonjhar kharagpur,Pass,Passenger,Passenger & Suburban,SER,JJKR,Jajpur Keonjhar Road,KGP,Kharagpur Jn,222.0,325,41.0,05:45:00,11:10:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,37,36,16.22
+58008,Jajpur Keonjhar Kharagpur,Pass,Passenger,Passenger & Suburban,SER,JJKR,Jajpur Keonjhar Road,KGP,Kharagpur Jn,222.0,325,41.0,05:45:00,11:10:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,37,36,16.22
 58009,Kharagpur Jajpur Keonjhar Road Passenger,Pass,Passenger,Passenger & Suburban,SER,KGP,Kharagpur Jn,JJKR,Jajpur Keonjhar Road,222.0,365,36.5,15:55:00,22:00:00,15,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,37,36,16.22
 58010,Chakradharpur Adra Passenger,Pass,Passenger,Passenger & Suburban,SER,JJKR,Jajpur Keonjhar Road,KGP,Kharagpur Jn,222.0,325,41.0,05:45:00,11:10:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,37,36,16.22
 58017,Kharagpur Asansol Passenger,Pass,Passenger,Passenger & Suburban,SER,KGP,Kharagpur Jn,ASN,Asansol Jn,209.0,350,35.8,05:30:00,11:20:00,5,Night (00-05),100-300 km,0,0,0,0,0,0,0,31,30,14.35
@@ -4340,10 +4340,10 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 58722,Rajim Abhanpur Pass,Pass,Passenger,Passenger & Suburban,SECR,RIM,Rajim,AVP,Abhanpur Junction,16.0,50,19.2,18:35:00,19:25:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,3,3,18.75
 58802,Gondia Nagbhir Ballarshah Passenger,Pass,Passenger,Passenger & Suburban,SECR,G,Gondia Jn,BPQ,Balharshah,252.0,370,40.9,07:30:00,13:40:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,21,18,7.14
 58808,Wadsa Chanda Fort Passenger,Pass,Passenger,Passenger & Suburban,SECR,WSA,Wadsa,CAF,Chanda Fort,137.0,170,48.4,07:00:00,09:50:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,10,10,7.3
-58809,Ramtek itwari Passenger,Pass,Passenger,Passenger & Suburban,SECR,RTK,Ramtek,ITR,Itwari,46.0,75,36.8,07:30:00,08:45:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,7,7,15.22
+58809,Ramtek Itwari Passenger,Pass,Passenger,Passenger & Suburban,SECR,RTK,Ramtek,ITR,Itwari,46.0,75,36.8,07:30:00,08:45:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,7,7,15.22
 58810,Nagpur Ramtek Passenger,Pass,Passenger,Passenger & Suburban,SECR,NGP,Nagpur,RTK,Ramtek,42.0,89,28.3,05:40:00,07:09:00,5,Night (00-05),<100 km,0,0,0,0,0,0,0,6,6,14.29
 58811,Ramtek Nagpur Passenger,Pass,Passenger,Passenger & Suburban,SECR,RTK,Ramtek,NGP,Nagpur,42.0,115,21.9,21:15:00,23:10:00,21,Evening (18-21),<100 km,0,0,0,0,0,0,0,6,6,14.29
-58813,Ramtek itwari Passenger,Pass,Passenger,Passenger & Suburban,SECR,RTK,Ramtek,ITR,Itwari,38.0,100,22.8,14:00:00,15:40:00,14,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,5,5,13.16
+58813,Ramtek Itwari Passenger,Pass,Passenger,Passenger & Suburban,SECR,RTK,Ramtek,ITR,Itwari,38.0,100,22.8,14:00:00,15:40:00,14,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,5,5,13.16
 58814,Itwari Ramtek Passenger,Pass,Passenger,Passenger & Suburban,SECR,ITR,Itwari,RTK,Ramtek,38.0,75,30.4,12:00:00,13:15:00,12,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,5,5,13.16
 58815,Itwari Tirodi Passenger,Pass,Passenger,Passenger & Suburban,SECR,ITR,Itwari,TRDI,Tirodi,124.0,245,30.4,13:05:00,17:10:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,16,15,12.1
 58816,Tirodi Itwari Passenger,Pass,Passenger,Passenger & Suburban,SECR,TRDI,Tirodi,ITR,Itwari,124.0,205,36.3,08:00:00,11:25:00,8,Morning (06-11),100-300 km,0,0,0,0,0,0,0,16,13,10.48
@@ -4380,13 +4380,13 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 58860,Mandla Fort Nainpur Passenger,Pass,Passenger,Passenger & Suburban,SECR,MFR,Mandla Fort,NIR,Nainpur Junction,43.0,115,22.4,15:25:00,17:20:00,15,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,8,8,18.6
 58861,Nainpur Mandla Fort Passenger,Pass,Passenger,Passenger & Suburban,SECR,NIR,Nainpur Junction,MFR,Mandla Fort,43.0,115,22.4,17:40:00,19:35:00,17,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,8,8,18.6
 58862,Mandla Fort Nainpur Passenger,Pass,Passenger,Passenger & Suburban,SECR,MFR,Mandla Fort,NIR,Nainpur Junction,43.0,115,22.4,19:55:00,21:50:00,19,Evening (18-21),<100 km,0,0,0,0,0,0,0,8,8,18.6
-58863,Balaghat jabalpur Passenger,Pass,Passenger,Passenger & Suburban,SECR,BTC,Balaghat Junction,JBP,Jabalpur,185.0,550,20.2,00:40:00,09:50:00,0,Night (00-05),100-300 km,0,0,0,0,0,0,0,19,15,8.11
+58863,Balaghat Jabalpur Passenger,Pass,Passenger,Passenger & Suburban,SECR,BTC,Balaghat Junction,JBP,Jabalpur,185.0,550,20.2,00:40:00,09:50:00,0,Night (00-05),100-300 km,0,0,0,0,0,0,0,19,15,8.11
 58864,Jabalpur Balaghat Passenger,Pass,Passenger,Passenger & Suburban,SECR,JBP,Jabalpur,BTC,Balaghat Junction,185.0,635,17.5,06:00:00,16:35:00,6,Morning (06-11),100-300 km,0,0,0,0,0,0,0,19,15,8.11
 58865,Balaghat Jabalpur Passenger,Pass,Passenger,Passenger & Suburban,SECR,BTC,Balaghat Junction,JBP,Jabalpur,187.0,535,21.0,05:00:00,13:55:00,5,Night (00-05),100-300 km,0,0,0,0,1,0,0,21,21,11.23
 58866,Jabalpur Balaghat Passenger,Pass,Passenger,Passenger & Suburban,WCR,JBP,Jabalpur,BTC,Balaghat Junction,185.0,580,19.1,10:55:00,20:35:00,10,Morning (06-11),100-300 km,0,0,0,0,0,0,0,19,15,8.11
-58867,Balaghat jabalpur Passenger,Pass,Passenger,Passenger & Suburban,SECR,BTC,Balaghat Junction,JBP,Jabalpur,185.0,525,21.1,09:50:00,18:35:00,9,Morning (06-11),100-300 km,0,0,0,0,0,0,0,19,15,8.11
+58867,Balaghat Jabalpur Passenger,Pass,Passenger,Passenger & Suburban,SECR,BTC,Balaghat Junction,JBP,Jabalpur,185.0,525,21.1,09:50:00,18:35:00,9,Morning (06-11),100-300 km,0,0,0,0,0,0,0,19,15,8.11
 58868,Jabalpur Balaghat Passenger,Pass,Passenger,Passenger & Suburban,SECR,JBP,Jabalpur,BTC,Balaghat Junction,187.0,535,21.0,18:05:00,03:00:00,18,Evening (18-21),100-300 km,0,0,0,0,1,0,0,26,23,12.3
-58869,Balaghat jabalpur Passenger,Pass,Passenger,Passenger & Suburban,SECR,BTC,Balaghat Junction,JBP,Jabalpur,185.0,590,18.8,13:50:00,23:40:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,19,15,8.11
+58869,Balaghat Jabalpur Passenger,Pass,Passenger,Passenger & Suburban,SECR,BTC,Balaghat Junction,JBP,Jabalpur,185.0,590,18.8,13:50:00,23:40:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,19,15,8.11
 58870,Jabalpur Balaghat Passenger,Pass,Passenger,Passenger & Suburban,SECR,JBP,Jabalpur,BTC,Balaghat Junction,187.0,550,20.4,22:20:00,07:30:00,22,Late night (22-23),100-300 km,0,0,0,0,1,0,0,23,23,12.3
 58871,Balaghat Jabalpur Passenger,Pass,Passenger,Passenger & Suburban,SECR,BTC,Balaghat Junction,JBP,Jabalpur,187.0,555,20.2,20:45:00,06:00:00,20,Evening (18-21),100-300 km,0,0,0,0,1,0,0,21,21,11.23
 58873,Balaghat Nainpur Passenger,Pass,Passenger,Passenger & Suburban,SECR,BTC,Balaghat Junction,NIR,Nainpur Junction,74.0,200,22.2,17:55:00,21:15:00,17,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,9,7,9.46
@@ -4545,7 +4545,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 59705,Suratgarh Jaipur Passenger,Pass,Passenger,Passenger & Suburban,NWR,SOG,Suratgarh Jn,JP,Jaipur,562.0,945,35.7,06:15:00,22:00:00,6,Morning (06-11),300-700 km,0,0,0,0,0,0,0,55,46,8.19
 59707,Anupgarh - Suratgarh Passenger,Pass,Passenger,Passenger & Suburban,NWR,APH,Anupgarh,SOG,Suratgarh Jn,76.0,110,41.5,10:35:00,12:25:00,10,Morning (06-11),<100 km,0,0,0,0,0,0,0,10,4,5.26
 59708,Suratgarh - Anupgarh Passenger,Pass,Passenger,Passenger & Suburban,NWR,SOG,Suratgarh Jn,APH,Anupgarh,76.0,115,39.7,08:10:00,10:05:00,8,Morning (06-11),<100 km,0,0,0,0,0,0,0,10,4,5.26
-59709,Aph-Sog  Passanger,Pass,Passenger,Passenger & Suburban,NWR,APH,Anupgarh,SOG,Suratgarh Jn,76.0,100,45.6,17:00:00,18:40:00,17,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,10,4,5.26
+59709,APH-SOG  Passanger,Pass,Passenger,Passenger & Suburban,NWR,APH,Anupgarh,SOG,Suratgarh Jn,76.0,100,45.6,17:00:00,18:40:00,17,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,10,4,5.26
 59710,Suratgarh Anupgarh Passenger,Pass,Passenger,Passenger & Suburban,NWR,SOG,Suratgarh Jn,APH,Anupgarh,76.0,105,43.4,14:50:00,16:35:00,14,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,4,4,5.26
 59711,Bhatinda Suratgarh Passenger,Pass,Passenger,Passenger & Suburban,NWR,BTI,Bhatinda Jn,SOG,Suratgarh Jn,142.0,220,38.7,14:45:00,18:25:00,14,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,17,10,7.04
 59712,Suratgarh Bhatinda Passenger,Pass,Passenger,Passenger & Suburban,NWR,SOG,Suratgarh Jn,BTI,Bhatinda Jn,142.0,215,39.6,09:00:00,12:35:00,9,Morning (06-11),100-300 km,0,0,0,0,0,0,0,17,8,5.63
@@ -4597,7 +4597,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 63211,Jasidih - Patna MEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ECR,JSME,Jasidih Jn,PNBE,Patna Jn,176.0,400,26.4,17:00:00,23:40:00,17,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,57,27,15.34
 63212,Patna-Jhajha Passenger MEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ECR,PNBE,Patna Jn,JAJ,Jhajha,176.0,365,28.9,14:30:00,20:35:00,14,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,35,28,15.91
 63217,Mokama Danapur Passenger,MEMU,MEMU/DEMU,Passenger & Suburban,ECR,MKA,Mokameh Jn,DNR,Danapur,99.0,205,29.0,06:05:00,09:30:00,6,Morning (06-11),<100 km,0,0,0,0,0,0,0,22,15,15.15
-63218,Danapur Mokameh passenger,MEMU,MEMU/DEMU,Passenger & Suburban,ECR,DNR,Danapur,MKA,Mokameh Jn,99.0,205,29.0,18:20:00,21:45:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,22,18,18.18
+63218,Danapur Mokameh Passenger,MEMU,MEMU/DEMU,Passenger & Suburban,ECR,DNR,Danapur,MKA,Mokameh Jn,99.0,205,29.0,18:20:00,21:45:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,22,18,18.18
 63219,Danapur Ara MEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ECR,DNR,Danapur,RPR,Raghunathpur,76.0,135,33.8,09:50:00,12:05:00,9,Morning (06-11),<100 km,0,0,0,0,0,0,0,11,11,14.47
 63220,Ara Danapur Passenger,MEMU,MEMU/DEMU,Passenger & Suburban,ECR,RPR,Raghunathpur,PNBE,Patna Jn,85.0,185,27.6,15:00:00,18:05:00,15,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,13,13,15.29
 63223,Patna Ara Passenger DEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ECR,PNBE,Patna Jn,ARA,Ara,49.0,110,26.7,20:30:00,22:20:00,20,Evening (18-21),<100 km,0,0,0,0,0,0,0,9,9,18.37
@@ -4640,7 +4640,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 53042,Jaynagar - Howrah Passenger,Pass,Passenger,Passenger & Suburban,ER,JYG,Jaynagar,HWH,Howrah Jn,730.0,1700,25.8,18:45:00,23:05:00,18,Evening (18-21),700-1500 km,0,0,0,0,0,0,0,164,110,15.07
 54159,Jhansi Banda Passenger,Pass,Passenger,Passenger & Suburban,NCR,JHS,Jhansi Jn,BNDA,Banda Jn,191.0,260,44.1,12:30:00,16:50:00,12,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,19,19,9.95
 63525,Barddhaman Asansol mEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,BWN,Barddhaman Jn,ASN,Asansol Jn,106.0,115,55.3,20:05:00,22:00:00,20,Evening (18-21),100-300 km,0,0,0,0,0,0,0,14,14,13.21
-63541,Asansol-Gomoh Passenger (Memu),MEMU,MEMU/DEMU,Passenger & Suburban,ER,ASN,Asansol Jn,GMO,Gomoh Jn,87.0,113,46.2,05:10:00,07:03:00,5,Night (00-05),<100 km,0,0,0,0,0,0,0,17,15,17.24
+63541,Asansol-Gomoh Passenger (MEMU),MEMU,MEMU/DEMU,Passenger & Suburban,ER,ASN,Asansol Jn,GMO,Gomoh Jn,87.0,113,46.2,05:10:00,07:03:00,5,Night (00-05),<100 km,0,0,0,0,0,0,0,17,15,17.24
 63542,Gomoh-Asansol MEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,GMO,Gomoh Jn,ASN,Asansol Jn,87.0,120,43.5,07:20:00,09:20:00,7,Morning (06-11),<100 km,0,0,0,0,0,0,0,17,12,13.79
 63543,Asansol Gomoh Pass,MEMU,MEMU/DEMU,Passenger & Suburban,ER,ASN,Asansol Jn,GMO,Gomoh Jn,87.0,125,41.8,18:10:00,20:15:00,18,Evening (18-21),<100 km,0,0,0,0,0,0,0,17,12,13.79
 63544,Gomoh Asansol Passenger MEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,GMO,Gomoh Jn,ASN,Asansol Jn,87.0,110,47.5,21:10:00,23:00:00,21,Evening (18-21),<100 km,0,0,0,0,0,0,0,17,15,17.24
@@ -4651,13 +4651,13 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 63551,Asansol Dhanbad Passenger MEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,ASN,Asansol Jn,DHN,Dhanbad Jn,58.0,80,43.5,23:00:00,00:20:00,23,Late night (22-23),<100 km,0,0,0,0,0,0,0,12,10,17.24
 63552,Dhanbad Asansol Passenger MEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,DHN,Dhanbad Jn,ASN,Asansol Jn,58.0,80,43.5,03:30:00,04:50:00,3,Night (00-05),<100 km,0,0,0,0,0,0,0,12,9,15.52
 63556,Asansol Purulia MEMU Passenger,MEMU,MEMU/DEMU,Passenger & Suburban,ER,ASN,Asansol Jn,PRR,Purulia Jn,80.0,143,33.6,10:52:00,13:15:00,10,Morning (06-11),<100 km,0,0,0,0,0,0,0,15,15,18.75
-63561,asansol jasidih mEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,ASN,Asansol Jn,JSME,Jasidih Jn,111.0,130,51.2,07:30:00,09:40:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,16,16,14.41
-63562,baidyanath dham asansol passenger,MEMU,MEMU/DEMU,Passenger & Suburban,ER,BDME,Baidyanathdham Deoghar,ASN,Asansol Jn,117.0,160,43.9,04:10:00,06:50:00,4,Night (00-05),100-300 km,0,0,0,0,0,0,0,18,16,13.68
+63561,Asansol Jasidih mEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,ASN,Asansol Jn,JSME,Jasidih Jn,111.0,130,51.2,07:30:00,09:40:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,16,16,14.41
+63562,Baidyanath Dham Asansol Passenger,MEMU,MEMU/DEMU,Passenger & Suburban,ER,BDME,Baidyanathdham Deoghar,ASN,Asansol Jn,117.0,160,43.9,04:10:00,06:50:00,4,Night (00-05),100-300 km,0,0,0,0,0,0,0,18,16,13.68
 63563,Asansol Jasidh MEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,ASN,Asansol Jn,JSME,Jasidih Jn,110.0,128,51.6,20:32:00,22:40:00,20,Evening (18-21),100-300 km,0,0,0,0,0,0,0,16,16,14.55
-63564,jasidih Asansol mEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,JSME,Jasidih Jn,ASN,Asansol Jn,111.0,130,51.2,17:40:00,19:50:00,17,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,16,16,14.41
+63564,Jasidih Asansol mEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,JSME,Jasidih Jn,ASN,Asansol Jn,111.0,130,51.2,17:40:00,19:50:00,17,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,16,16,14.41
 63567,Asansol Jhajha Passenger,MEMU,MEMU/DEMU,Passenger & Suburban,ER,ASN,Asansol Jn,JAJ,Jhajha,154.0,200,46.2,09:35:00,12:55:00,9,Morning (06-11),100-300 km,0,0,0,0,0,0,0,20,20,12.99
-63568,jhajha asansol memu,MEMU,MEMU/DEMU,Passenger & Suburban,ER,JAJ,Jhajha,ASN,Asansol Jn,155.0,200,46.5,13:20:00,16:40:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,20,8,5.16
-63569,Asansol jasidih mEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,ASN,Asansol Jn,JSME,Jasidih Jn,111.0,135,49.3,17:25:00,19:40:00,17,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,16,14,12.61
+63568,Jhajha Asansol Memu,MEMU,MEMU/DEMU,Passenger & Suburban,ER,JAJ,Jhajha,ASN,Asansol Jn,155.0,200,46.5,13:20:00,16:40:00,13,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,20,8,5.16
+63569,Asansol Jasidih mEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,ASN,Asansol Jn,JSME,Jasidih Jn,111.0,135,49.3,17:25:00,19:40:00,17,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,16,14,12.61
 63570,Baidyanathdham Asansol Passenger,MEMU,MEMU/DEMU,Passenger & Suburban,ER,BDME,Baidyanathdham Deoghar,ASN,Asansol Jn,117.0,160,43.9,06:20:00,09:00:00,6,Morning (06-11),100-300 km,0,0,0,0,0,0,0,18,16,13.68
 63572,Kiul Jasidih Passenger MEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ER,KIUL,Kiul Jn,JSME,Jasidih Jn,97.0,150,38.8,05:50:00,08:20:00,5,Night (00-05),<100 km,0,0,0,0,0,0,0,13,11,11.34
 63574,Kiul Jhajha Passenger,MEMU,MEMU/DEMU,Passenger & Suburban,ER,KIUL,Kiul Jn,JSME,Jasidih Jn,97.0,145,40.1,14:10:00,16:35:00,14,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,13,11,11.34
@@ -4847,16 +4847,16 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 56903,Solapur - Dharwar Passenger,Pass,Passenger,Passenger & Suburban,SWR,SUR,Solapur Jn,DWR,Dharwar,378.0,565,40.1,23:40:00,09:05:00,23,Late night (22-23),300-700 km,0,0,0,0,1,0,0,51,31,8.2
 57515,Daund Nanded Passenger,Pass,Passenger,Passenger & Suburban,SCR,DD,Daund Jn,NED,Huzur Sahib Nanded,586.0,910,38.6,13:05:00,04:15:00,13,Afternoon (12-17),300-700 km,0,0,0,0,1,0,0,58,53,9.04
 57624,Guntur Kacheguda Pass,Pass,Passenger,Passenger & Suburban,SCR,GNT,Guntur Jn,KCG,Kacheguda,623.0,1025,36.5,05:15:00,22:20:00,5,Night (00-05),300-700 km,0,0,0,0,0,0,0,77,70,11.24
-58027,Bhubaneswar-Khurda Road passenger,Pass,Passenger,Passenger & Suburban,SER,BBS,Bhubaneswar,KUR,Khurda Road Jn,19.0,65,17.5,14:15:00,15:20:00,14,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,4,4,21.05
+58027,Bhubaneswar-Khurda Road Passenger,Pass,Passenger,Passenger & Suburban,SER,BBS,Bhubaneswar,KUR,Khurda Road Jn,19.0,65,17.5,14:15:00,15:20:00,14,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,4,4,21.05
 58426,Bhubaneswar-Kendujhargarh Fast Passenger,Pass,Passenger,Passenger & Suburban,ECoR,BBS,Bhubaneswar,KDJR,Kendujhargarh,215.0,405,31.9,12:45:00,19:30:00,12,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,32,16,7.44
 58812,Itwari Ramtek Passenger,Pass,Passenger,Passenger & Suburban,SECR,ITR,Itwari,RTK,Ramtek,38.0,80,28.5,19:10:00,20:30:00,19,Evening (18-21),<100 km,0,0,0,0,0,0,0,5,5,13.16
 58845,Itwari Nagbahir Passenger,Pass,Passenger,Passenger & Suburban,SECR,ITR,Itwari,NAB,Nagbhir Junction,106.0,265,24.0,11:00:00,15:25:00,11,Morning (06-11),100-300 km,0,0,0,0,0,0,0,7,2,1.89
-59307,Indore Jaipur link Express,Pass,Passenger,Passenger & Suburban,WR,INDB,Indore Jn Bg,JP,Jaipur,685.0,925,44.4,18:00:00,09:25:00,18,Evening (18-21),300-700 km,1,0,0,1,1,0,0,80,31,4.53
+59307,Indore Jaipur Link Express,Pass,Passenger,Passenger & Suburban,WR,INDB,Indore Jn Bg,JP,Jaipur,685.0,925,44.4,18:00:00,09:25:00,18,Evening (18-21),300-700 km,1,0,0,1,1,0,0,80,31,4.53
 59701,Jaipur Hisar Passenger,Pass,Passenger,Passenger & Suburban,NWR,JP,Jaipur,HSR,Hisar,368.0,585,37.7,18:25:00,04:10:00,18,Evening (18-21),300-700 km,0,0,0,0,1,0,0,48,38,10.33
 59706,Jaipur Suratgarh Passenger,Pass,Passenger,Passenger & Suburban,NWR,JP,Jaipur,SOG,Suratgarh Jn,562.0,835,40.4,05:15:00,19:10:00,5,Night (00-05),300-700 km,0,0,0,0,0,0,0,55,45,8.01
 63242,Gaya Patna Passenger MEMU,MEMU,MEMU/DEMU,Passenger & Suburban,ECR,GAYA,Gaya Jn,PNBE,Patna Jn,92.0,165,33.5,05:00:00,07:45:00,5,Night (00-05),<100 km,0,0,0,0,0,0,0,14,14,15.22
 63554,Asansol-Bokaro Steel City MEMU Passenger,MEMU,MEMU/DEMU,Passenger & Suburban,ER,ASN,Asansol Jn,BKSC,Bokaro Steel City,140.0,200,42.0,07:05:00,10:25:00,7,Morning (06-11),100-300 km,0,0,0,0,0,0,0,22,20,14.29
-02094,Loharu - Jaipur Passenger Spl (Mg),Pass,Passenger,Passenger & Suburban,NWR,LHU,Loharu,JP,Jaipur,230.0,410,33.7,12:40:00,19:30:00,12,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,24,19,8.26
+02094,Loharu - Jaipur Passenger Spl (MG),Pass,Passenger,Passenger & Suburban,NWR,LHU,Loharu,JP,Jaipur,230.0,410,33.7,12:40:00,19:30:00,12,Afternoon (12-17),100-300 km,0,0,0,0,0,0,0,24,19,8.26
 22406,AnandVihar Terminal-Bhagalpur Garib Rath,GR,Garib Rath,Premium / Fast-track,NR,ANVT,Anand Vihar Trm,BGP,Bhagalpur,1207.0,1110,65.2,17:00:00,11:30:00,17,Afternoon (12-17),700-1500 km,1,0,0,1,0,1,0,176,17,1.41
 06593,Yesvantpur-Hosur Passenger Special,Pass,Passenger,Passenger & Suburban,SWR,YPR,Yesvantpur Jn,HSRA,Hosur,67.0,90,44.7,15:35:00,17:05:00,15,Afternoon (12-17),<100 km,0,0,0,0,0,0,0,10,9,13.43
 06001,Chennai Central-Kollam SF Special,SF,Superfast,Express & Superfast,SR,MAS,Chennai Central,QLN,Kollam Jn,858.0,870,59.2,15:15:00,05:45:00,15,Afternoon (12-17),700-1500 km,1,0,1,1,1,0,0,149,17,1.98
@@ -4913,7 +4913,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 12193,Bhopal Partapgarh Express,SF,Superfast,Express & Superfast,CR,BPL,Bhopal Jn,PBH,Partapgarh Jn,756.0,820,55.3,19:20:00,09:00:00,19,Evening (18-21),700-1500 km,1,0,1,1,1,0,0,96,11,1.46
 12258,Kochuveli-Yesvantpur Garib Rath,GR,Garib Rath,Premium / Fast-track,SWR,KCVL,Kochuveli,YPR,Yesvantpur Jn,808.0,990,49.0,16:35:00,09:05:00,16,Afternoon (12-17),700-1500 km,1,0,0,1,0,0,0,118,14,1.73
 12165,Mumbai LTT - Varanasi Ratnagiri Exp,SF,Superfast,Express & Superfast,CR,LTT,Lokmanya Tilak Term,BSB,Varanasi Jn,1483.0,1545,57.6,05:20:00,07:05:00,5,Night (00-05),700-1500 km,1,0,1,1,1,0,0,200,14,0.94
-12615,Grand Trunk (Gt) Express,SF,Superfast,Express & Superfast,SR,MAS,Chennai Central,NDLS,New Delhi,2184.0,2105,62.3,19:15:00,06:20:00,19,Evening (18-21),1500+ km,1,1,1,1,1,0,0,274,38,1.74
+12615,Grand Trunk (GT) Express,SF,Superfast,Express & Superfast,SR,MAS,Chennai Central,NDLS,New Delhi,2184.0,2105,62.3,19:15:00,06:20:00,19,Evening (18-21),1500+ km,1,1,1,1,1,0,0,274,38,1.74
 12286,Hazrat Nizamuddin-Secunderabad Duronto Express,Drnt,Duronto,Premium / Fast-track,SCR,NZM,Delhi H Nizamuddin,SC,Secunderabad Jn,1660.0,1330,74.9,15:50:00,14:00:00,15,Afternoon (12-17),1500+ km,1,1,1,1,1,0,0,187,2,0.12
 12395,RajendraNagar-Ajmer Ibadat Express,SF,Superfast,Express & Superfast,ER,RJPB,Rajendra Nagar Bihar,AII,Ajmer Jn,1305.0,1235,63.4,18:45:00,15:20:00,18,Evening (18-21),700-1500 km,1,0,1,1,1,0,0,176,13,1.0
 12463,Rajasthan Sampark Kranti Express,SKr,Sampark Kranti,Premium / Fast-track,NR,DEE,Delhi Sarai Rohilla,JU,Jodhpur Jn,616.0,590,62.6,22:25:00,08:15:00,22,Late night (22-23),300-700 km,1,1,1,1,1,0,0,88,9,1.46
@@ -4987,7 +4987,7 @@ number,name,type,type_name,category,zone,from_station_code,from_station_name,to_
 12995-Slip,Bandra-Udaipur SF Express Slip,SF,Superfast,Express & Superfast,WR,BDTS,Mumbai Bandra Terminus,AII,Ajmer Jn,1017.0,1080,56.5,15:45:00,09:45:00,15,Afternoon (12-17),700-1500 km,1,0,1,1,1,0,0,145,13,1.28
 13318,Black Diamond Express,Exp,Express,Express & Superfast,ECR,DHN,Dhanbad Jn,HWH,Howrah Jn,271.0,300,54.2,16:25:00,21:25:00,16,Afternoon (12-17),100-300 km,1,0,0,0,0,1,0,59,16,5.9
 13187,Maa Tara Express,Exp,Express,Express & Superfast,ER,SDAH,Kolkata Sealdah,RPH,Rampur Hat,226.0,290,46.8,07:25:00,12:15:00,7,Morning (06-11),100-300 km,1,0,0,0,0,1,0,54,9,3.98
-14019,Chhindwara Delhi SR (Biweekly) Kanhan valley Express,Exp,Express,Express & Superfast,NR,CWA,Chhindwara Junction,DEE,Delhi Sarai Rohilla,1050.0,1200,52.5,10:15:00,06:15:00,10,Morning (06-11),700-1500 km,1,0,0,1,1,0,0,132,18,1.71
+14019,Chhindwara Delhi SR (Biweekly) Kanhan Valley Express,Exp,Express,Express & Superfast,NR,CWA,Chhindwara Junction,DEE,Delhi Sarai Rohilla,1050.0,1200,52.5,10:15:00,06:15:00,10,Morning (06-11),700-1500 km,1,0,0,1,1,0,0,132,18,1.71
 12972,Bhavnagar Bandra Express,SF,Superfast,Express & Superfast,WR,BVC,Bhavnagar Terminus,BDTS,Mumbai Bandra Terminus,778.0,845,55.2,20:30:00,10:35:00,20,Evening (18-21),700-1500 km,1,0,1,1,1,0,0,126,19,2.44
 12906,Howrah - Porbandar SF Exp,SF,Superfast,Express & Superfast,WR,HWH,Howrah Jn,PBR,Porbandar,2551.0,2645,57.9,22:55:00,19:00:00,22,Late night (22-23),1500+ km,1,0,1,1,1,0,0,387,29,1.14
 12871,Howrah - Titlagarh Ispat Exp,SF,Superfast,Express & Superfast,SER,HWH,Howrah Jn,TIG,Titlagarh,745.0,805,55.5,06:55:00,20:20:00,6,Morning (06-11),700-1500 km,1,0,0,0,0,1,0,117,29,3.89

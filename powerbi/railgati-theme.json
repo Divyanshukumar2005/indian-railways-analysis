@@ -1,0 +1,27 @@
+{
+  "name": "RailGati",
+  "dataColors": ["#2563eb", "#f59e0b", "#10b981", "#7c3aed", "#06b6d4", "#ef4444", "#64748b", "#ea580c"],
+  "background": "#ffffff",
+  "foreground": "#0f172a",
+  "tableAccent": "#2563eb",
+  "good": "#10b981",
+  "neutral": "#f59e0b",
+  "bad": "#ef4444",
+  "maximum": "#2563eb",
+  "center": "#f59e0b",
+  "minimum": "#cbd5e1",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "fontSize": 14, "color": "#0f172a" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#475569" },
+    "callout": { "fontFace": "Segoe UI Semibold", "fontSize": 28, "color": "#0f172a" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "border": [{ "show": true, "color": { "solid": { "color": "#e2e8f0" } }, "radius": 8 }],
+        "title": [{ "show": true, "fontColor": { "solid": { "color": "#0f172a" } } }]
+      },
+      "page": [{ "background": [{ "color": { "solid": { "color": "#f1f5f9" } }, "transparency": 0 }] }]
+    }
+  }
+}

@@ -1,12 +1,27 @@
+<div align="center">
+
 # Indian Railways Service Network Analysis
 
-![Dashboard](docs/dashboard.png)
+**Where is the passenger network slow, short on AC, or overloaded, and what should a planner look at first?**
 
-**[Live demo](https://indian-railways-analysis.vercel.app)** · Python · pandas · SQL (SQLite) · React · TypeScript · Tailwind · Data: [datameet/railways](https://github.com/datameet/railways) (CC0)
+[![CI](https://github.com/Divyanshukumar2005/indian-railways-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/Divyanshukumar2005/indian-railways-analysis/actions)
+![Python](https://img.shields.io/badge/Python-pandas%20%7C%20SQLite-3776AB?logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-CTEs%20%26%20window%20functions-4479A1)
+![React](https://img.shields.io/badge/React-TypeScript%20%7C%20Tailwind-149ECA?logo=react&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-DAX-F2C811?logo=powerbi&logoColor=black)
+![Data](https://img.shields.io/badge/Data-datameet%2Frailways%20(CC0)-2E7D32)
 
-**Business question:** where is the Indian Railways passenger network slow, short on AC, or overloaded, and what should a planner look at first?
+[**Live dashboard**](https://indian-railways-analysis.vercel.app) · [Findings](#findings-at-a-glance) · [Power BI report](#power-bi-report) · [SQL results](sql/outputs/RESULTS.md) · [Notebook](notebooks/01_eda_and_findings.ipynb)
 
-I cleaned the public timetable (5,147 train services, 8,486 stations), computed the KPIs in SQL, tested whether the main pattern survives a sanity check, and built an interactive dashboard on top. Every number in this README is re-checked against the data by `scripts/check_numbers.py` and in CI.
+<img src="docs/dashboard.png" alt="React dashboard" width="900">
+
+</div>
+
+| 5,147 | 8,486 | 17 | 55.6% |
+|:---:|:---:|:---:|:---:|
+| train services | stations | railway zones | of services are passenger & suburban |
+
+I cleaned the public timetable (5,147 train services, 8,486 stations), computed the KPIs in SQL, tested whether the main pattern survives a sanity check, and built the result twice: an interactive React dashboard and a Power BI report. Every number in this README is re-checked against the data by `scripts/check_numbers.py` and in CI.
 
 ## Findings at a glance
 
@@ -27,6 +42,47 @@ Average speed is distance divided by total time, and total time includes standin
 
 This is an association across trains. It does not prove that cutting one stop gives a fixed gain, which is why the dashboard's what-if simulator is labelled "illustrative".
 
+## Power BI report
+
+<div align="center">
+<img src="docs/powerbi-dashboard.png" alt="Power BI report" width="900">
+</div>
+
+One-page report built from the same cleaned CSVs: four KPI cards, category and zone slicers, and six visuals, one per finding. Amber bars mark the problem spots (Passenger & Suburban speed, the 300-700 km AC gap, the three slowest zones). Open [`powerbi/railgati-dashboard.pbix`](powerbi/railgati-dashboard.pbix) in Power BI Desktop (Windows). The DAX measures, load steps and check values are in [`powerbi/DAX_measures.md`](powerbi/DAX_measures.md), and the card values match the React dashboard and the SQL results.
+
+## Dashboard tour
+
+<table>
+<tr>
+<td width="50%"><img src="docs/screenshots/01-overview-kpis-filters.png" alt="Overview and filters"><br><sub><b>Overview</b>: KPIs and filters</sub></td>
+<td width="50%"><img src="docs/screenshots/02-speed-by-category-and-ac-gap.png" alt="Speed by category and AC gap"><br><sub><b>Speed by category</b> and the AC gap</sub></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/03-speed-by-zone.png" alt="Speed by zone"><br><sub><b>Speed by railway zone</b></sub></td>
+<td><img src="docs/screenshots/05-hub-concentration-and-zone-gap.png" alt="Hub concentration"><br><sub><b>Hub concentration</b> and zone gap</sub></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/06-service-explorer.png" alt="Service explorer"><br><sub><b>Service explorer</b>: every train, searchable</sub></td>
+<td><img src="docs/screenshots/09-what-if-simulator.png" alt="What-if simulator"><br><sub><b>What-if simulator</b> (illustrative)</sub></td>
+</tr>
+</table>
+
+<details>
+<summary>More screens</summary>
+
+<table>
+<tr>
+<td width="50%"><img src="docs/screenshots/04-departures-and-stops-vs-speed.png" alt="Departures and stops vs speed"><br><sub>Departures by hour, halts vs speed</sub></td>
+<td width="50%"><img src="docs/screenshots/07-policy-dossier-1.png" alt="Policy dossier"><br><sub>Policy dossier (1)</sub></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/08-policy-dossier-2-footer.png" alt="Policy dossier footer"><br><sub>Policy dossier (2) and sources</sub></td>
+<td><img src="docs/simulator.png" alt="Simulator detail"><br><sub>Simulator detail</sub></td>
+</tr>
+</table>
+
+</details>
+
 ## What is in this repo
 
 | Part | What it shows |
@@ -35,10 +91,8 @@ This is an association across trains. It does not prove that cutting one stop gi
 | `sql/queries.sql` | 7 KPI queries plus a drill-down: CTEs, `RANK` / `ROW_NUMBER` window functions, conditional aggregation, `HAVING` filters. Saved results in `sql/outputs/RESULTS.md` |
 | `notebooks/01_eda_and_findings.ipynb` | EDA with charts and the speed-vs-halts check, runs on the committed CSVs |
 | `dashboard-react/` | React + TypeScript + Tailwind dashboard: filters, drill-downs, a train explorer, a what-if simulator. All figures come from the pipeline, none are typed by hand |
+| `powerbi/` | Finished Power BI report (`.pbix`), DAX measures with check values, dark theme and background |
 | `scripts/check_numbers.py`, `.github/workflows/ci.yml` | Checks that README, notebook, dashboard data and SQL results agree with the CSVs; CI also re-runs the SQL, executes the notebook and builds the dashboard |
-| `powerbi/` | DAX measures and a build guide (the `.pbix` is not built yet) |
-
-![Simulator](docs/simulator.png)
 
 ## Data cleaning decisions
 
@@ -71,7 +125,7 @@ npm install
 npm run dev                          # http://localhost:3000
 npm run build                        # static site in dist/, any static host can serve it
 ```
-The cleaned CSVs in `data/` are committed, so the notebook, SQL step, dashboard and Power BI guide work without the raw download. Only `data/schedules_clean.csv` (17 MB) is git-ignored; `clean.py` recreates it. For the notebook: `pip install -r requirements-notebook.txt`, then open `notebooks/01_eda_and_findings.ipynb`.
+The cleaned CSVs in `data/` are committed, so the notebook, SQL step, dashboard and Power BI report work without the raw download. Only `data/schedules_clean.csv` (17 MB) is git-ignored; `clean.py` recreates it. For the notebook: `pip install -r requirements-notebook.txt`, then open `notebooks/01_eda_and_findings.ipynb`.
 
 ## Project structure
 ```
@@ -80,7 +134,7 @@ sql/              queries.sql + load.py + run_queries.py, results in outputs/
 notebooks/        01_eda_and_findings.ipynb
 data/             cleaned CSVs, excluded_trains.csv, cleaning_log.txt
 dashboard-react/  React + TypeScript + Tailwind dashboard
-powerbi/          DAX measures and build guide
+powerbi/          .pbix report, DAX measures, theme and background
 docs/             screenshots used in this README
 .github/          CI
 ```
@@ -94,5 +148,7 @@ docs/             screenshots used in this README
 - **Categories**: `Heritage / Toy` holds the 7 narrow-gauge toy trains that passed the speed check. The Nilgiri and Darjeeling hill services typed as Passenger stay in Passenger & Suburban. Hyderabad MMTS, Delhi and Kolkata suburban types are counted as Passenger & Suburban.
 - **Source quality**: the datameet data is a community-collected snapshot that looks several years old, so findings describe that timetable, not today's network. Some distances in the source are probably wrong in ways no rule can detect without outside data.
 
-## License
-Code: MIT (see `LICENSE`). Data: datameet/railways, CC0.
+## Data and license
+Data: [datameet/railways](https://github.com/datameet/railways) (CC0), pinned to one upstream commit. Code: MIT (see `LICENSE`).
+
+<div align="center"><sub>Built by Divyanshu · <a href="https://github.com/Divyanshukumar2005">GitHub</a></sub></div>

@@ -107,7 +107,7 @@ export const ZonePerformanceChart: React.FC<ZonePerformanceChartProps> = ({
 
       <div className="mt-3 pt-3 border-t border-slate-100 dark:border-slate-800/80 text-[11px] text-slate-500 dark:text-slate-400 flex items-center justify-between font-mono">
         <span>Slowest corridor zone:</span>
-        <span className="text-amber-700 dark:text-amber-400 font-bold">SECR (33.2 km/h)</span>
+        <span className="text-amber-700 dark:text-amber-400 font-bold">{FACTS.slow_zones[0].zone} ({FACTS.slow_zones[0].speed} km/h)</span>
       </div>
     </div>
   );
