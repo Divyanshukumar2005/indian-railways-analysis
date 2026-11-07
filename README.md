@@ -1,10 +1,5 @@
 # Indian Railways Service Network Analysis
 
-![Python](https://img.shields.io/badge/Python-pandas%20%7C%20SQLite-3776AB?logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-CTEs%20%26%20window%20functions-4479A1)
-![React](https://img.shields.io/badge/React-TypeScript%20%7C%20Tailwind-149ECA?logo=react&logoColor=white)
-![Data](https://img.shields.io/badge/Data-datameet%2Frailways%20(CC0)-2E7D32)
-
 ![Dashboard](docs/dashboard.png)
 
 **[Live demo](https://indian-railways-analysis.vercel.app)** · Python · pandas · SQL (SQLite) · React · TypeScript · Tailwind · Data: [datameet/railways](https://github.com/datameet/railways) (CC0)
